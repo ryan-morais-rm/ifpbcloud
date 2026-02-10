@@ -1,0 +1,55 @@
+Introdução:
+- Trace recording:
+CTS grava operações performadas no console ou pelas chama-
+das de API, e também operações feitas por cada serviço in-
+terconectado.
+
+- Trace query:
+Você pode consultar quaisquer gravações dos últimos sete 
+dias no console do CTS usando filtros como tipo de recurso,
+registro, operador e status. 
+
+- Trace transfer:
+CTS comprime rastreamentos em arquivos por serviço e perio-
+dicamente transfere estes para os buckets OBS  ou LTS, os
+log streams. 
+
+- Trace encryption:
+Trace files são comrpimidos usando chaves providas pelo DEW
+durante a transferência. 
+
+- Event notification:
+CTS trabalha com o SMN para enviar notificações para celu-
+lares e endereços de e-mail para notificá-lo de certas ope-
+rações chaves, endpoints HTTP, HTTPS podem ser usados.  
+
+
+Funções:
+- Tracker:
+Antes de usar o CTS, você precisa habilitar o serviço. Um
+management tracker é automaticamente criado na etapa inici-
+al de habilitação. Este tracker identifica e é associado 
+com todos os serviços de nuvem que você usa, e grava todas
+as operações nos serviços. 
+
+- Trace:
+Rastreamenos são logs de serviços de nuvem utilizados e ar-
+quivados pelo CTS. É possível visualizá-los para identifi-
+car operações feitas por usuários específicos. 
+
+- Trace file:
+É uma coleção de rastreamentos. CTS gera trace files basea-
+dos em serviços e ciclo de transferência e envia esses ar-
+quivos para os buckets especificados. Tipicamente, todos os
+rastreamentos de um serviço gerado em um ciclo de transfe-
+rência são comprimidos em um único trace file. Porém, CTS
+dinamicamente ajusta o número de traces por arquivo, quando
+está lidando com um número alto de traces. 
+
+- Security:
+CTS suporta criptografia dos arquivos de trace. Quando este
+complemento é habilitado, CTS usa chaves providas pelo DEW
+para criptografar arquivos durante transferência. 
+
+
+

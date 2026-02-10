@@ -1,0 +1,67 @@
+Desafios:
+Aplicações distribuídas possuem relacionamentos complexos. Como
+resultado, é difícil garantir que uma aplicação rode normalmente
+e rapidamente localize falhas e buracos de performance. 
+
+Introdução:
+APM ajuda o time de O&M à rapidamente identificar problemas de 
+performance e localizar causas centrais de falhas, garantindo a
+melhor experiência de usuário. 
+É necessário, apenas, instalar Agentes para aplicações, então o 
+APM pode monitorá-los de um modo geral. APM pode rapidamente lo-
+calizar erros de APIs e desacelerar APIs, reproduzindo chamadas 
+de parâmetros, facilitando diagnóstico on-line.
+
+Linguagems:
+APM suporta aplicações Java, Python, Node.js, Golang, PHP, C++ e
+aplicações .NET.
+
+Capacidades:
+- Coleção de dados da aplicação de modo não intrusivo:
+  Você não precisa modificar o código da aplicação. Na verdade,
+  você apenas desenvolver um pacote agente do APM e modificar os
+  parâmetros do início da aplicação e monitorá-las. 
+- Monitoramento de métricas da aplicação:
+  APM automaticamente monitora as métricas da aplicação. 
+- Topologia do APP:
+  Ele gera chamadas de relacionamento entre as aplicações dis-
+  tribuídas baseadas na análise dinâmica e computação de chama-
+  das RPC. 
+- Monitoramento web:
+  APM agents regularmente coletam dados de métricas de perfor-
+  mance para medir a saúde geral dos navegadores, páginas HTML5,
+  e applets. 
+- Gerenciamento entre contas:
+  Quando sua chave de acesso é usada por outro usuário para lo-
+  gar no APM, você pode gertenciar a performance de dados das 
+  aplicações do usuário. 
+- Integração com o SQL:
+  APM mostra gráficos de métricas (como o número de declarações
+  SQL, latência e número de erros), e suporta análise de proble-
+  mas de performance de banco de dados causados por consultas 
+  SQL anormais. 
+
+Conceitos básicos: 
+- APDEX:
+  Define um método para medir a performance da aplicação. Ele
+  está em um intervalo de 0 à 1. 
+- CMDB:
+  Estrutura e mostra rercursos de configuração de aplicações, 
+  então você pode monitorar melhor e gerenciar aplicações.
+- Ugrade:
+  APM provê edições gratuitas e enterprises e suporta intercone-
+  xão com aplicações Java. APM pode ser melhorado da edição bá-
+  sica para a empresarial, mas não pode ser rebaixada da empre-
+  sarial para a gratuita (edição básica). 
+- Métricas:
+  Uma métrica descreve a o consumo de dados ou status. Ela con-
+  siste do tipo de métrica, nome e descrição, tipos de dados e
+  modo de agregação padrão. Para o modo de agregação comum, 
+  "LAST" indica o valor da última métrica coletada.
+  "SUM" indica a soma das métricas coletadas. 
+  "MAX" indica o valor máximo das métricas coletadas. 
+  "AVG" indica o valor comum das métricas coletadas. 
+  Os dados para métricas são coletados periodicamente. O período
+  de coleta padrão é 1 minuto. 
+
+

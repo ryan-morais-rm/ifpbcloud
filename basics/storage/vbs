@@ -1,0 +1,30 @@
+Introdução:
+Prover proteção de dados baseada em snapshots para discos EVS. 
+VBS assegura seus dados, mesmo se um disco EVS é problemático ou
+se encontra um erro lógico (por exemplo, remoção equivocada, a-
+taques hacker, infecção por vírus). Isto permite que backups se-
+jam criados sem esforço paraos seus dados, e estes backups podem
+ser usados para restaurar seus dados rapidamente. 
+
+VBS suporta tanto os backups incrementais quanto completos. Por
+padrão, o sistema performa um backup completo inicialmente, e 
+então performa backups incrementais dpeois. Você pode usar os 
+backups gerados para restaurar o EVS de origem para o estado que
+ele estava quando o backup foi criado. 
+
+VBS permite backup one-click e restauração para os discos EVS em
+servidores por toda a plataforma. Estes servidores precisam ser
+Elastic Cloud Server (ECSs) ou Bare Metal Servers (BMSs). 
+
+Vantagens:
+- Usuários podem criar uma política de backup e associar a polí-
+  tica com múltiplos discos EVS. Então, a política pode ser exe-
+  cutada para fazer o backup de múltiplos EVS simultaneamente. 
+- VBS pode fazer o backup de discos em uso. Quando um server es-
+  tá rodando, dados estão sendo escritos nos discos EVS, e al-
+  guns dados gerados são cacheados dentro da memória do server. 
+  Durante uma tarefa de backup, dados dentro da memória não se-
+  rão automaticamente escritos no disco. 
+- VBS suporta apenas backup e restauração dentro de uma região. 
+
+

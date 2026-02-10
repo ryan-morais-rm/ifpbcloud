@@ -1,0 +1,42 @@
+Auto Scaling:
+-> Introdução:
+   AS adiciona instâncias ECS e aumenta a largura da banda para
+   suas aplicações quando o volume de acessos aumenta e remove 
+   os recursos desnecessários quando o volume de acesso diminui,
+   garantindo estabilidade do sistema e disponibilidade. 
+
+-> Cenários de aplicação:
+   Fóruns de alto tráfego, E-commerce, Live streaming. 
+
+-> Escalando instâncias ECS baseado em demanda:
+   Dynamic scaling:
+   Mostra o escalonamento de recursos em resposta da mudança da
+   demanda usando políticas baseadas em alarmes. 
+   Scheduled scaling:
+   Ajuda você a configurar seu escalonamento agendado de acordo 
+   com previsões de mudanças de carga, pela criação de políticas
+   periódicas ou agendadas. 
+   Manual scaling:
+   Você pode também manualmente mudar o número esperado de ins-
+   tâncias do seu grupo AS, ou adicionar e remover instâncias
+   para ou de outro grupo AS.
+
+-> Distribuição homogênea de instâncias entre AZs:
+   Para reduzir o impacto de força ou mal uso de rede na estabi-
+   lidade rede, AS tenta distribuir instâncias ECS entre as AZs
+   que estão sendo usadas por um grupo AS. 
+
+-> Limitações:
+   Apenas aplicações que são stateless e horizontalmente escalá-
+   veis podem rodar em instâncias ECS dentro do AS group. ECSs
+   dentro de um AS group podem ser liberadas automaticamente pe-
+   lo AS, então as instâncias ECSs não podem ser usadas para 
+   salvar informações de status de aplicações (como status das 
+   sessões) ou dados relacionados (como dados de DBs e logs). 
+
+-> Dados de monitoramento usados pelo AS são do Cloud Eye. O pe-
+   ríodo de monitoramento pode ser configurado para 5 minutos,
+   20 minutos ou 1 hora. Por isso, uma mudança abrupta nos valo-
+   res das métricas não irão impactar ações de escalonamento. 
+
+ 

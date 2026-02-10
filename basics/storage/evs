@@ -1,0 +1,71 @@
+Um novo disco comprado deve ser atrelado ao servidor e então ini-
+cializado sistema operacional do servidor antes de ser utilizado.
+
+Discos EVS não podem ser usados sozinhos, eles precisam ser atre-
+lados ao servidores primeiro, antes do uso. Não é possível arma-
+zenar dados neles sendo utilizados de modo solo. 
+
+A zona de disponibilidade do disco não pode ser mudada depois que
+o disco for comprado. Se precisa mudar a AZ, o recomendado é de-
+letar ou desinscrever o disco e então comprar um novo. 
+
+Não é possível mudar os atributos de disco como "compartilhamen-
+to, tipo de dispositivo e criptografia". 
+
+Uma vez que o disco é criado, não é possível diretamente reduzir
+sua capacidade. No entanto, é possível migrar o seu servidor 
+usando o SMS e reduzir a capacidade do disco durante a migração.
+
+Se backups ou snapshots tiverem sido criados de discos, que não
+foram expandidos, você pode restaurar esses backups ou snapshots
+depois dos discos serem expandidos. Operações de expansão não
+afetam backups e snapshots. Depois do disco de dados ser restau-
+rado, a capacidade de disco é aumentada, porém o espaço adicional
+ainda precisa ser particionado e formatado antes dele poder ser
+usado. É necessário logar no servidor e extender a partição do 
+disco ou do sistema de arquivos. 
+
+Um disco compartilhado, em uso não pode ser expandido. É necessá-
+rio desatrelar o disco de todos os seus servidor e então expandir
+sua capacidade. Pode ser atrelado até 16 servidores.
+
+Um disco de sistema EVS suporta até 1TB. Já um disco de dados EVS
+pode expandir até 32TB. 
+Com o tipo MBR, qualquer espaço de disco em excesso de 2TB não
+pode ser alocado e usado, porque o máximo suportado é 2TB.
+Com GPT, é possível expandir a capacidade do disco até 32TB, por-
+que a capacidade máxima do disco suporta pelo GPT é 18EIB. 
+
+Diferentes tipos de discos EVS podem ser atrelados ao mesmo ser-
+vidor. Você apenas precisa ter certeza que estes discos e o ser-
+vidor está na mesma AZ. 
+
+A caácidade de um único disco pode chegar até 32TiB. Se esta con-
+figuração não está de acordo com tuas necessidades. É recomendado
+que você crie arrays RAID com discos EVS ou gerencie estes usando
+Logical Volume Manager. 
+
+Não é possível transferir capacidade de um disco de dados para um
+disco de sistema. Atualmente, múltiplos discos EVS não podem ser
+combinados em um disco maior. 
+
+É recomendado que servidores com OSs diferentes não estejam com
+a função de shared disk atreladas. Se você atrelar um disco com-
+partilhado para os servidores rodando o mesmo tipo de OS, porém
+com kernel diferentes, não deve existir problemas. 
+
+Garanta que o disco esteja nos estados de "In-Use or Available" 
+antes de criar um snapshot. Se não, não será possível ser criado.
+
+Snapshots não podem ser criados em múltiplos discos ao mesmo tem-
+po. Você deve criar snapshots para os discos um por um.
+
+Discos em uso suportam backup entre regiões e restauração. CBR 
+suporta replicação cross-region. É possível realizar o backup de
+tais discos, por meio do backup das ECS. Então, replicar os 
+backups dos servidores para a região desejada e usa os backups
+para criar imagens e provisionar servidores. 
+Discos EVS que não esão atrelados à qualquer ECS não podem ser
+restaurados entre regiões e nem fazer backup. 
+
+

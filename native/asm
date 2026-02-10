@@ -1,0 +1,43 @@
+Introducao:
+É uma solução não intrusiva para gerenciar o ciclo de vida de mi-
+crosserviços e o tráfego. Ele é compatível com os ecossistemas
+k8s e Istio e hospeda um range grande de complementos como o lo-
+ad balancing, outlier detection, e injeção de falhas. Ele também
+provê grayscale realease, incluindo canary release e o green-blue
+deployment. 
+
+Istio:
+É uma plataforma aberta que provê funções de conexão, proteção, 
+controle e observabilidade. Por prover uma solução de governança
+completa não intrusiva para microsserviços, Istio pode muito bem
+resolver problemas de governança de rede como gerenciamento de 
+serviços de nuvem nativa, conexão de rede, e gerenciamento de 
+segurança. Com a popularização de microsserviços, desafios maio-
+res emergiram dentro do O&M básico e avançado. 
+
+Istio control plane:
+- Load balancing automático para HTTP, gRPC, WebSocket e TCP.
+- Controle específico ou comportamento de tráfego com regras 
+  de rotas específicas, retentativas e injeção de falhas. 
+- Camada de política plugável e configuração de suporte de API
+  para controle de acesso, taxas de limites e cotas. 
+- Métricas automáticas, logs e traces para todo o tráfego dentro
+  do cluster, incluindo cluster ingress e egress. 
+- Comunicação serviço-serviço segura dentro do cluster com auten-
+  ticação e autorização seguras baseadas em identidade. 
+
+Service Mesh:
+É usado para descrever uma rede de microsserviços que fazem apli-
+cações e as interações entre as aplicações.
+
+Resumo:
+Application Service Mesh é uma plataforma baseada na Istio que
+simplifica o gerenciamento de microsserviços com integração fá-
+cil com o CCE, oferencendo complementos como gerenciamento de 
+tráfego, canary release e blue-green deployment automáticos, in-
+jeção de falhas, e suporte para protocolos com HTTP/gRPC/Dubbo,
+provendo observabilidade forte e controle para serviços comple-
+xos sem a extensiva mudança de códigos, embora que qualquer ser-
+vice mesh adiciona overhead de recursos. 
+
+

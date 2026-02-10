@@ -1,0 +1,40 @@
+Introdução:
+Banco de dados distribuído relacional proprietário da Huawei. Ele
+suporta deploy intra-city cross-AZ com zero perda de dados, além
+disso suporta petabytes de armazenamento e contém mais de 1000 
+nodes por instância. 
+É possível utilizá-lo via API e via Console. 
+Adequado para cenários críticos como governos, plataformas finan-
+ceiras, e-commerce, O2O, telecomunicações internacionais...
+
+Arquitetura descentralizada:
+CN - Coordinator node
+- Recebe requisições de acesso de aplicações e retorna os resul-
+  tados da execução para os clientes. Ele também divide e distri-
+  bue tarefas para diferentes data nodes (DNs) para processamento
+  paralelo. 
+GTM - Global Transaction Manager
+- Gera e mantém os IDs de transação global, snapshots de transa-
+  ção, timestamps, e sequências que precisam ser únicas. 
+DN - Data Node
+- Um DN armazena dados da empresa, performa queries de dados e 
+  retorna os resultados de execução para o CN. 
+
+Arquitetura centralizada:
+ETCD 
+- É utilizado para configuração compartilhada e descoberta de 
+  serviço (registro de serviço e procura). 
+CMS 
+- O Servidor de gerenciamento de cluster (CMS) é um componente 
+  usado para gerenciar status do cluster. 
+DN - Data Node
+- Mesma função. 
+
+Basics:
+- Shards:
+Um fragmento contém múltiplos DNs. O número de DNs dentro de um
+shard depende do valor das Réplicas, por exemplo, se as Réplicas
+estiverem configuradas para o valor 3, haverão 3 DNS (um primá-
+rio e dois standbys DNs) dentro de um fragmento. 
+
+

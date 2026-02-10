@@ -1,0 +1,18 @@
+Introdução:
+- Enterprise router é um roteador central que interconecta todas suas
+  VPCs e redes on-premises. Ele usa BGP para aprendizado de rotas, se-
+  leção dinâmica de rotas e mudanças de caminhos. Roteadores empresa-
+  riais simplificam sua rede então ela pode ser mais escalável. 
+
+Utilidade:
+- Enterprise routers podem rotear tráfego entre instâncias. Para comu-
+  nicação entre VPCs, você apenas precisa manter as tabelas de rotas
+  das VPCs sem precisar de tantas conexões ponto a ponto. 
+- Para comunicação entre VPCs e data center on-prem, múltiplas VPCs 
+  podem se conectar com um ER e então comunicar com o data center, por
+  meio de uma conexão Direct Connect ou conexão VPN. Você não precisa
+  estabelecer um direct connect ou conexão VPN entre o data center e 
+  cada uma das VPCs. 
+- ERs podem automaticamente aprender, atualizar, e sincronizar rotas,
+  eliminando a necessidade de manualmente configurar ou atualizar ro-
+  tas quando a topologia de rede muda. 

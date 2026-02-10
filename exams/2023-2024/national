@@ -1,0 +1,33 @@
+CodeArts PerfTest:
+-> Se aplica em testes de cenário de e-commerce com vendas rápidas, jo-
+   gos muito usados, suporte de cenários complexos e otimização de per-
+   formance da aplicação. 
+   Testes de performance verificam a disponibilidade e estabilidade de
+   sistemas debaixo de tráfego pesado, porém ele não resulta em capaci-
+   dades de recuperação de desastres por consquência. Testes de DR usu-
+   almente envolvem segurança de sistema e capacidade de DR, o qual não
+   é coberto pelo CodeArts. 
+
+Database migration:
+-> DRS:
+   Ferramenta fácil de usar, estável e eficiente para migração de banco
+   de dados de modo on-line e sincronização de DBs em tempo real. 
+-> MgC:
+   É uma migração one-stop e plataforma de modernização da Huawei Cloud
+   Ela é baseada nas metodologias de migração e melhores práticas. Além
+   de prover descoberta de aplicação poderosa e capacidades de avalia-
+   ção. 
+-> UGO: 
+   Serviço profissional dedicado para migrar schemas de banco de dados
+   heterogêneos. 
+
+CBR:
+-> Cloud disk backups não podem ser replicados para outras regiões.
+   Backups só podem ser criados apenas quando os discos estão no estado
+   "disponível ou em uso". 
+   É possível fazer backup em discos compartilhados. 
+   Não é possível fazer backup de servers BMS para criação de imagens, 
+   só é possível em backups ECS. 
+
+
+   

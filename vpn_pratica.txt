@@ -1,0 +1,7 @@
+94.74.96.71 -> Active IP
+119.8.24.89 -> Standby IP
+Hong Kong
+
+
+188.239.37.233 -> Active IP
+124.243.138.129 -> Standby IP

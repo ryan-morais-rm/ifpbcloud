@@ -1,0 +1,39 @@
+Introdução:
+- Qualidade de rede:
+  Direct Connect permite estabelecer uma rede dedicada para transmis-
+  são de dados, a qual traz alta performance de rede, baixa latência.
+- Segurança:
+  Estabelece uma conectividade privada entre seu datacenter dedicado e
+  a nuvem. Dados são transmitidos por meio de um conexão segura. 
+- Transmissão:
+  Suporta até 100Gbit/s de largura de banda.
+
+Componentes:
+- Conexão:
+  Uma conexão de rede dedicada estabelecida entre o on-prem e o direct
+  connect por uma linha fornecida pelo provedor. Você pode criar uma
+  conexão padrão por si mesmo ou requisitar uma conexão hospedada pe-
+  lo seu parceiro. 
+- Virtual Gateway:
+  Gateway lógico para acessar VPCs. Pode ser associado com apenas uma
+  única VPC, e múltiplas conexões podem acessar uma VPC, por meio do
+  mesmo virtual gateway. 
+- Global DC Gateway: 
+  Habilita seu datacenter local à acessar VPCs em múltiplas regiões.
+  Então, você pode usar uma única conexão para prover acesso de alta
+  velocidade para computação em nuvem e armazenamento de recursos em
+  qualquer região. 
+- Virtual interface:
+  Linka uma conexão com um ou mais gateways virtuais, então sua rede
+  dedicada pode acessar todas as VPCs.
+
+Pontos:
+Auto-negociação para portas deve estar desabilitado. Por speed e modo
+full-duplex devem estar manualmente configurados. 
+Seu dispositivo deve suportar o Border Gateway Protocol (BGP) e auten-
+ticação BGP MD5 ou roteamento estático. 
+Endereços IP privados são recomendados para cloud e servers on-prem, 
+e o IP deve estar faixa que não sofra overlap. 
+Direct connect suporta apenas Anual/Mensal.
+
+

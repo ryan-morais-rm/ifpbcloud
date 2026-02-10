@@ -1,0 +1,38 @@
+Introdução:
+Plataforma multi-dimensional focada em gerenciamento de O&M para
+aplicações em nuvem. Ela integra origens de dados observáveis, 
+como Cloud Eye, LTS, APM, experiência de usuário, e dados linka-
+dos ao backend. 
+AOM não mostra as aplicações que os logs pertencem. Para ter 
+essa informação, ingeste todos os logs para o LTS e use o recur-
+so de estatístico dele para visualização. 
+
+Funções:
+- Monitoramento com prometheus:
+AOM é interconectado com o ecossistema prometheus para prover 
+serviços que são completamente dependentes do promethteus. Ele
+também suporta consulta PromQL e pesquisa de métricas. Dados do
+prometheus podem ser remotamente lidos e escritos. Em adição, 
+ele suporta interconexão com grafana. 
+- Monitoramento de infraestrutura:
+AOM coleta dados de monitoramento dos hosts (processos) e con-
+tainers (como workloads e pods), mostra dados de infraestrutura,
+como (CPU/memória/uso de disco/logs dos hosts) e associa dados
+de monitoramento para análises.
+- Performance da aplicação: 
+AOM analisa a latência e exceções de webs/apps para aplicação
+microsserviços/banco de dados/middleware, habilitando o time de 
+O&M a rapidamente localizar causas raízes de problemas e identi-
+ficar perdas de performance, ainda protegendo a expe do usuário.
+
+Alarmes x Eventos:
+Alarmes são reportados quando o AOM ou um serviço externo como o
+ServiceStage ou CCE está anormal ou quando este pode causar ex-
+ceções. Alarmes devem lidar com isso. Se não, exceções de servi-
+ço podem ocorrer. 
+Eventos geralmente carregam algumas informações importantes.
+Eles são reportados quando AOM ou um serviço externo (como o 
+ServiceStage ou CCE) possui algumas mudanças. Tais mudanças não
+necessariamente causam exceções. 
+
+

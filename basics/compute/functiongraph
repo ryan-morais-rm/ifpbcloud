@@ -1,0 +1,31 @@
+Como uma função lê e escreve arquivos?
+- Uma função pode ler arquivos dentro do diretório do código. O
+  diretório de trabalho de uma função é o diretório mais alto
+  do "handler file". Suponha que você fez o upload de uma pasta
+  chamada backend. Para ler o arquivo test.conf dentro do mesmo
+  nível do diretório do "handler file", é possível utilizar o ca-
+  minho relativo ("code/backend/test.conf") ou usar o raiz, ou
+  seja a variável de ambiente que tem o valor "RUNTIME_CODE_ROOT"
+  Para escrever um arquivo, por exemplo, criar ou baixar um, vá 
+  para o diretório /tmp ou use uma feature de montagem do siste-
+  ma de arquivos provida pelo FunctionGraph. 
+
+- É possível adicionar threads e processos às funções, utilizando
+  o runtime e features do OS. 
+- Cada função roda dentro do seu próprio ambiente e tem seus 
+  próprios recursos e sistema de arquivos. 
+- FunctionGraph suporta dependências: padrão e de terceiros. 
+  Quando se usa dependências padrão, você pode importá-las para
+  o iniline code, ou empacotar e fazer o upload destas para o
+  FunctionGraph. O mesmo acontece para as não padrão, porém é 
+  mais limitado. Se precisar de uma dependência mais incomum,
+  você pode fazer o upload delas para o OBS bucket. 
+
+- FunctionGraph automaticamente redimensiona instâncias de uma
+  função baseado no número de requisições. Se o número de requi-
+  sições concorrentes aumentam, o FunctionGraph aloca mais ins-
+  tâncias de funções para processar essas requisições. Se esse
+  número diminuir, FunctionGraph aloca funções menores, de acordo
+  com a necessidade. 
+
+

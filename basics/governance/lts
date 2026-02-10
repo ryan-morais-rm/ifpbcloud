@@ -1,0 +1,75 @@
+Introdução:
+LTS é uma plataforma de gerenciamento de logs, de alta per-
+formance. Oferece uma coleção de logs full-stack. Foi de-
+senhada para O&M de aplicações, segurança e compliance e 
+operações de análises. 
+LTS gerencia os logs, por meio do Log stream. Cada stream
+pertence à exatamente um único log group, enquanto um log
+group pode conter múltiplos log streams. 
+
+Valores:
+Log ingestion:
+Cobre mais de 40+ serviços de nuvem, servers, containers, 
+dispositivos móveis, SDKs, linguagens...
+
+Log storage and search:
+Leva apenas poucos segundos para dezenas de bilhões de logs
+Suporta procura interativa de centenas de bilhões de logs. 
+
+SQL statistics display:
+Provê mais de 100 funções SQL, múltiplos charts visuais, e
+mais de 10 dashboards fora da caixa. 
+
+Real-time alarm:
+SUporta conteúdo customizado e múltiplos canais de notifi-
+cação (SMS, e-mail, WeCom, DingTalk e HTTP). 
+
+- One-stop processing:
+Provê mais de 200 funções e normalização de logs, enrique-
+cimento, anonimização, filtragem e separação. 
+
+- Integração do serviço:
+Transfere logs para o OBS, DWS, DIS, DLI, DMS para constru-
+ção de soluções horizontais. 
+
+
+Funções: 
+Log group:
+É a unidade básica do LTS para gerenciar logs. Ele reúne
+log streams e faz a categorização destes, mas não armazena
+quaisquer dados de logs. 
+
+Log stream:
+É a unidade básica para leitura e escrita de logs. Logs co-
+letados de diferentes tipos são classificados e armazenados
+para gerenciamento de logs mais simples. Se existe um núme-
+ro maior de logs, você pode criar múltiplos log streams e 
+nomeá-los para procura de log mais rápida. 
+
+Host:
+É um dispositivo físico ou vritual independente e tem um
+identificador de rede único. Ele roda software e serve co-
+mo o componente fundamental para comunicação de rede. Para
+o LTS, hospedeiros são classificados em intra-region ou 
+extra-region. 
+
+Billing modes:
+on-demand ou por pacotes de recursos.
+Os itens que podem ser cobrados incluem: cobraça de leitura
+e escrita por tráfego, tráfego de indexação do log, volume
+de armazenamento do log (standard and cold), e tráfego de
+transferência de log. 
+
+Logs coletaods:
+Se o caminho de coleta de logs está configurado para um 
+diretório, por exemplo: "/var/logs", apenas .log, .trace e
+.out são coletados. Se o caminho de coleta está configura-
+do com um nome de arquivo, apenas arquivos de texto são 
+suportados. Note que o LTS coleta, apenas, logs que são ge-
+rados dentro dos últimos 7 dias. 
+A função de transferência de logs apenas envia logs exis-
+tentes, eles não são apagados. LTS deleta logs retidos uma
+vez que o período de retenção terminou. Porém, os logs que
+foram transferidos para outros serviços não são afetados. 
+
+

@@ -1,0 +1,58 @@
+Introducao: 
+- BRS prover serviços de recuperação de desastres para serviços
+  de nuvem como o (ECS) e o EVS. Pelo aproveitamento de tecnolo-
+  gias como: host-layer replication, redundância de dados, e a-
+  celeração de cache, BRS provê confiabilidade e continuidade.
+- BRS protege aplicações através da replicação de dados da ECS
+  e configurações para o site de DR. Isto permite as aplicações
+  iniciarem e rodarem no site de DR, se qualquer servidor de 
+  produção parar de rodar. 
+
+DR e Backup:
+- Diferenças:
+  DR protege data center contra falhas de hardware ou desastres
+  naturais, então isto requer uma distância segura entre o site
+  de produção e o de DR. Backups são usado para restaurar dados
+  em um evento de ações intencionais como vírus ou erros lógi-
+  cos. Backups são usualmente armazenados no mesmo data center
+  do sistema principal. 
+- Um sistyema de DR protege dados, porém focar mais na continui-
+  dade de proteção do serviço. Um backup de dados do sistema a-
+  penas garante que os dados gerados em diferentes pontos do
+  tempo podem ser restaurados. Normalmente, um backup completo é
+  performado apenas pela primeira vez, o qual leva um grande pe-
+  ríodo de tempo. Backups subsequentes são totalmente incremen-
+  tais e podem ser realizados mais rapidamente. 
+
+Vantagens:
+- Você pode replicar servidores de uma AZ para outra de acordo
+  com a necessidade do seu negócio, reduzindo custos e a comple-
+  xidade de manter outro data center. 
+- BRS garante que o data center migrado não irá crashar, porém
+  ele não garante que sua aplicação vai voltar ao normal. 
+
+Two-City Three-Center:
+- Solução em que 3 data centers coexistem, a continuidade é ga-
+  rantida de 2 data centers falharem. 
+  Produdction center: Provê serviços para apps externos. 
+  Intra-City DR center: Usualmente em dezenas de KM longe do 
+  site de produção. Apps podem ser levados para cá sem perda 
+  de dados. Nível 1 de proteção para essa solução. 
+  Remote DR Center: É usualmente construída em centenas de KM
+  de distância das outras duas para proteger contra desastres
+  regionais. Os dados são periodicamente, assíncronizadamente,
+  replicados para o centro remoto de DR. Nível 2 de proteção. 
+
+Diagrama:
+Solution - Handle AZ-Level Failures - AZ Fail - Regional Fail
+BRS      -          y               -   y     -      n
+CBR      -          y               -   n     -      y
+Two-City -          y               -   y     -      y 
+
+RPO x RTO:
+RPO: O máximos de dados perdidos que podem ser tolerados pelo
+     sistema. 
+RTO: O máximo de interrupção do serviço tolerado pelo sistema.
+     Isto se refere ao requerimento para a dureção de recupera-
+     ção do sistema causada por um desastre. 
+

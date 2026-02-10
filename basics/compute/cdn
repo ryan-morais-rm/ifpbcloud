@@ -1,0 +1,51 @@
+Introdução:
+Rede virtual inteligente na infra da internet. CDN faz um cache
+do conteúdo da origem em pontos de presença (PoPs) perto do 
+usuário, então o conteúdo pode ser carregado mais rápido. CDN
+acelera a resposta do site e sua disponibilidade.
+
+Funcionamento:
+Quando um usuário acessa o website que usa CDN, o dns local re-
+direciona a requisição para o CDN usando um record CNAME. Então
+o CDN encontra o PoP que responde de mais rápido baseado em re-
+gras já definidas (incluindo tipos de conteúdo, localização ge-
+ográfica, e cargas de rede), e envia o endereço IP do PoP para
+o usuário. Com CDN, o usuário recebe a requisição do conteúdo 
+mais rápido. 
+
+Cenários:
+- Website acceleration:
+  Portais web, plataformas de e-commerce, novos apps e conteú-
+  dos gerados pelo usuário (UGC). Isso pode acelerar a distri-
+  buição de conteúdo estático como imagens e arquivos pequenos.
+  
+- Download acceleration:
+  Adequado para baixar clientes, jogos, app stores e websites
+  que provêm serviços de download baseados em HTTP ou HTTPS. 
+
+- On-demand acceleration:
+  Para clientes que fornecem serviços de audiovisual. Tais ser-
+  viços sobre demanda, incluem educação online, compartilhamen-
+  to de video, e música/vídeo sob demanda. 
+
+- Whole site acceleration:
+  Boa opção para websites que consistem tanto em conteúdos di-
+  nâmicos como estáticos e para sites com requisições ASP, JSP
+  ou PHP. Isto serve contéudo estático dos PoPs mais próximos e
+  puxa conteúdo dinâmico via a rota mais rápida possível. 
+
+Funções:
+- CDN suporta requisições POST?
+  Requisições POST são interações dinâmicas, se você configurou
+  website acceleration, download acceleration ou on-demand 
+  acceleration, CDN não acelera estas requisições.
+  Porém, pode ser configurado com o "whole site acceleration". 
+- Não existe limite padrão de velocidade para o CDN, mas você
+  pode configurar esses limites.
+- O tamanho máximo de arquivo permitido por upload pelo CDN é de
+  300 MB. CDN será cobrado por tráfego usado por upload. 
+- O CDN da huawei não suporta criptografia do contéudo antes de 
+  sua distribuição, ele apenas suporta a aceleração da distribui-
+  ção do contéudo.
+
+
