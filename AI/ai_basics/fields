@@ -1,0 +1,63 @@
+Natural Language Processing(NLP):
+-> Estuda teorias e métodos para implementar comunica-
+   ção entre humanos e computadores por meio de lingua-
+   gens naturais. O foco do NLP é habilitar computado-
+   res a entender e gerar linguagens humanas. 
+-> Cenários de aplicação:
+   Análise de sentimento, mineração de texto, tradução
+   de máquina, chatbots, classificação de texto...
+-> Sequence Labeling:
+   É usar um modelo para rotular cada posição de uma
+   dada sequência de input (usualmente uma setença, 
+   caractere, ou palavra no texto) para formar uma se-
+   quência rotulada. Este processo pode ser visto como
+   mapeamento sequência-sequência. 
+
+Knowledge Graph: 
+-> É um modelo de dados gráfico usado para representar
+   e organizar informações estruturadas. Ele represent
+   entidades (como pessoas, lugares e coisas) dentro d
+   mundo real e seus relacionamentos (como amizades e 
+   afiliações) na forma de grafos para construir uma 
+   base de conhecimento de larga escala e de múltiplos
+   domínios. 
+-> NLP provê os significados para construir um grafo de
+   conhecimentos. NLP ajuda na extração de informações
+   como entidades, relacionamentos e atributos do texto
+   para construir e enriquecer grafos de conhecimento.
+
+Computer Vision:
+-> É uma tecnologia que usa computadores e algoritmos
+   para simular o processo de visão humana. Ela envol-
+   a extração de informação de imagens ou vídeos, ana-
+   lisar e compreender conteúdo, e fazer decisões com
+   esses dados. 
+-> Cenários:
+   Classificação de imagens, detecção de objetos, seg-
+   mentação semântica, condução de veículo inteligente,
+   restauração de vídeos...
+
+Foundation Model:
+-> Refere se a um modelo que é treinado com dados de 
+   larga escala, tem um número massivo de parâmetros,
+   e possui funcionalidades maiores do que o padrão.
+   A rigor, ele pode integrar dados multi-modais (tex-
+   to, imagem, vídeo e áudio) para entendimento compre-
+   ensível e inferência.  
+-> Características:
+   Bilhões de neurônios, habilidade de conseguir outras
+   respostas de um exemplo, múltiplas tasks podem ser 
+   gerenciadas por um modelo.
+-> Princípios:
+   Scaling Law:
+   A medida que o tamanho do modelo cresce exponencial-
+   mente, a performance do modelo aumenta linearmente. 
+   Chinchilla Law:
+   O tamanho do modelo e o número de tokens de treina-
+   mento devem escalar em taxas iguais. 
+   Emergent Abilities:
+   Quando o modelo ating um certo tamanho e escala, ele
+   mostra uma melhora súbita e inesperada na performan-
+   ce e capacidade de generalização. 
+
+
