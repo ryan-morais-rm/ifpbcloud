@@ -1,0 +1,29 @@
+Simple Tasks to Complex Tasks:
+Modelos de Deep Learning tradicionais:
+-> Aplicação:
+   Tarefas de otimização específicas. 
+-> Generalização:
+   Adaptação fraca à novas amostras. 
+-> Capacidade do modelo:
+   Capacidades de geração pobres, mais usadas 
+   para tarefas de discriminação. 
+
+Modelos de LLM:
+-> Aplicação:
+   Alta cobertura de de domínios, tarefas
+   diversas. 
+-> Generalização:
+   Capacidades fortes em processamento de 
+   tarefas cross-domain, transferência de
+   conhecimento, e adaptação à novas amos-
+   tras. 
+-> Capacidade do modelo:
+   Criatividade forte, tiro zero e tiro curto, 
+   e raciocínio lógico.
+
+Pontos de observação:
+-> Tecnologias como multi-modal large models e
+   generative adversarial network (GAN) podem
+   ser usadas para produzir imagens e vídeos 
+   com uma qualidade maior do que os outros mo-
+   delos.  
