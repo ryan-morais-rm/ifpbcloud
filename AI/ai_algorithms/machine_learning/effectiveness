@@ -1,0 +1,47 @@
+Capacidade de generalização:
+-> É a capacidade do modelo funcionar bem com
+   dados novos, nunca vistos. 
+-> Machine Learning não serve só para memori-
+   zar o treino. 
+-> O objetivo é aprender padrões que funcio-
+   nem no mundo real. 
+-> Quando melhor a generalização, melhor o mo-
+   delo em produção, ou seja mais "robusto". 
+
+Erro(Error):
+-> É a diferença entre "previsão do modelo" e
+   o valor real correto. 
+-> Quanto menor o erro -> melhor o modelo. 
+-> Todo modelo tenta minimizar esse erro. 
+
+Training Error:
+-> Erro calculando usando os dados no treino. 
+-> Mostra o quão bem o modelo aprendeu o dataset
+   do treinamento. 
+-> Pode ser baixo mesmo que o modelo seja ruim
+   no mundo real. 
+
+Generalization Error:
+-> Erro em dados novos (dados nunca vistos). 
+-> É o mais importante na prática.
+-> Mede se o modelo realmente aprendeu padrões
+   úteis. 
+-> Modelos bons resultam em baixo erro de gene-
+   ralização. 
+
+Underfitting:
+-> O modelo não aprendeu bem.
+-> Training error alto. 
+-> Generalization error alto. 
+-> Modelo simples demais ou pouco treinado. 
+-> Não captou padrões dos dados. 
+
+Overfitting:
+-> O modelo memorizou o treino. 
+-> Training error muito baixo. 
+-> Generalization error alto. 
+-> Funciona bem no treino, mal
+   em dados novos. 
+-> Modelo complexo demais ou
+   treinado em excesso. 
+

@@ -1,0 +1,103 @@
+Processo geral:
+-> 1° Preparação dos dados
+   2° Limpeza dos dados
+   3° Extração de features e seleção
+   4° Treinamento do modelo
+   5° Melhora do modelo
+   6° Desenvolvimento do modelo e integração
+
+Conceito básico:
+-> Dataset é uma coleção de dados usados em tare-
+   fas de ML, onde cada pedaço de dado é chamado
+   de amostra. Itens ou atributos que refletem a
+   apresentação ou natureza de uma amostra em um
+   aspecto particular são chamadas de "features". 
+   Training set:
+   Dataset usado no processo de treinamento, onde
+   cada amostra é chamada de amostra de treino. 
+   Learning(training) é o processo de construção
+   de um modelo a partir de dados. 
+   Test set:
+   Dataset usado dentro do processo de treinamento,
+   onde cada amostra é chamada de "amostra de tes-
+   te". Teste se refere ao processo, em que o mo-
+   delo é usado para previsão. 
+-> A maioria dos modelos de machine learning
+   processam "features", os quais usualmente são
+   representações numéricas de variáveis de input
+   que podem ser usadas dentro do modelo. 
+
+-> Feature selection:
+   Geralmente um datset possui muitas "features",
+   algumas que podem ser desnecessárias ou irrele-
+   vantes para os valores a serem previstos. 
+   Necessidade:
+   - Simplifica os modelos para uma interpretação
+     facilitada. 
+   - Encurta o tempo de treinamento. 
+   - Evita o problema de dimensionalidade. 
+   - Melhora a generalização do modelo 
+   - Evita o overfitting. 
+
+-> Feature selection methods:
+   Filter method:
+   É a forma mais simples e direta de seleção de
+   features. Eles funcionam como um filtro esta-
+   tístico aplicado antes do treinamento do mo-
+   delo. A ideia é analisar cada feature invidu-
+   almente e medir o quanto ela se relaciona com
+   a variável alvo. Se a relação for forte, a 
+   feature é mantida; se for fraca ou irrelevan-
+   te, ela é descartada. Esse processo é indepen-
+   dente do modelo que será usado depois. Ou seja,
+   o filtro não treina um algoritmo de ML para de-
+   cidir quais variáveis são importantes; ele usa
+   métricas estatísticas como correlação, variân-
+   cia ou testes de dependência. 
+
+   Wrapper method:
+   Em vez de avaliar cada feature de forma isolada,
+   eles utilizam um modelo de ML real para testar
+   difernetes combinações de features e medir exa-
+   tamente o desempenho do modelo em cada caso. 
+   A lógica é simples: se um conjunto de features
+   melhora o desempenho do modelo, então ele é um
+   bom conjunto. Se pior, deve ser descartado.
+   O método "envolve" o algoritmo de ML em um pro-
+   cesso de tentativa e erro. Por exemplo, o sis-
+   tema pode começar com todas as features, remo-
+   ver uma de cada vez e verificar se a performan-
+   ce melhora. Ou pode começar com poucas e ir a-
+   dicionando.
+
+   Embedding method:
+   A seleção de features acontece durante o pró-
+   prio processo de treinamento do modelo. Em vez
+   de separar a etapa de seleção e etapa de apren-
+   dizado, o modelo aprende quais features são ma-
+   is relevantes enquanto está sendo treiado. Al-
+   guns algoritmos possuem mecanismos internos 
+   para isso. Por exemplo, certos modelos penali-
+   zam features menos importantes ou atribuem pe-
+   sos diferentes a cada variável, permitindo i-
+   dentificar automaticamente quais contribuem 
+   mais para a previsão.  
+
+Construção do modelo:
+-> 1° Dividir dados
+   Divida o dataset entre treinamento, validação
+   e teste sets. 
+-> 2° Treine o modelo
+   Use os dados que foram obtidos durante o pro-
+   cesso de limpeza e feature engineering. 
+-> 3° Valide o modelo
+   Use o conjunto de validação para melhorar a 
+   efetividade do modelo. 
+-> 4° Teste o modelo
+   Use o conjunto de teste para melhorar a capa-
+   cidade de generalização do modelo. 
+-> 5° Desenvolva o modelo
+   Faça o desenvolvimento em cenários de produção.
+-> 6° Refine o modelo
+   Continuamente melhore o modelo baseado nos da-
+   dos reais de produção. 
