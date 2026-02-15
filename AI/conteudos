@@ -1,0 +1,25 @@
+Tipos de tarefas de Machine Learning
+🔹 Classification
+🔹 Regression
+🔹 Clustering
+
+Tipos de aprendizado
+🔹 Supervised learning
+🔹 Unsupervised learning
+🔹 Semi-supervised learning
+🔹 Reinforcement learning
+
+Generalização e erros
+🔹 Generalization capability
+🔹 Error (erro)
+🔹 Training error
+🔹 Generalization error
+
+Problemas de treinamento
+🔹 Underfitting
+🔹 Overfitting
+
+Feature Selection (seleção de atributos)
+🔹 Filtering methods
+🔹 Wrapper methods
+🔹 Embedding methods

@@ -1,0 +1,102 @@
+Machine Learning training methods:
+-> Gradient Descent:
+   É um algoritmo de otimização usado para
+   ajustar iterativamente os parâmetros de
+   um modelo (pesos e tendências) para mi-
+   nimizar um custo ou a função de perda.
+   Esta função mede o erro entre as previ-
+   sões do modelo e o dado real, com a meta
+   de encontrar os valores que serão colo-
+   cados nos parâmetros que produzem o erro
+   mais baixo possível. 
+
+   How it works:
+   1. Inicialização:
+      O algoritmo inicia com valores inici-
+      ais randômicos para os parâmetros do
+      modelo. 
+   2. Cálculo do gradiente:
+      O gradiente (um vetor parcial de deri-
+      vadas) é computado na posição inicial 
+      dos parâmetros. O gradiente indica a 
+      direção ascendente mais íngrime da per-
+      da de função. 
+   3. Atualização dos parâmetros:
+      Os parâmetros são atualizados através de
+      pegar a direção oposta do gradiente. O 
+      tamanho desta movimentação é determinada
+      pela taxa de aprendizado. 
+   4. Repetição:
+      Os passos 2 e 3 são repetidos até que o
+      algoritmo alcança um ponto onde a função
+      de perda não diminui mais significativa-
+      mente, que se chama "convergência". 
+
+   Batch (BGD):
+   A principal característica dele é que, a ca-
+   da atualização dos parâmetros do modelo, ele
+   utiliza todo o conjunto de dados de treina-
+   mento para calcular o gradiente e ajustar os
+   pesos. Isso evita oscilações bruscas e torna
+   o processo de convergência mais suave. Como 
+   o gradiente é calculado com base em todos os
+   dados, a direção de atualização tende a ser
+   consistente e confiável. 
+   
+   Stochastic (SGD):
+   Atualiza os parâmetros do modelo utilizando 
+   apenas uma amostra por vez, em vez de usar
+   todo o conjunto de dados. Assim que o erro
+   dessa amostra é calculado, o modelo já atu-
+   aliza seus pesos imediatamente. Em seguida,
+   passa para a próxima amostra e repete o pro-
+   cesso. Esse comportamento o torna mais rápi-
+   do em termos de atualização dos parâmetros.
+   No entanto, como o gradiente é calculado com
+   base em apenas uma amostra, ele não repre-
+   senta perfeitamente a direção real de desci-
+   da do erro global. Isso introduz ruído no
+   processo de otimização. Em vez de uma descida
+   suave e estável como no BGD, ele pode oscilar
+   e seguir um caminho irregular em direção ao 
+   mínimo da função de erro. 
+
+   Mini-batch (MBGD):
+   Em vez de usar todo o dataset para calcular o
+   gradiente ou apenas uma amostra, o mini utili-
+   za pequenos grupos de amostras, chamados de mi-
+   ni-batches, para atualizar os parâmetros do
+   modelo. Durante o treinamento, o dataset é di-
+   vidido em vários pequenos lotes, por exemplo de
+   16, 32, 64 ou 128 amostras. Para cada mini-batch,
+   o modelo calcula a previsão, mede o erro através
+   da função de loss e calcula o gradiente com base
+   em apenas naquele conjunto de dados. Em seguida,
+   atualiza os pesos do modelo e passa para o pró-
+   ximo mini-batch. Esse processo continua até que
+   todos os mini-batches do dataset sejam processa-
+   dos, o que corresponde a uma época (epoch) de 
+   treinamento. Mini-batches permitem o uso efici-
+   ente de GPUs e processamento paralelo, já que 
+   várias amostras podem ser processadas ao mesmo
+   tempo. Ele é mais rápido e escalável que o BGD
+   e mais estável que o SGD.
+
+-> Parameters and Hypers:
+
+-> Cross-Validation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
