@@ -83,20 +83,107 @@ Machine Learning training methods:
    e mais estável que o SGD.
 
 -> Parameters and Hypers:
+   - Parâmetos são os valores internos do modelo 
+   que são aprendidos automaticamente durante o 
+   treinamento. Eles são ajustados pelo algoritmo
+   para reduzir o erro da previsão. 
+   Parâmetro é o que o modelo aprende a partir 
+   dos dados. Esses valores definem como o modelo
+   transforma entrada em saída. 
+   Casos de uso:
+   - Em redes neurais:   
+     1. Pesos das conexões
+     2. Bias dos neurônios
+   - Em deep learning:
+     1. Milhões ou bilhões de pessoas
+     2. Todos aprendeidos automaticamente
+   - Hiperparâmetros não são aprendidos auto-
+   maticamente durante o treinamento. Eles 
+   são definidos antes do treino por quem cons-
+   trói o modelo. Ou seja, hiperparâmetros são
+   as configurações do modelo, eles controlam
+   como o modelo aprende. Os valores deles in-
+   fluenciam o treinamento, mas não são apren-
+   didos diretamente dos dados. 
 
 -> Cross-Validation:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   É uma técnica usada em machine learning para
+   avaliar o desempenho real de um modelo e ve-
+   rificar se ele generaliza bem para dados no-
+   vos. Ela serve para evitar conclusões erra-
+   das apenas no treinamento ou em um único tes-
+   te. A ideia central é simples: dividir os da-
+   dos em várias partes e treinar/testar o mode-
+   lo várias vezes, permitindo uma estimativa 
+   mais confiável da performance real. 
+   - Ideia básica do processo:
+     1. Divide o dataset em partes menores.
+     2. Treina o modelo em algumas partes.
+     3. Testa em outra parte.
+     4. Repete o processo várias vezes.	
+     5. Calcula a média dos resultados. 
+   Tipos:
+   1. K-Fold Cross-Validation:
+      Método mais comum, o dataset é dividido em
+      K partes iguais (folds). Exemplo com K = 5:
+      Dataset -> dividido em 5 partes.
+      Processo:
+      Treino em 4 partes.
+      Teste em 1 parte.
+      Repete 5 vezes.
+      Cada parte vira teste uma vez.
+      Depois, calcula a média das performances,
+      isso reduz o risco de avaliação enviesada.
+      Cross-validation também é muito usada para
+      escolher melhores hiperparâmetros, por e-
+      xemplo: testar learning rate, testar núme-
+      ro de camadas e testar regularização.
+      Vantagens:
+        1. Avaliação mais confiável, pois não de-
+           pende de uma única divisão. 
+        2. Usa todos os dados, todos oservem para 
+           treino e teste em algum momento. 
+        3. Detecta overfitting, se o modelo vai 
+           bem no treino e mal nos folds.
+	4. Melhor para datasets pequenos. 
+      Desvantagens:
+	1. Mais custoso computacionalmente.
+	2. Demorado em deep learning grande.
+ 
+    2. Stratified K-Fold:
+       É uma variação do K-Fold tradicional
+       usada principalmente em problemas de 
+       classificação. A principal caracterís-
+       tica dele é manter a mesma proporção
+       das classes em cada divisão do data-
+       set. Isso é importante porque, em 
+       muitos conjuntos de dados reais, as
+       classes não estão distribuídas de for-
+       ma equilibrada. Se a divisão do data-
+       set for feita de forma aleatória, al-
+       guns folds podem acabar com poucas 
+       amostras	da classe minoritária, preju-
+       dicando a avaliação do modelo.
+    3. Leave-One-Out (LOOCV)
+       É um caso extremo de cross-validation.
+       Nesse método, o dataset é dividido de
+       forma que apenas uma amostra é usada
+       para teste em cada iteração, enquanto
+       todas as outras são usadas para treina-
+       mento. Se o dataset tiver N amostras,
+       o modelo será treinado N vezes. Em cada
+       vez, ele treina com N-1 amostras e tes-
+       ta em apenas uma. Ele é especialmente
+       útil quando o dataset é pequeno e cada
+       amostra é valiosa.  
+    4. Repeated K-Fold
+       É uma extensão do K-Fold tradicional.
+       Nele, o processo de dividir o dataset em
+       K folds e treinar/testar o modelo é repe-
+       tido várias vezes, mas a cada repetição
+       a divisão dos dados é feita de forma dife-
+       rente e aleatória. Isso permite obter uma
+       estimativa ainda mais robusta do desempenho
+       do modelo, pois reduz a influência de uma
+       divisão específica dos dados. 
 
