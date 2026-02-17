@@ -1,0 +1,13 @@
+Introdução:
+-> Quando usadas para regressão, elas funcionam como um
+   modelo que aprende a relação entre variáveis de en-
+   trada e um valor numérico de saída. 
+   A rede neural recebe várias variáveis de entrada. 
+
+Processo de treinamento:
+-> 1. Dados entram na rede
+   2. Rede gera previsão numérica
+   3. Calcula o erro (diferença do valor real) 
+   4. Ajusta pesos via gradient descent 
+   5. Repete até reduzir erro
+   Função de erro suada geralmente é a MSE.

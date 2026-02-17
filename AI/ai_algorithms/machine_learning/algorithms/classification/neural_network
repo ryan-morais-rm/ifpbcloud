@@ -1,0 +1,56 @@
+Introdução:
+-> Redes neurais são algoritmos de machine learning
+   inspirados no funcionamento do cérebro humano. 
+   Na classificação, elas são usadas para identificar
+   a qual categoria um dado pertence, aprendendo pa-
+   drões complexos a partir de exemplos rotulados. 
+-> Escopo:
+   Elas fazem parte do deep learning também e são mui-
+   to usadas em: reconhecimento de imagens, voz, NLP,
+   detecção de fraude e diagnóstico médico. Sempre que
+   o objetivo for classificar algo complexo, redes neu-
+   rais costumam ser uma das melhoras opções. 
+
+Ideia básica:
+-> Uma rede neural recebe dados de entrada (features),
+   processa esses dados através de várias camadas e 
+   produz uma saída que representa a classe prevista. 
+   Estrutura básica:
+   1. camada de entrada
+   2. camadas ocultas
+   3. camada de saída
+   Cada camada possui neurônios que processam a infor-
+   mação e passam adiante. Durante o treinamento, a re-
+   de ajusta seus pesos para que a saída se aproxime
+   do resultado correto.
+
+Processo de treinamento:
+-> O treinamento ocorre em etapas:
+   1. Entrada passa pela rede
+   2. Rede faz previsão
+   3. Calcula o erro (loss function) 
+   4. Ajusta pesos via backpropagation
+   5. Repete muitas vezes
+   O objetivo é reduzir o erro e melhorar a precisão
+
+Necessidade:
+-> Redes neurais são poderosas, porque elas conseguem
+   aprender padrões complexos, relações não lineares,
+   estruturas em imagens e texto. Diferente de modelos
+   lineares, redes neurais conseguem resolver problemas
+   mais complexos. 
+-> Usabilidade:
+   Visão computacional, reconhecimento de fala, LLMs,
+   direção autônoma. 
+-> Tipos de classificação:
+   Binária: fraude / honesto
+   Mutliclasse: gato / cachorro / pássaro
+
+Vantagens:
+-> Alta precisão em problemas complexos, aprende relações
+   não lineares, escalável para grandes datasets. 
+
+Limitações:
+-> Exige muitos dados, treinamento pesado, alto custo com-
+   putacional, difícil interpretação, risco de overfitting.
+

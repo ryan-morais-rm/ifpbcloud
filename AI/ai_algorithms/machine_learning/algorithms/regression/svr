@@ -1,0 +1,45 @@
+Introdução:
+-> O SVM também pode ser usado para regressão. Quando
+   usado para prever valores numéricos contínuos, ele
+   recebe o nome de SVR. Enquanto o SVM de classifica-
+   ção separa dados em classes, o SVR tenta encontrar
+   uma função que preveja valores numéricos com o me-
+   nor erro possível. Exemplos de uso: prever preço 
+   de casas, consumo de energia, demanda de mercado
+   e temperatura. Sempre que a saída for um número 
+   contínuo, podemos usar SVR. 
+
+Ideia central:
+-> Na classificação, o SVM tenta encontrar a melhor
+   linha que separa classes. Na regressão, ele tenta
+   encontrar a melhor linha (ou curva) que se ajusta
+   aos dados. Mas, existe uma diferença importante:
+   o SVR aceita pequenos erros dentro de uma margem
+   tolerável. Ele não tenta passar exatamente por 
+   todos os pontos. Ele cria uma "zona de tolerância"
+   ao redor da linha de previsão. Se os pontos esti-
+   verem dentro dessa zona, o erro é considerado 
+   aceitável, não há penalização forte. Se estiverem
+   fora, o modelo ajusta os parâmetros.
+
+Support vectos na regressão:
+-> Assim como na classificação, apenas alguns pontos
+   influenciam o modelo. Os pontos fora da margem de
+   tolerância são chamados: support vectors. Eles de-
+   terminam a posição da função de regressão. 
+-> Pontos dentro da marge possuem pouca influência e
+   são ignorados no ajuste fino. 
+
+Características principais:
+-> Algoritmo supervisionado, usado para regressão, 
+   funciona bem com dados complexos, robusto a out-
+   liers moderados, usa apenas pontos relevantes.
+
+Vantagens:
+-> Bom para datasets médios, pode modelar relações não
+   lineares, robusto a ruído, boa generalização. 
+
+Limitações:
+-> Difícil de interpretar, lento em datasets grandes,
+   escolha do kernel pode ser difícil, tuning necessário.
+ 

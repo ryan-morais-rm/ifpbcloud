@@ -1,0 +1,61 @@
+Introdução:
+-> É um algoritmo de machine learning que pode
+   ser usado tanto para classificação quanto
+   para regressão. Ele funciona como uma árvo-
+   re de decisões, onde o modelo faz perguntas
+   sequenciais sobre os dados até chegar a um
+   resultado final. 
+
+Ideia básica:
+-> A arvóre começa com todos os dados na raiz.
+   Depois divide os dados em grupos menores 
+   com base em perguntas. 
+   Cada divisão é chamada de nó, cada resultado
+   final é chamado de folha. A árvore continua
+   dividindo até chegar a uma decisão final.
+
+Classificação:
+-> A árvore decide a qual classe o dado pertence.
+   Cada folha da árvore representa uma classe.
+   A árvore aprende: quais perguntas melhor sepa-
+   ram as classes. Ela escolhe as divisões que
+   tornam os grupos mais "puros". 
+
+Regressão:
+-> A árvore prevê um valor numérico. Cada folha
+   contém um valor numérico (ou média dos valores
+   daquele grupo). A árvore divide os dados em re-
+   giões onde os valores são semelhantes.
+
+Como a árvore aprende:
+-> Durante o treinamento, a árvore testa várias
+   possíveis divisões. Ela escolhe a divisão que
+   melhor separa os dados. Para classificação:
+   reduz mistura de classes. Para regressão:
+   reduz erro numérico. Esse processo continua
+   até atingir um critério de parada. 
+
+Vantagens:
+-> Não precisa de normalização de dados
+   Captura relações não lineares
+   Funciona com dados numéricos e categóricos
+   Rápido de treinar
+   Pouca preparação de dados
+
+Desvantagens:
+-> Pode sofrer overfitting
+   Sensível a pequenas mudanças nos dados
+   Menos preciso que modelos ensemble
+   Árovre muito profunda -> memoriza dados
+
+Aleatoriedade no Random Forest:
+-> O nome "random" vem de dois tipos:
+   1. Amostras aleatórias dos dados
+   Cada árvore treina com subconjunto diferente
+   do dataset. 
+   2. Seleção aleatória de features
+   Cada divisão da árvore usa apenas algumas
+   features.
+   Isso faz com que as árvores sejam diferentes
+   entre si. Diversidade entre árvores -> modelo
+   mais robusto. 

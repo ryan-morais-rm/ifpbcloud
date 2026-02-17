@@ -23,3 +23,18 @@ Feature Selection (seleção de atributos)
 🔹 Filtering methods
 🔹 Wrapper methods
 🔹 Embedding methods
+
+-> Hiperparâmetros, parâmetros
+-> Cross-validation. 
+-> Logistic Regression
+-> Linear Regression
+-> SVM
+-> Neural Network
+-> Decision Tree
+-> Random Forest
+-> GBDT
+-> k-NN
+-> Naive Bayes
+-> k-means
+-> Hierarchical clustering
+-> PCA

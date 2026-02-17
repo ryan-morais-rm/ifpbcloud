@@ -1,0 +1,59 @@
+Introdução:
+-> Usado para agrupar dados semelhantes sem
+   precisar de rótulos. A ideia principal des-
+   se método é construir uma hierarquia de 
+   grupos (clusters) organizados em forma de
+   árvore. Essa árvore é chamada de dendrograma.
+
+Ideia central:
+-> Diferente do k-means, o hierarchical clustering
+   não divide diretamente os dados em K grupos. 
+   Ele cria uma estrutura de agrupamentos em níveis
+   Pense como uma árvore genealógica:
+   - Pontos muito parecidos ficam juntos
+   - Grupos próximos se juntam
+   - No final todos formam uma grande árvore
+   Depois podemos escolher onde "cortar" a árvore
+   para formar clusters. 
+
+Tipos principais:
+-> Aglomerativo (mais comum)
+   Começa com cada ponto como um cluster separado.
+   Depois vai juntando os mais pŕoximos, repete até
+   virar um cluster só. 
+-> Divisivo (menos comum) 
+   Começa com todos os pontos juntos. Depois vai di-
+   vidindo em grupos menores. 
+
+Dendograma:
+-> O resultado do hierarchical clustering é mostado
+   em um gráfico chamado dendograma. Esse gráfico 
+   mostra como os clusters foram formados, em que
+   nível foram unidos, distância entre grupos. 
+   Você pode escolher um nível da árvore e cortar 
+   para definir quantos clusters quer. 
+-> O algoritmo usa distância entre pontos, que pode
+   ser calculado por "distância euclidiana, manhattan".
+   Ele também mede distância entre clusters. 
+
+Formas de medição:
+-> Single linkage:
+   Distância entre pontos mais próximos. 
+-> Complete linkage:
+   Distância entre pontos mais distantes.
+-> Average linkage:
+   Distância média entre pontos. 
+
+Características:
+-> Gera estrutura em árvore, hierárquica. 
+   Não precisa definir número de clusters inicialmente
+   Bom para análise exploratória
+   Visualizável (dendrograma) 
+   Funciona bem em datasets pequenos.
+
+Limitações:
+-> Lento em datasets grandes
+   Alto custo computacional
+   Sensível a ruído
+   Difícil ajustar depois de criado
+

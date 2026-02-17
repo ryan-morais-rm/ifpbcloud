@@ -1,0 +1,55 @@
+Introdução:
+-> É um algoritmo de ML baseado em árvores de
+   decisão, assim como o Random Forest. Ele
+   também é um método de ensemble learning,
+   mas funciona de forma diferente. A ideia
+   principal do GBDT é criar várias árvores
+   sequencialmente, onde cada árvore corrige
+   os erros da anterior. Ou seja, cada árvo-
+   re nova melhora o modelo anterior. 
+
+Ideia intuitiva:
+-> Imagine que você está tentando prever um
+   valor. A primeira árvore faz uma previsão
+   inicial, comete erros. Já a segunda árvore
+   tenta corrigir os erros da primeira. A ter-
+   ceira árvore corrige os erros restantes. 
+   Isso continua até o erro ficar pequeno. 
+   O modelo final é a soma das previsões de 
+   todas as árvores.
+
+GBDT x Random Forest:
+-> Random:
+   1. Árvores independentes.
+   2. Treinadas em paralelo. 
+   3. Votação/média.
+   4. Reduz variância. 
+-> GBDT:
+   1. Árvores sequenciais.
+   2. Cada um corrige erros anteriores.
+   3. Soma de previsões. 
+   4. Reduz erro gradualmente. 
+
+Como funciona (conceito):
+   1. Cria primeira árvore simples
+   2. Calcula erro
+   3. Cria nova árvore para corrigir erro
+   4. Adiciona nova árvore ao modelo
+   5. Repete várias vezes
+   Esse processo usa o gradient descent, 
+   por isso o nome Gradient Boosting. 
+
+Vantagens:
+-> Ele melhora o modelo gradualmente. 
+   Cada árvore foca nos erros restantes.
+   Isso permite: alta precisão, captura de 
+   relações complexas, ótimo desempenho em
+   dados estruturados. 
+
+Limitações:
+-> Treinamento mais lento
+   Sensível a hiperparâmetros
+   Pode sofrer overfitting se mal ajustado
+   Difícil interpretar
+   Mais pesado que random forest
+
