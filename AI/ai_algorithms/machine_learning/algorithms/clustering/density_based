@@ -1,0 +1,54 @@
+Introdução:
+-> A ideial principal é que os pontos que estão
+   próximos e em regiões densas formam um cluster;
+   pontos isolados são considerados ruído. O al-
+   goritmo mais famoso desse tipo é o DBSCAN. 
+
+Ideia intuitiva:
+-> Imagine pontos em um gráfico. Alguns pontos es-
+   tão bem próximos uns dos outros -> região densa,
+   outros estão isolados -> poucos vizinhos. O den-
+   sity-based clustering identifica: áreas densas,
+   áreas vazias -> separação entre clusters. Pontos
+   isolados -> ruídos (outliers). 
+
+Diferença em relação ao k-means:
+-> k-means
+   Precisa definir número de clusters (K) 
+   Assume clusters circulares
+   Sensível a outliers
+   Todos os pontos pertencem a algum cluster
+-> Density-based
+   Não precisa definir número de clusters
+   Detecta clusters de qualquer formato
+   Identifica ruídos/outliers
+   Baseado em densidade
+
+Vantagens:
+-> Funciona com clusters de formato
+   irregular.
+-> Bom para dados espaciais
+-> Mais realista que k-means em muitos casos
+-> Muito útil em dados do mundo rea
+
+Limitações:
+-> Difícil escolher parâmetros ideais
+-> Não funciona bem com densidades muito 
+   diferentes.
+-> Pode ser lento em datasets grandes.
+-> Sensível à escala dos dados.  
+
+Quando usar:
+-> Detecção de anomalias
+-> Análise de GPS
+-> Análise de comportamento
+
+
+
+
+
+
+
+
+
+

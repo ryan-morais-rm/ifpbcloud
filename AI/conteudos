@@ -38,3 +38,5 @@ Feature Selection (seleção de atributos)
 -> k-means
 -> Hierarchical clustering
 -> PCA
+-> Gaussian mixture
+-> Density based

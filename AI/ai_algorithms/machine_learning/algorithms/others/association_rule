@@ -1,0 +1,62 @@
+Introdução:
+-> Técnica de machine learning usada para descobrir
+   relações e padrões entre itens em um conjunto de
+   dados. Ela pertence ao aprendizado não supervisi-
+   onado, porque não precisa de rótulos. A ideia 
+   princiapl é identificar quais itens aparecem jun-
+   tos com frequência, esse método é muito usado em
+   análise de comportamento e recomendação. 
+
+Exemplo clássico:
+-> Imagine um dataset com compras de clientes:
+   - pão, leite, manteiga, café.
+   O algoritmo pode descobrir regras como: clientes
+   que compram pão também compram manteiga. Clientes
+   que compram café também compram leite. 
+
+Regra de associação:
+-> Uma regra tem formato: A->B.
+   Significa que se A ocorre, é provável B ocorrer.
+   Não é causalidade, é apenas relação de frequência.
+
+Objetivo principal:
+-> Descobrir:
+   Padrões escondidos, relações frequentes, comporta-
+   mento de usuários. Isso ajuda em: recomendação de
+   produtos, marketing, análise de dados. 
+
+Métricas importantes:
+-> Support:
+   Frequência com que a combinação aparece no dataset.
+   Ex: quantas vezes "pão + leite" aparece. 
+   Mais support -> regra mais comum 
+-> Confidence:
+   Probabilidade de B acontecer quando A acontece.
+   Ex: probabilidade de comprar manteiga se comprou pão
+   Mais confidence -> relação mais fote
+-> Lift:
+   Verifica se A e B aparecem juntos mais do que por 
+   acaso.
+   Lift alto -> relação relevante.
+
+Algoritmos usados:
+-> O mais famoso é o Apriori algorithm. Ele encontra
+   combinações frequentes e gera regras. 
+
+Limitações:
+-> Pode gerar muitas regras irrelevantes
+   Não indica causalidade
+   Pode ser custoso em datasets maiores
+   Precisa filtrar regras úteis
+
+Diferença para clustering:
+-> Clustering:
+   Agrupa dados, sem regras explícitas, foca em grupos.
+-> Association Rule:
+   Descobre relações, gera regras A->B, foco em relações.
+
+
+
+
+
+
