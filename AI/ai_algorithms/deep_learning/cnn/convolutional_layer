@@ -1,0 +1,27 @@
+A camada convolucional é o componente central de uma CNN,
+servindo principalmente para extrair características
+(features) automáticas de dados de entrada, especialmente
+imagens. Ela utiliza filtros(kernels) que deslizam sobre
+a imagem para detectar padrões locais, como bordas, tex-
+turas, formas e, posteriormente, objetos complexos, redu-
+zindo a necessidade de engenharia de características manual. 
+
+Extração de características:
+Camadas iniciais detectam formas simples(bordas, cores), en-
+quanto camadas mais profundas combinam essas informações pa-
+ra reconhecer formas complexas.
+
+Compartilhamento de pesos:
+O mesmo filtro é aplicado a toda a imagem, tornando a rede efi-
+ciente em termos de memória e capaz de detectar recursos inde-
+pendentemente da sua posição(tolerância à translação). 
+
+Mapeamento de características:
+O resultado de cada convolução é um mapa que destaca a presen-
+ça e localização das características detectadas. 
+
+Redução da dimensionalidade:
+Em conjunto com o padding e stride, a camada convolucional ajuda
+a gerenciar o tamanho dos dados, preparando-os para as camadas
+densas finais. 
+

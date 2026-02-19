@@ -1,0 +1,33 @@
+A camada de pooling(ou subamostragem) em CNNs serve
+principalmente para reduzir a dimensionalidade espa-
+cial(largura e altura) dos mapas de características,
+diminuindo a quantidade de dados e parâmetros. Isso
+acelera o treinamento, diminui a complexidade compu-
+tacional e ajuda a vetir overfitting. 
+
+Principais funções e benefícios:
+-> Redução da dimensionalidade: Diminui o tamanho das
+   imagens intermediárias, reduzindo o número de pixe-
+   ls e, consequentemente, a carga computacional. 
+-> Invariância espacial: Torna a rede mais robusta a 
+   pequenas variações, rotações ou translações na po-
+   sição dos objetos dentro da imagem. 
+-> Prevenção de Overfitting: Ao simplificar a informa-
+   ção, o modelo foca nas características mais relevan-
+   tes, reduzindo o risco de decorar ruídos. 
+-> Resumo de características: Mantém apenas os valores 
+   mais importantes(no caso do Max Pooling) ou a média
+   (Average Pooling), simplificadno a representação das
+   características extraídas. 
+
+Tipos Comuns de Pooling:
+-> Max pooling: Seleciona o valor máximo de uma região,
+   sendo o método mais utilizado por destacar as carac-
+   terísticas mais fortes.
+-> Average pooling: Calcula a média dos valores da região.
+
+A camada de pooling é geralmente inserida logo após uma ca-
+mada convolucional e de ativação, sendo crucial para tornar
+a rede mais eficiente em tarefas de classificação de ima-
+gens e detecção de objetos. 
+
