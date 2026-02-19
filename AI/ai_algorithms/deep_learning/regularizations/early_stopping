@@ -1,0 +1,10 @@
+Ideia central:
+-> Parar o treinamento antes do overfitting começar.
+   Durante o treino ↓, erro de validação ↓. Depois,
+   começa a subir. Quando erro de validação sobe,
+   significa que o overfitting começou. 
+
+Como funciona:
+-> Treina por várias épocas, monitora validation loss.
+   Se não melhorar por X épocas, para o treino. 
+

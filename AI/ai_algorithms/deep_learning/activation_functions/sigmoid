@@ -1,0 +1,32 @@
+Introdução:
+-> Função usada em redes neurais e em modelos como
+   regressão logística. Ela transforma qualquer va-
+   lor real em um número entre 0 e 1, permitindo in-
+   terpretar a saída como probabilidade. Ela tem o 
+   formato característico em "S". 
+
+Ideia intuitiva:
+-> Exemplos:
+   Entrada muito negativa -> saída próxima de 0
+   Entrada próxima de 0 -> saída ~= 0.5
+   Entrada muito positiva -> saída próxima de 1
+   Isso permite interpretar, que valores próximos de
+   1 possuem alta probabilidade, já valores próximos
+   de 0 é o inverso. 
+
+Comportamento da curva:
+-> Região central:
+   Próxima de zero. Pequenas mudanças na entrada geram
+   grandes mudanças na saída. Aqui o aprendizado é mais
+   eficiente. 
+-> Extremidades:
+   Valores muito altos ou baixos. A saída fica quase 
+   constante (0 ou 1). O gradiente fica muito pequeno. 
+
+Vanishing gradient:
+-> Quando a saída da sigmoid está perto de 0 ou 1: o gra-
+   diente fica muito pequeno. Isso faz com que os pesos 
+   atualizem lentamente, o treinamento fique difícil, re-
+   des profundas aprendam pior. Por isso, em redes pro-
+   fundas modernas, a sigmoid foi substituída em muitas
+   camadas ocultas por ReLU.

@@ -1,0 +1,8 @@
+Ideia central:
+-> Adiciona penalidade baseada no quadrado dos pesos.
+   O objetivo é reduzir pesos grandes, mas sem zerar.
+   Ele força pesos a ficarem pequenos e suaves. 
+
+Efeito:
+-> Ele empurra pesos para perto de zero, mas raramen-
+   te exatamente zero. Por isso, não remove variáveis.

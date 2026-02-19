@@ -1,0 +1,15 @@
+Ideia central:
+-> Durante o treino, ele desliga neurônios aleatoriamente.
+   Ex: 50% dos neurônios desligados. Isso força a rede a
+   não depender de neurônios específicos. 
+
+O que acontece:
+-> Em cada batch, alguns neurônios desligam, rede muda,
+   aprende de forma mais robusta. É como treinar várias 
+   redes diferentes ao mesmo tempo. 
+
+Funcionamento:
+-> Se todos os neurônios estão sempre ativos: rede decora
+   padrões. Se alguns desligam, rede precisa aprender re-
+   dundância, isso melhor generalização. 
+

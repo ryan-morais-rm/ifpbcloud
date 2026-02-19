@@ -1,0 +1,10 @@
+Introdução:
+-> Existem várias versões melhoradas de algoritmos do 
+   "gradient descent". Em programação OO, algoritmos
+   diferentes são frequentemente encapsulados em um
+   objeto chamado "otimizador". Razões para melhorar
+   algoritmos: acelerar a convergência do algoritmo, 
+   prevenir ou superar extremos locais, simplificar
+   configuração manual de parâmetros, especialmente
+   taxa de aprendizado. 
+

@@ -1,0 +1,47 @@
+Introdução:
+-> É o tipo mais básico e clássico de rede neural
+   artificial. Ela recebe esse nome porque a infor-
+   mação flui apenas em uma direção: da entrada pa-
+   ra a saída, sem ciclos ou retornos. Em termos 
+   simples: os dados entram, passam pelas camadas
+   e saem - sem voltar para trás.
+
+Ideia central:
+-> Uma feedforward é composta por camadas de neurô-
+   nios conectadas sequencialmente. 
+   Fluxo:
+   entrada -> camadas ocultas -> saída
+   Cada camada transforma os dados e envia o resultado
+   para a próxima camada. Não há loops nem memória in-
+   terna. 
+
+Estrutura:
+-> Recebe os dados:
+   1. números, imagens, sinais, texto convertido em nú-
+   meros. Cada feature corresponde a um neurônio de en-
+   trada. 
+-> Camadas ocultas (hidden layers):
+   Cada neurônio recebe entradas, multiplica por pesos,
+   soma, aplica função de ativação, envia o resultado
+   adiante. Podem existir várias camadas ocultas, quan-
+   to mais camadas, mais profunda a rede. 
+
+Fluxo:
+-> 1. entrada passa pela rede
+   2. gera previsão
+   3. calcula o erro (loss) 
+   4. usa backpropagation
+   5. ajusta pesos via gradiante descent
+   6. repete
+   Objetivo é reduzir o erro e melhorar previsões.
+
+Limitações:
+-> Não lida bem com dados sequenciais
+   Não tem memória
+   Menos poderosa para texto e séries temporais
+   Pode exigir mais dados
+
+Relação com perceptron:
+-> Um feedforward network é vários perceptrons 
+   conectados. Se tiver várias camadas, MLP. 
+

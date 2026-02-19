@@ -1,0 +1,34 @@
+Introdução:
+-> É uma função de ativação mais usada em redes neurais
+   profundas modernas. Ela introduz não linearidade no
+   modelo e permite que redes neurais aprendam padrões
+   complexos de forma eficiente.
+   A regra da ReLU é extremamente simples:
+     se x > 0 -> x / se x <= 0 -> 0
+   Ou seja, mantém valores positivos e zera negativos.
+   Isso cria uma saída simples e eficiente. 
+
+Vantagens:
+-> Simples e rápida:
+   Cálculo extremamente fácil, treinamento mais rápido.
+-> Evita vanishing gradient:
+   Gradiente não desaparece para valores positivos. 
+-> Funciona bem em redes profundas:
+   Permite treinar deep neural networks grandes.
+-> Eficiência computacional:
+   Muito leve para GPU. 
+
+Problemas:
+-> Existe um ponto chamadao "dying ReLU". Se muitos va-
+   lores ficarem negativos, a saída sempre é zero, neu-
+   rônio morre, para de aprender. Isso pode acontecer 
+   em alguns casos. 
+
+Variações:
+-> Leaky ReLU:
+   Permite valores negativos pequenos. 
+-> Parametric ReLU:
+   Versão ajustável. 
+-> ELU:
+   Suaviza valores negativos. 
+

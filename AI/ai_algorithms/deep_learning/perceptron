@@ -1,0 +1,62 @@
+Introdução: 
+-> Representa a forma mais básica de uma rede neural.
+   Em essência, o perceptron é um classificador line-
+   ar que toma decisões com base em uma combinação de
+   entradas. Ele recebe várias entradas, aplica pesos,
+   soma tudo e gera uma saída. 
+Estrutura:
+-> Um perceptron possui 3 partes principais:
+   - Entradas (features)
+     Valores que entram no modelo: x1, x2, x3...
+   - Pesos (weights) 
+     Cada entrada possui um peso: w1, w2, w3...
+     Esses pesos representam a importância de 
+     cada entrada. 
+   - Bias
+     Valor adicional que ajusta a saída.
+
+Funcionamento matemático:
+-> O perceptron calcula:
+   z = w1x1 + w2x2 + ... + b
+   Ou seja, soma ponderada das entradas, depois
+   aplica uma função de ativação. Se o valor for
+   maior que um limite: -> classe 1, se não clas-
+   se 0. Isso o torna um classificador binário. 
+
+Função de ativação:
+-> O perceptron clássico usa uma função de ativa-
+   ção simples, chamada: step function, ela trans-
+   forma a soma em 0 ou 1, negativo ou positivo. Ou
+   seja, decide a classe final. Isso é diferente de
+   redes neurais modernas que usam: ReLU, sigmoid,
+   tanh...
+
+Treinamento do perceptron:
+-> O perceptron aprende ajustando os pesos:
+   Processo:
+   1. Recebe entrada
+   2. Gera previsão
+   3. Compara com valor real
+   4. Ajusta pesos se errar
+   5. Repete várias vezes
+   Se errar, os pesos são ajustados para reduzir o
+   erro. Isso é uma forma inicial de gradient-based
+   learning. Assim, ele aprende a separar classes.
+   Com muitas iterações, ele encontra uma linha que
+   separa os dados. 
+
+O que o perceptron aprende:
+-> Ele aprende uma fronteira linear de decisão.
+   Em 2D: uma linha, Em 3D: um plano
+   Em alta dimensão: um hiperplano 
+   O perceptron só funciona bem quando os dados são
+   linearmente separáveis. Se não for possível se-
+   parar com uma linha, ele falha. 
+
+Perceptron multicamada:
+-> Para resolver limitações do perceptron simples,
+   surgiram redes neurais com múltiplas camadas.
+   Chamadas de Multilayer Perceptron (MLP) 
+   Com várias camadas: 
+   Conseguem aprender relações não lineares.
+

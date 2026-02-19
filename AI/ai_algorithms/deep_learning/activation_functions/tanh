@@ -1,0 +1,31 @@
+Introdução:
+-> Ela transforma qualquer valor de entrada em um
+   número entre -1 e 1. Por isso, a Tanh é muito
+   usada quando queremos uma saída que pode ser 
+   positiva ou negativa e centrada em zero. Ela
+   foi muito popular antes da ReLU dominar o deep
+   learning moderno.
+
+Ideia central:
+-> A função Tanh pega qualquer número real e compri-
+   me para o intervalo: -1 <= saída <= 1. 
+   Comportamento:
+   valores muito negativos -> próximos de -1
+   valores próximos de zero -> próximos de 0
+   valores muito positivos -> próximos de 1
+   Ela também tem formato em "S", semelhante à sigmoid,
+   porém centrada em zero. 
+
+Por que centrada em zero importa:
+-> Treinamento costuma zer mais estável
+   Convergência mais rápida
+   Por isso, a Tanh geralmente funciona melhor que sigmoid
+   em camadas ocultas. 
+
+Usabilidade:
+-> Apesar de ter sido substituída em casos pela ReLU, a 
+   Tanh ainda aparece com Redes recorrentes (RNNs).
+   Muito usada em RNN, LSTM, GRU.
+   Porque valores entre -1 e 1 funciona bem com estados
+   internos. 
+

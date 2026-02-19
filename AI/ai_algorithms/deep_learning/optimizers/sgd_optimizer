@@ -1,0 +1,21 @@
+Introdução:
+-> Ele atualiza os pesos usando o gradiente de uma
+   amostra ou mini-batch por vez. Fórmula: 
+   "peso = peso - learning_rate * gradiente"
+
+Características:
+-> Ele é simples, rápido, ruidoso(oscila), pode demorar
+   para a convergir, pode ficar preso em mínimos locais.
+-> Ele segue sempre em direção oposta ao gradiente, mas
+   pode oscilar, andar em zigue-zague, ser instável.
+
+Problema:
+-> Imagine uma função em formato de U.
+   O SGD desce, mas oscila muito e demora para chegar no
+   fundo. Isso levou à criação de versões melhores.
+ 
+
+
+
+
+

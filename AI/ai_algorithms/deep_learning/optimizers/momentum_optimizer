@@ -1,0 +1,11 @@
+Introdução:
+-> momemtum = "momento"(inércia). Inspirado na física,
+   objetos em movimento ganham velocidade. Em vez de
+   olhar só o gradiente atual, ele considera gradientes
+   passados, ele acumula velocidade. 
+-> Resultado:
+   Menos oscilações, movimento mais suave, converge mais
+   rápido.
+-> Intuição:
+   SGD normal: anda -> para -> muda direção -> lento
+   Momentum: ganha velocidade -> vai direto
