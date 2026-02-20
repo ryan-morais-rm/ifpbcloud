@@ -1,0 +1,36 @@
+Introdução:
+-> Modelos fundamentais são modelos de grande escala, treinados
+   com dados massivos, bilhões de parâmetros, capazes de genera-
+   lizar múltiplas tarefas. Eles não são treinados para uma úni-
+   ca tarefa específica. 
+-> Eles são pré-treinados em larga escala e depois adaptados(fi-
+   ne tuning) para tarefas específicas. 
+
+Necessidade:
+-> Escalabilidade do Transformer e aumento massivo de computação
+   (GPU/TPU). Com isso, foi possível aumentar número de camadas,
+   dimensão de atenção, parâmetros. Além disso, a possibilidade
+   de treinar com datasets gigantes.
+-> GPT-1 foi o primeiro grande exemplo prático. Características
+   importantes: Usa apenas o Decoder do Transformer, arquitetura
+   autoregressiva, máscara causal(prevê próximo token), escala
+   maior que modelos anteriores. 
+-> GPT - decoder-only transformer
+   BERT - encoder-only transformer
+
+Bert:
+-> Introduziu algo diferente que é o processamento bidirecional.
+   Enquanto GPT lê da esquerda para direita. O BERT lê da esquerda
+   e direita simultaneamente. Isso melhora a compreensão contextu-
+   al e tarefas de classificação. 
+
+MoE:
+-> É uma estratégia para aumentar capacidade sem aumentar
+   custo proporcionalmente. A ideia é gerar múltiplos ex-
+   perts (submodelos). Assim, um gating mechanism decide
+   qual expert utilizar. Em vez de ativar todo o modelo,
+   apenas uma parte dele é ativada. 
+
+Linha evolutiva:
+RNN -> LSTM -> Attention -> Transformer -> GPT/BERT -> Foundation -> LLMs
+
