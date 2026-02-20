@@ -1,0 +1,19 @@
+A Rede neural recorrent é uma rede que captura informa-
+ções dinâmicas em dados sequenciais por meio de conexõ-
+es periódicas de camadas de nodes escondidas. Ela pode
+classificar dados sequenciais. 
+
+Diferente de FNNs, a RNN pode manter um estado de con-
+texto e até mesmo armazenar, e expressar informação re-
+lacionada à janelas de contextos de quaisquer tamanhos.
+Diferente de redes neurais tradicionais, RNN não está
+restrita ao padrão de espaço, porém pode extender se-
+quências de tempo. Em outras palavras, um lado existe
+entre a camada escondida do momento atual e a camada
+escondida do próximo momento. 
+
+A RNN é amplamente utilizada em cenários que precisam
+de sequenciamento, como vídeos já que são um conjunto 
+de frames de imagens, áudio consistindo de clipes, e 
+sentenças consistindo de palavras. 
+

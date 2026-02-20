@@ -1,0 +1,36 @@
+Ideia central:
+-> Foi criada para armazenar informação por longo tempo 
+   sem perder gradiente. Ela resolve o problema criando
+   um sistema de memória controlado por portas(gates). 
+   Essas portas decidem o que esquecer, guardar, atuali-
+   zar, mostrar. 
+
+Estrutura:
+-> A LSTM possui Cell State, Hidden State e Gates.
+-> Ct(memória longa):
+   Ele funciona como uma linha de memória que atravessa
+   toda a sequência, isso permite que a informação viaje
+   por muito tempo sem desaparecer. 
+-> Ht(saída atual):
+-> Gates(controlam fluxo):
+   - Forget gate é a primeira etapa da LSTM. Ela decide o
+   que esquecer da memória antiga. Recebe estado anterior(Ht-1)
+   e a entrada atual (Xt). Produz um valor entre 0 e 1. A in-
+   terpretação é que se for 1 -> manter informação. Se for 0,
+   apaga a informação.
+   - Input gate é a porta de entrada, depois de decidir o que
+   esquecer, decide o que guardar. Por isso, existem duas partes
+   que é o Sigmoid Layer: decide o que atualizar. Tanh layer: cria
+   novos valores candidatos. Ou seja, gera nova informação possível. 
+   Depois, decide quanto dessa nova informação entra na memória. 
+   - Atualização do Cell State:
+   Agora a memória principal é atualizada. Processo:
+   memória antiga + forget gate + nova informação * input gate
+   Resultado é que gera uma nova memória Ct. 
+   - Output gate:
+   Decide o que da memória será enviado como saída. Processo:
+   1. Aplica sigmoid -> decide o que liberar
+   2. aplica tanh -> normaliza valores
+   3. multiplica -> gera saída final
+   Resultado: hidden state Ht.
+ 
