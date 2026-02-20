@@ -52,3 +52,6 @@ Deep Learning
 -> exploding gradient
 -> optimizers
 -> regularization
+-> cnn
+-> rnn architecture
+-> transformers
