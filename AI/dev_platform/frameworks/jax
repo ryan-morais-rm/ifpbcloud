@@ -1,0 +1,11 @@
+Introdução:
+-> Jax é uma library de performance computacional numérica, desenvolvida pela google.
+   Ela combina APIs NumPy-like, a função de diferenciação automática do Autograd, o 
+   compilador XLA do TensorFlow, implementando computação eficiente entre CPUs, GPUs
+   e TPUs. 
+
+Características:
+-> O jax foi desenhado para minimizar o encapsulamento e operações redundantes, fazendo
+   sua API simples e fácil de usar.
+-> Jax entrega excelente performance computacional por meio da otimização do compilador
+   XLA e execução acelerada em GPUs e TPUs.
