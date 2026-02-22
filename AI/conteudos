@@ -62,3 +62,11 @@ Frameworks
 -> pytorch, tensorflow, jax
 -> tensores
 -> pytorch modules
+
+Platform deployment
+-> Model architecture
+-> Model compression
+-> AI Business Process
+-> Large Model Business Process
+-> Use of Large Models and Prompt Engineering
+

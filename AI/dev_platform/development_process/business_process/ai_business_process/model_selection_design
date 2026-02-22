@@ -1,0 +1,32 @@
+-> Selecione o a arquitetura e o modelo de deep learning baseado no tipo
+   de tarefa e as características de dados. Por exemplo:
+   - Tarefas de reconhecimento de imagens -> CNN. Então, VGG, ResNet, Yolo...
+   - Tarefas de processamento de textos -> RNN, LSTM, GRU, Transformer(Bert, GPT)...
+
+-> Faça o design da hierarquia do modelo, incluindo o input layer, hidden layer
+   (convolutional layer, recurrent layer, self-attetion layer, and so on), output
+   layer and auxiliary layers como pooling layer e normalization layer. 
+
+-> Seleção de hiperparâmetros:
+   Determine os hiperparâmetros do modelo, como taxa de aprendizado, batch size,
+   força de regularização, número de camadas, número de nodes e proporção do dropout. 
+
+Treinamento do modelo:
+-> Forward propagation: Calcula a loss function, isto é, a diferença entre o rótulo
+   previsto e o rótulo verdadeiro. 
+-> Backward propagation: Otimiza os parâmetros dentro do modelo baseado na loss function,
+   então a próxima previsão é a mais próxima possível do valor real. 
+
+Avaliação do modelo:
+-> Métricas de avaliação da tarefa de regressão
+   - Mean squarred error(MSE): 
+     É a média do quadrado das diferenças entre o valor previsto e o valor real.
+     Ele é utilizado para medir o erro previsto. 
+   - Root mean squared error(RMSE):
+     É a raiz quadrada do MSE. A unidade é a mesma do valor observado original, 
+     o qual reflete mais intuitivamente a diferença entre o valor previsto e 
+     o valor real. 
+   - Mean absolute error(MAE):
+     É a média absoluta das diferenças entre o valor previsto e o valor real.
+     Comparado com MSE, MAE é mais robusto aos outliers. 
+
