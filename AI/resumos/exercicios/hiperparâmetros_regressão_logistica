@@ -1,0 +1,72 @@
+1. Which of the following statements best describes model "parameters" in machine learning? 
+   A. They are configurations set outside the model by the practitioner before training. 
+   B. They are "distilled" from historical training data and are not manually set by the user. 
+   C. Examples include the learning rate and the number of trees in a random forest. 
+   D. They are used exclusively to evaluate the model's performance on the test set.
+
+2. True or False: Hyperparameters are typically tuned for a given predictive modeling problem 
+   and are often set heuristically by the user.
+
+3. Which of the following are considered hyperparameters rather than model parameters? 
+   (Select all that apply)
+   A. Weights in an artificial neural network. 
+   B. The value of k in the k-nearest neighbors (k-NN) algorithm. 
+   C. The coefficients in a Logistic Regression model. 
+   D. The learning rate and batch size used during training. 
+   E. The number of layers and neurons in a neural network.
+
+4. What is the primary purpose of using k-fold cross-validation (CV) in machine learning? 
+   A. To automatically optimize the weights of a model without using gradient descent. 
+   B. To check the performance of classifiers and effectively avoid over-learning and under-learning. 
+   C. To replace the need for a training set by using only a validation set. 
+   D. To increase the size of the original dataset through data augmentation.
+
+5. In k-fold cross-validation, how is the final performance metric usually determined? 
+   A. By selecting the accuracy of the first model trained. 
+   B. By taking the average accuracy score of the k models obtained during the process. 
+   C. By using only the model that achieved 100% accuracy on its respective validation set. 
+   D. By combining all k subsets into a single large test set.
+
+6. True or False: In the context of k-fold cross-validation, the value of k (the number of subsets) 
+   is itself considered a hyperparameter.
+
+7. Despite its name, Logistic Regression is formally categorized as which type of machine learning task? 
+   A. A continuous regression task used for price prediction. 
+   B. A classification model used to resolve binary or multi-class problems. 
+   C. An unsupervised clustering algorithm based on internal similarities. 
+   D. A reinforcement learning strategy based on scalar signals.
+
+8. What distinguishes Logistic Regression from Linear Regression in a "broad sense"? 
+   A. Logistic Regression uses only one independent variable, while Linear Regression uses many. 
+   B. Logistic Regression is a type of unsupervised learning. 
+   C. Logistic Regression introduces a non-linear factor, specifically the Sigmoid function, 
+      and sets a threshold. 
+   D. Linear Regression uses the Softmax function while Logistic Regression does not.
+
+9. When extending Logistic Regression to handle multi-class classification problems, 
+   which function is typically employed? 
+   A. The Sigmoid function. 
+   B. The ReLU activation function. 
+   C. The Softmax function, which ensures the sum of all class probabilities is 1. 
+   D. The Pearson correlation coefficient.
+
+10. True or False: Adding an L1 regularization term (Lasso) to a Logistic Regression model can serve 
+    as a mechanism for feature selection.
+
+11. According to the "Hyperparameter Search General Process," which dataset is specifically used 
+    to search for and tune model hyperparameters? 
+    A. The training set. 
+    B. The validation set. 
+    C. The test set.
+    D. The unlabeled experience dataset.
+
+12. Which of the following are valid evaluation metrics for classification tasks like Logistic Regression? 
+    (Select all that apply) 
+    A. Mean Absolute Error (MAE). 
+    B. Accuracy. 
+    C. Precision and Recall. 
+    D. F1-score. 
+    E. Mean Squared Error (MSE).
+
+
+Gabarito: 1-B, 2-True, 3-B,D,E, 4-B, 5-B, 6-True, 7-B, 8-C, 9-C, 10-True, 11-B, 12-B,C,D
