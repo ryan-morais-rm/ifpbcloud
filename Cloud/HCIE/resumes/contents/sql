@@ -1,1 +1,61 @@
-Schemas/Tuning
+Motor de diagnóstico: Tuning SQL via DAS
+
+-> Análise de Slow logs:
+Identificação de instruções SQL com longo tempo de execução e 
+varredura massiva de linhas.
+-> Redução de interações:
+Substituição de chamadas repetidas por instruções de gravação
+em lote. 
+-> Otimização paramétrica:
+Ajuste de threads e leitura/escrita e capacidade de cache. 
+
+Princípio da paginação: Fluxo vs Sobrecarga
+-> O Problema: SELECT * (Sem limites)
+Causa picos de consumo de memória e gargalo imediato de throu-
+ghput de rede. 
+-> A Solução: Paginação geométrica
+Limita o volume extraído por ciclo. Reduz drasticamente o trá-
+fego de rede e o uso de memória do servidor. 
+
+Granularidade de transações e evasões de locks
+-> O risco: Big Transactions
+Transações massivas processam dados excessivos de uma só vez,
+bloquando tabelas inteiras para outros usuários.
+-> A solução: Escopo reduzido
+Reduzir operações em larga escala. Garantir que apenas as 
+leituras/escritas estritamente necessárias ocorram na transação.
+
+-> Matriz de indexação: Otimizando o sistema de triagem
+1. B-Tree Index
+Mecânica: Busca hierárquica por condições de filtro
+Vantagem: Redução drástica de operações de I/O em discos
+Uso: Dados padrão, alta cardinalidade e chaves primárias.
+
+2. Bitmap Index
+Mecânica: Uso de mapeamento de bits (0s e 1s).
+Vantagem: Reduz o espaço de armazenamento e melhora a eficiência
+de operações de agregação.
+Uso: Campos de baixa cardinalidade(status ativo/inativo, gênero). 
+
+3. Full-Text Index
+Mecânica: Segmentação de palavras e cálculo de grau de correspon-
+dência.
+Vantagem: Melhora a eficiência e a precisão da consulta semântica.
+Uso: Buscas complexas em grandes volumes de texto não estruturado.
+
+-> Sharding Vertical: Desacoplamento funcional e de colunas
+Conceito: Divisão de tabelas largas baseada em domínios de serviço
+ou frequência de atualização de colunas. 
+Quando usar: Esquemas que misturam dados frequentemente atualizados
+com dados estáticos. Quando colunas específicas (ex: campos BLOB) 
+causam gargalos de I/O para o resto da tabela. É possível utilizar
+também para isolar microsserviços por contexto funcional. 
+
+-> Sharding Horizontal: Expansão de capacidade de linhas
+Conceito: Divisão de registros massivos através de múltiplos nós de
+banco de dados, mantendo a mesma estrutura de colunas. 
+Critérios de particionamento: (Sharding Keys) 
+Dimensão de tempo: Dados divididos por ano/mês
+Dimensão geográfica: Roteamento baseado em localização (ex: Sul vs Norte) 
+Range de Primary Key/Hash: Distribuição matemática para balancear carga
+
