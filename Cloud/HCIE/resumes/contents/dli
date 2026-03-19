@@ -1,0 +1,21 @@
+O Data Lake Insight(DLI) é o serviço de análise de big data
+serverless da Huawei Cloud. Ele é totalmente compatível com
+os ecossistemas Apache Spark, FLink e openLooKeng, permitin-
+do realizar análises em lote(batch), processamento em tempo
+real(streaming) e consultas interativas usando SQL padrão.
+Além disso, o DLI interage diretamente com o DIS(Data Inges-
+tion Service).
+
+-> Ingestão em tempo real: O DIS é utilizado para coletar e 
+transmitir dados gerados em tempo real (como logs ou dados
+de IoT).
+-> Processamento de streaming: O DLI atua como motor de pro-
+cessamento para esses dados que chegam via DIS, permitindo 
+que você execute consultas SQL ou programas Flink sobre o 
+fluxo de dados conforme ele é ingerido. 
+-> Arquitetura de dados: Em soluções de "Intelligent Data
+Lake", o DIS serve como a porta de entrada para dados de stre-
+aming, enquanto o DLI realiza a computação e análise para ge-
+rar insights imediatos ou alimentar armazéns de dados como o
+DWS.
+

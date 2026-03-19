@@ -1,0 +1,19 @@
+O conceito de Data Lake é consolidar volumes absurdos de dados
+heterogêneos em um repositório central, como o OBS ou o HDFS
+para quebrar os chamados "silos de dados". Para resolver esse
+problema, foi criado duas ferramentas principais:
+
+1. DataArts Studio(DAYU): É a plataforma que faz a agregação
+   visual e a governança. Ele permite que você veja o ciclo
+   de vida completo do dado, estabeleça padrões unificados e 
+   gerencie metadados, transformando dados "nebulosos" em ati-
+   vos de dados claros e catalogados.
+2. Graph Engine Service: Enquanto o DataArts foca na organiza-
+   ção, o GES foca na correlação. Ele mapeia entidades e seus
+   relacionamentos(arestas e vértices), permitindo descobrir
+   conexões ocultas em trilhões de registros que seriam impos-
+   síveis de ver em tabelas comuns.
+
+Para a visualização macro e tomada de decisão, utiliza-se o DLV,
+que cria dashboards de BI integrados diretamente a esse ecossistema. 
+
