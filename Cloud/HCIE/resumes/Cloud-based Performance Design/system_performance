@@ -1,0 +1,11 @@
+Throughput:
+-> É uma medida de quantas requisiões são processadas dentro de um
+   intervalo específico de tempo. Cada throughput é baseado em uma
+   taxa de sucesso e tempo de resposta. 
+   Métricas:
+   Transações por segundo e consultas por segundo.
+
+Response Time:
+-> É o tempo que os usuários submetem uma requisição e recebem uma
+   resposta. 
+   Métricas: Segundos e milissegundos. 

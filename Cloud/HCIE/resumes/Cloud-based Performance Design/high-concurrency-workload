@@ -1,0 +1,32 @@
+Network Access:
+-> RoadMap: Conteúdo é distribuído na rede inteira em vez de um único node.
+-> Método 1:
+   Colocar CDN em múltiplas regiões e cachear arquivos estáticos nos nodes de borda.
+-> Método 2:
+   Use o DNS inteligente e GSLB para distribuir tráfego em múltiplos nodes.
+
+Access control:
+-> Approach: Usar clusters com auto scaling habilitado.
+-> Método 1: Construir um cluster de redes host e usar ELB e AS para autoescalar
+   esses recursos do cluster.
+-> Método 2: Construir um cluster containerizado no CCE e usar ELB para balancear
+   tráfego de acesso. 
+
+Service logic:
+-> Approach: Usar um cluster com auto scaling habilitado, onde dados podem ser sin-
+   cronizados em paralelo e de modo assíncrono para garantir disponibilidade.
+-> Método 1: Construir um host service cluster e usar ELB e AS para autoescalar
+   recursos. Diferentes serviços usam o distributed message queue service(DMQ) 
+   para comunicação assíncrona. 
+-> Método 2: Construir um cluster containerizado, desenvolver aplicações como micros-
+   serviços, e usar ferramentas de governança para manter a performance do sistema
+   através de rate limiting, cicuit breaker, service degradation e timeout. 
+
+Data acess:
+-> Queries duplicadas são cacheadas, e requisições são distribuídas entre múltiplos
+   banco de dados. 
+-> Método 1: Cachear dados quentes no DCS para minimizar consultas concorrentes nos
+   bancos de dados.
+-> Método 2: Usar o DDM para melhorar a divisão leitura/escrita e sharding do banco
+   de dados e melhorar o processamento concorrente por meio do descarregamento de
+   requisições de um banco de dados para um cluster múltiplo de banco de dados. 

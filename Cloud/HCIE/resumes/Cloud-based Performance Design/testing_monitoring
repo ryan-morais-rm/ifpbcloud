@@ -1,0 +1,13 @@
+Foco em disponibilidade e distribuição:
+-> O ELB é projetado para distribuir tráfego e garantir alta disponibilidade,
+   evitando que um servidor único seja sobrecarregado. Embora ele ajude a li-
+   dar com a concorrência, ele não "acelera" o processamento ou reduz a latên-
+   cia instrínseca da aplicação; na verdade, adicionar um balanceador insere um
+   salto de rede adicional. 
+
+DCS, DMS e DDM como otimizadores reais:
+-> DCS(Redis): Reduz drasticamente a latência ao ler dados da memória.
+-> DMS(Mensageria): Aumenta o throughput através do desacoplamente assíncrono,
+   permitindo que o sistema processe picos de carga sem travar. 
+-> DDM(Middleware): Melhora a performance dividindo tabelas grandes(sharding) 
+   e separando leitura de escrita, o que reduz o tempo de resposta massivamente.

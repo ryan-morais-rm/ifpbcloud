@@ -1,0 +1,57 @@
+Análise de custo: Avalia o custo total de antes e depois de mover a 
+empresa para a nuvem, incluindo custos iniciais, operacionais e ris-
+cos em pontenciais.
+TCO: Custo total de posse, o qual inclui custos para operações e 
+manutenção.
+TCO = CAPEX + OPEX
+
+QingTian Architecture:
+A comunicação entre o chip QingTian e o hardware principal seja ele
+x86 ou Kunpeng, ocorrer fisicamente através do barramento PCIe. 
+Offloading(Descarregamento): O Chip reside em uma Smart Card que 
+assume as tarefas de processamento de rede, armazenamento e seguran-
+ça que normalmente sobrecarregam a CPU do servidor. 
+A comunicação de rede é otimizada via HiNIC(rede de alta performance)
+e protocolos de armazenamento nativos que conversam diretamente com
+o chip. Como o chip abstrai as funções de rede e armazenamento de 
+forma padronizada, o usuário recebe o mesmo nível de latência inde-
+pendentemente do tipo de instância que contratar. 
+
+KYON (Mantenha sua própria rede):
+Ele habilita usuários a migrar suas redes on-prem para a nuvem
+sem fazer mudanças. O KYON provê pontos como NAT gateway priva-
+do, Layer 2 gateway(L2CG), load balancing híbrido, e VPC endpo-
+int para estar de acordo às necessidades chaves do usuário em
+diferentes fases de migração de nuvem.
+
+Edge Technology:
+-> Paradigma Dispositivo-Borda-Nuvem
+   Nuvem: gestão centralizada, desenvolvimento de serviços glo-
+   bais e agregação do ecossistema tecnológico. 
+-> Borda: execução de serviços de baixa latência e interconexão
+   direta com sistemas locais.
+-> Dispositivos: Geração de dados brutos e consumo da experiên-
+   cia final. 
+
+Intelligent EdgeCloud(IEC):
+Infraestrutura de nuvem estendida diretamente para áreas de 
+hotspots urbanos densamente povoados.
+Atuação: AZs operadas pela cloud
+Alvo: volume gigantescos de tráfego de dados
+Performance: Latência garantida < 10ms
+Casos de Uso: Vídeo interativo, Cloud gaming...
+
+Intelligent EdgeSite(IES):
+Extensão direta dos serviços da nuvem pública para as insta-
+lações corporativas através de racks pré-integrados. Zero 
+gestão local, a infraestrutura é mantida, monitorada e geren-
+ciada pela Cloud. 
+Alimentado pela arquitetura QingTian, a fronteira entre local
+e nuvem desaparece. Conexão transparente e contínua entre o
+ambiente on-premises local e a nuvem pública. Utilização exa-
+ta das mesmas APIs, instâncias e ferramentas da nuvem central.
+
+IEC - Metrópole/Hostspot  - 100% Huawei    - Tráfego Massivo
+IES - Rack no cliente     - 100% Huawei    - Dados Locais/Privacidade
+IEF - Dispositivo/Máquina - Huawei/Cliente - IoT/AI extrema 
+
