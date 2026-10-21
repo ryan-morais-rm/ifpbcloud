@@ -1,0 +1,43 @@
+Core:
+-> torch: Módulo principal que fornece as funções fundamentais
+   para operações com tensores e álgebra linear.
+-> torch.nn : Módulo essencial para a construção de redes neurais.
+   Ele fornece as camadas da rede(layers), funções de perda(loss 
+   functions) e funções de ativação. 
+-> torch.optim: Contém vários algoritmos de otimização como SGD,
+   ADAM e RMSProp usados para atualizar os parâmetros do modelo e
+   minimizar o erro durante o treinamento. 
+-> torch.utils.data: Fornece ferramentas para o carregamento e 
+   pré-processamento de dados, especificamente através das classes
+   Dataset e DataLoader, que permitem a leitura iterativa de dados
+   em lotes(batches). 
+-> torch.autograd: O motor de diferenciação automática do PyTorch.
+   Ele suporta o cálculo de gradientes, sendo fundamental para o 
+   processo de backpropagation após a obtenão da função de perda. 
+
+Infraestrutura:
+-> torch.jit: Módulo compilador Just-In-Time que permite conver-
+   ter grafos dinâmicos em grafos estáticos para fins de otimiza-
+   ção de performance e serialização do modelo. 
+-> torch.device: Permite especificar o hardware onde os tensores
+   e modelos devem ser executados facilitando a alternância entre
+   CPU e GPU.
+-> torch.onnx: Define as ferramentas para exportar modelos no for-
+   mato ONNX, permitindo a troca de modelos entre diferentes fra-
+   meworks de IA. 
+-> torch.distributions: Oferece classes para amostragem de dife-
+   rentes distribuições probabilísticas e geração de grafos com-
+   putacionais para processos de amostragem. 
+
+Ecossistema:
+-> torchvision.datasets: Disponibiliza conjuntos de dados prontos
+   para uso, como MNIST, CIFAR-10 e ImageNet.
+-> torchvision.transforms: Suporta operações de aumento de dados
+   (data augmentation) e pré-processamento, como redimensionamento,
+   rotação e normalização. 
+-> torchvision.models: Encapsula estruturas de modelos pré-treinados
+   famosos, como ResNet, VGG e AlexNet, facilitando o aprendizado por
+   transferência.
+-> torchvision.utils: Fornece métodos práticos para visualizar resul-
+   tados, como a criação de grades de imagens. 
+

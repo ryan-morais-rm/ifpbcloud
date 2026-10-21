@@ -1,0 +1,44 @@
+Problemas:
+Classificação:
+-> O objetivo é escolher uma categoria entre várias possíveis. 
+   Imagine que você recebe uma entrada, por exemplo, uma ima-
+   gem, um texto ou um conjunto de dados e precisa decidir a
+   qual classe aquilo pertence. O modelo de ML aprende a par-
+   tir de exemplos rotulados, ou seja, dados onde a resposta
+   correta já é conhecida. Durante o treinamento, ele observa
+   padrões que ligam certas características da entrada a uma 
+   categoria específica. Depois de treinado, ele recebe novas
+   entradas e tenta classificá-las corretamente. 
+Regressão:
+-> Já na regressão, o objetivo não é escolher uma categoria, 
+   mas prever um valor numérico contínuo. Em vez de responder
+   "qual classe?", o modelo responde "qual valor?". O algoritmo
+   recebe dados de entrada e tenta estimar uma quantidade real
+   associada a eles. Durante o treinamento, ele também usa e-
+   xemplos rotulados, mas agora os rótulos são números. O mo-
+   delo aprende a relação entre as variáveis de entrada e o 
+   valor de saída, ajustando seus parâmetros para que a dife-
+   rença entre o valor previsto e o valor real seja a menor
+   possível. Exemplos típicos incluem prever o preço de uma
+   casa com base em suas características.   
+Clustering:
+-> É diferente de classificação e regressão, porque normal-
+   mente trabalha com dados sem rótulos. Em vez de aprender
+   com exemplos onde a resposta correta já é conhecida, o 
+   algoritmo tenta descobrir sozinho como organizar os da-
+   dos. A ideia é encontrar grupos internos baseados na si-
+   milaridade entre os exemplos. Se vários dados são pare-
+   cidos entre si, o algoritmo os coloca no mesmo grupo; se
+   são diferentes, separa em grupos distintos. Aqui não e-
+   xiste uma resposta previamente definida, mas sim uma es-
+   trutura oculta nos dados que o modelo tenta revelar. 
+
+Resumo:
+-> Na classificação e na regressão, o aprendizado é
+   supervisionado porque existem rótulos conhecidos
+   durante o treinamento. A diferença é que a clas-
+   sificação prevê categorias e a regressão prevê 
+   números. No clustering, o aprendizado é não su-
+   pervisionado porque o sistema precisa descobrir
+   a estrutura dos dados por conta própria. 
+

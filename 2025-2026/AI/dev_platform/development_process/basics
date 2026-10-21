@@ -1,0 +1,42 @@
+Pré-processamento de dados:
+-> Para melhorar a acurácia do modelo e garantir a capacidade
+   de generalização, você precisa performar aumento de dados e
+   padronização antes de usar os dados para treinar o modelo. 
+-> Carregue e processe o dataset, incluindo:
+   1. Ler o dataset
+   2. Definir parâmetros necessários para aumento de dados e
+      processamento. 
+   3. Gerar operações de aumento de dados de acordo com os pa-
+      râmetros.
+   4. Processar o dataset gerado.
+
+Treinamento do modelo:
+-> Inicia o treinamento do modelo depois do pré-processamento 
+   de dados e construção da rede do modelo. 
+-> Existem duas maneiras de treinar um modelo: 
+   1. Iniciar o treinamento do zero baseado no dataset. 
+   2. Refinar o dataset em um modelo treinado. 
+-> Ajuste de parâmetros: 
+   Você pode ajustar diferentes combinações de hiperparâmetors
+   durante o treinamento. 
+
+Carregamento do modelo e previsão:
+-> Teste o dataset baseado no peso do modelo treinado. 
+
+Compressão do modelo:
+-> Aumentar o numéro de parâmetros do modelo tem os seguintes
+   impactos:
+   1. Performance da inferência
+      Quando o acesso a largura de banda da memória é limitado,
+      o overhead de transferência de dados aumenta com o peso
+      elevado.
+      Quando não existe capacidade de RAM de vídeo suficiente,
+      o modelo apenas pode ser desenvolvido na CPU, baixando a
+      performance da inferência
+   2. Custo de desenvolvimento
+      Um peso maior requer mais capacidade de armazenamento, over-
+      head de recurso computacional, e capacidade de RAM. 
+   Atualmente, dispositivos com maior RAM e alto acesso à largura de
+   banda da memória são caros. Assim, compressão do modelo é essencial
+   para desenvolver e promover aplicação de IA em dispositivos simples. 
+

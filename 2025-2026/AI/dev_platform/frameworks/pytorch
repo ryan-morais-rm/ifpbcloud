@@ -1,0 +1,9 @@
+Characteristics:
+-> Python primeiro: Pytorch não atrela python ao framework C++ de modo simples. 
+   Em vez disso, ele suporta acesso ao python em nível granular. Desenvolvedores
+   podem usar PyTorch tão facilmente quanto o NumPy ou SciPy. 
+-> Rede neural dinâmica: Por padrão, PyTorch usa grafos computacionais dinâmicos.
+   Programas podem dinamicamente construir ou ajustar grafos durante execução. 
+-> Debug fácil: PyTorch pode gerar grafos dinâmicos durante execução, e desenvol-
+   vedores podem parar o interpretador dentro do debugger e visualizar o output
+   de um node específico. 

@@ -1,0 +1,31 @@
+É uma camada totalmente conectada ou densa, em
+uma CNN serve para classificar a imagem final com
+base nas características de alto nível extraídas
+pelas camadas convolucionais e de pooling anteriores.
+Ela transforma os "mapas de características"(feature
+maps) bidimensionais em uma única saída probabilística
+(como uma classificação). 
+
+-> Extração de características vs classificação:
+As camadas convolucionais atuam como extratores de ca-
+racterísticas(bordas, texturas), enquanto a fully connected
+layer atua como o classificador final. 
+
+-> Conectividade total:
+Como o nome sugere, cada neurônio nesta camad se conecta a 
+todos os neurônios da camada anterior, permitindo que a rede
+combine características globais para tomar a decisão. 
+
+-> Processamento:
+Ela recebe o mapa de características achatado(flattened), apli-
+ca transformações lineares e, geralmente, usa uma função de ati-
+vação softmax para classificar a imagem em categorias.
+
+-> Posição:
+Ela é localizada, quase invariavelmente, no final da CNN, após
+todas as convoluções e poolings.
+
+-> Uso:
+É essencial para identificar o objeto na imagem, agindo como uma
+rede neural tradicional (MLP) acoplada no final da arquitetura. 
+

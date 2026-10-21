@@ -1,0 +1,32 @@
+Elastic Volume Service (EVS): 
+Provê 9 noves de durabilidade. O espaço de armazenamento é pré-locado, e um disco
+pode suportar até 32 TB. Os discos EVS são similares aos discos físicos. O espaço
+de armazenamento no EVS é gerenciado por sistemas operacionais convidados e podem
+ser acessados via APIs. 
+Backup de discos EVS são armazenados no OBS para confiabilidade melhorada. 
+
+Elastic Load Balancing (ELB): 
+Para de distribuir requisições para o servidor de backend doente, porém ele sina-
+liza o alarme e identifica ao administrador que o problema está ocorrendo. 
+
+Relation Database Service (RDS):
+Backups automáticos usam binlogs do banco de dados. Backups são armazenados den-
+tro do OBS. Backups manuais podem ser usados para restaurar dados em qualquer 
+ponto do tempo e backups automáticos também. 
+
+Sistemas distribuídos: 
+Gama de recursos grande usando cloud computing.
+Pressão de requisição balanceada para performance estável. 
+Melhor recuperação de falhas quando um erro ocorre. 
+
+Engenharias do RDS: 
+Suporte -> MySQL, PostreSQL. 
+Não suporta -> Oracle, MongoDB. 
+
+Métodos do ELB de Health Check: 
+Estabelecer uma conexão TCP com uma porta específica do servidor de backend.
+Manda uma requisição HTTP para a porta específica do servidor de backend. 
+
+Componentes da VPC:
+Alto nível -> Subnet, security group, ACLs. 
+Baixo nível -> Roteador, switch. 

@@ -1,0 +1,39 @@
+O Cloud Search Service(CSS) é o serviço de busca distribuída
+e totalmente gerenciado da Huawei Cloud, baseado no motor de
+código aberto ElasticSearch. Ele é projetado para fornecer
+recursos de recuperação, estatística e relatórios para dados
+estruturados e não estruturados(textos, imagens, sons e geo-
+localização) com altíssima performance. 
+
+Vantagens técnicas e performance
+-> Economia com dados frios: O CSS permite reduzir em até 5
+   vezes o custo de armazenamento ao mover dados de índices
+   antigos(frios) para o OBS, liberando memória e cache para
+   dados "quentes".
+-> Aceleração de agregação: Através do uso de visões materi-
+   alizadas, o desempenho de consultas de agragação comple-
+   xas pode ser melhorado em até 100 vezes.
+-> Baixa latência(TP99): Em cenários reais(como recomendação
+   de vídeos), o CSS consegue manter o P99 abaixo de 120ms,
+   mesmo com picos superiores a 8.000 QPS. 
+-> Sincronização diferenciada: Diferente do Elasticsearch pa-
+   drão, o CSS otimiza a sincronização entre clusters de lei-
+   tura e escrita, reduzindo o impacto no desempenho e a va-
+   riação da latência em 30%.
+
+Integração com IA e Big Data
+-> Busca vetorial por IA: Utiliza um motor de vetor baseado 
+   em grafos que melhora a eficiência da busca por imagens e 
+   vídeos em até 10 vezes em comparação com varreduras de ta-
+   bela inteira. 
+-> Análise de logs: É o motor preferencial para analisar logs
+   massivos provenientes do LTS e do AOM, permitindo identifi-
+   car gargalos de sistema e erros em segundos. 
+
+Confiabilidade e Operação(O&M)
+-> Escalabilidade sem interrupção: Você pode expandir nós e 
+   discos com zero tempo de inatividade.
+-> Compatibilidade: Oferece 100% de compatibilidade com as APIs
+   do ElasticSearch, facilitando a migração de aplicações exis-
+   tentes. 
+

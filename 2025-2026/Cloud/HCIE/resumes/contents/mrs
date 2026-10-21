@@ -1,0 +1,50 @@
+Camada 1: Captura e ingestão contínua em larga escala.
+Kafka: 
+Fila de mensagens de altíssima taxa de transferência. Assinatura e
+consumo de dados incrementais de eventos em tempo real(ex: IoT,
+telemetria).
+Flume:
+Serviço de agregação distribuída. Movimentação eficiente e confiável
+de volumes massivos de dados de logs de várias fontes isoladas para
+um repositório centralizado. 
+
+Camada 2: Armazenamento, fundação de persistência.
+HDFS:
+Sistema de arquivos distribuído. Focado em alta taxa de transferência,
+escalabilidade horizontal e tolerância a falhas para conjuntos de
+dados massivos.
+HBase:
+Bando de dados NoSQL orientado a colunas. Ideal para consultas em tempo
+real e leitura/gravação aleatória em tabelas multibilionárias (ex: sé-
+ries temporais, perfis de usuários). 
+
+Camada 3: Computação, o motor onde os dados brutos são transformados.
+Spark: 
+Processamento em memória ultrarrápido. Suporta conversão de dados com-
+plexa, Batch e Micro-batching. 
+MapReduce:
+Motor clássico. Lê e grava em disco a cada iteração. Ideal para processa-
+mento em lote offline pesado e resiliente. 
+Flink:
+Processamento contínuo de streams com estado. Altíssima disponibilidade e 
+consistência exata para dados em tempo real. 
+Storm: 
+Processamento em fluxo distribuído focado em baixíssima latência(milisse-
+gundos) para eventos críticos. 
+
+Camada 4: Extração de inteligência e valor.
+Hive & DWS:
+Data warehouse baseado no ecossistema Hadoop. Permite consultas complexas
+através de sintaxe SQL familiar (HiveQL) sobre petabytes de dados arma-
+zenados.
+MLib (via Spark):
+Biblioteca escalável de Machine Learning. Executa algoritmos avançados co-
+mo classificação, regressão, clustering diretamente sobre os dados distri-
+buídos, sem movê-los. 
+
+O MRS da Huawei além de hospedar o ecossistema Hadoop, ele traz dois com-
+ponentes a mais: DataTurbo e SuperiorScheduler. O DataTurbo trabalha em 
+nível de aceleração de hardware para uma melhor integração entre o OBS
+Data Lake e os núcleos de computação. Além disso, o Superior Scheduler
+é específico da huawei, fazendo um trabalho mais específico do que o 
+Yarn. 

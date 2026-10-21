@@ -1,0 +1,64 @@
+Introdução:
+-> Nova geração de instâncias ECS designadas para empresas 
+   de pequeno/médio portes e desenvolvedores. 
+-> Tipos de instâncias: FlexusL, FlexusX, 
+   FlexusRDS e FlexusCCI. 
+
+
+FlexusL: 
+-> É um pacote de recursos que incluem servidores, discos 
+   EVS, EIPs, CBR vaults e o serviço HSS. Recursos dentro
+   do pacote são criados e gerenciados como um todo. Essas
+   instâncias provêm várias imagens para ajudar você à ra-
+   pidamente configurar seus ambientes. Por fim, o FlexusL
+   é fácil de usar e mais amigável para iniciantes. 
+-> Só suporta arquitetura x86
+-> Só suporta pagamento Anual/Mensal
+-> Só suporta o HSS(básica) e CBR, não tem Cloud Eye. 
+ 
+
+FlexusX:
+-> É um serviço de computação em nuvem flexível designado
+   para pequenas e médias empresas (SMEs) e devs. Ela for-
+   nece funções similares ao ECS, porém também suporta o 
+   ajuste de vCPU/memória e o modo performance. Comparada
+   ao FlexusL, FlexusX oferece mais imagens públicas e mais
+   especificações flexíveis. 
+-> Suporta arquitetura X86 e Arm
+-> Suporta pagamento on-demand e Anual/Mensal
+-> Suporta o HSS(completo), CBR e Cloud Eye. 
+
+
+FlexusRDS:
+-> Suporta os seguintes engines: MySQL e PostgreSQL
+-> Modos de uso: Management console e API
+-> Focado em interface amigável e banco de dados leve
+-> Suporta apenas Anual/Mensal
+-> Recomendado utilizar o DAS para se conectar ao DB
+-> O backup é feito todo dia e são armazenados como pacotes
+   no OBS. Backups automáticos são retidos por 7 dias e po-
+   dem ser usados para restaurar dados dentro daquele perí-
+   odo. Point-in-time (PITR) é suportado, você pode restau-
+   rar dados para uma instância nova ou para a original. 
+-> Backups manuais podem ser baixados para o seu computador,
+   além disso eles não serão deletados, mesmo depois de sete
+   dias. Ambos os manuais e automáticos são alocados no OBS.
+-> Storage Autoscaling é desabilitado por padrão, porém vo-
+   cê pode habilitar depois. 
+-> FlexudRDS é protegido por firewalls para evitar ataques
+   maliciosos como DDoS e injeções SQL. 
+
+
+FlexusCCI:
+-> Prover um modo simples de rodar aplicações em containers,
+   como websites, middleware e applet backends. 
+-> Suporta apenas Linux
+-> Suporta pagamento on-demand.
+-> Desativar o serviço do container irá finalizar os contai-
+   ners e liberar o EIP, os containers não podem acessar a
+   rede pública, então seus custos de rede e computação se-
+   rão economizados. Depois do serviço ser habilitado, os
+   containers irão iniciar de novo, e o novo EIP será assi-
+   nalado ao FlexuCCI.  
+
+

@@ -1,0 +1,40 @@
+Introdução:
+-> É uma função usada principalmente na camada de 
+   saída de redes neurais para classificação multi-
+   classe. Ela transforma os valores de saída da 
+   rede em probabilidades para cada classe. A prin-
+   cipal característica é a soma das probabilidades
+   de todas as classes será sempre igual a 1. Isso
+   permite interpretar a saída como uma distribuição
+   de probabilidade. 
+
+Ideia central:
+-> Quando uma rede neural precisa escolher entre vá-
+   rias classes (mais de duas), ela produz vários
+   valores numéricos na saída. A função softmax trans-
+   forma esses valores em probabilidades.
+   Antes da softmax:
+   gato -> 2.3, cão -> 1.2, pássaro -> 0.5
+   Depois da softmax:
+   gato -> 0.65, cão -> 0.25, pássaro -> 0.1
+
+Utilidade:
+-> Softmax é usada quando queremos escolher uma classe
+   entre várias possíveis. Exemplos: reconhcer dígitos,
+   identificar objeto em imagem, classificar texto em
+   categorias, reconhecimento facial. 
+
+Como funciona (intuição):
+-> A softmax pega todos os valores de saída, transforma
+   em valores positivos, normaliza, gera probabilidade.
+   Ele aumenta diferenças entre valores:
+   maior valor -> probabilidade maior
+   menor valor -> probabilidade menor
+   Isso ajuda na decisão final
+
+Limitações:
+-> Só usada na camada final
+   Não usada em camadas ocultas
+   Não serve para regressão
+   Assume classes mutuamente exclusivas
+

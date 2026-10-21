@@ -1,0 +1,19 @@
+O&M Cloud Services:
+-> Cloud Eye:
+   Foca no monitoramento de infraestrutura, além de prover
+   dados de uso de recursos em tempo real, porém ele não 
+   prover análise de falha da aplicação ou coleta de logs 
+   e análsie estrita. 
+-> LTS:
+   Foca na coleta de logs, armazenamento e análise. Porém,
+   ele não provê funções O&M como monitoramento de métricas,
+   análise de problemas e gerenciamento de alarmes. 
+
+DES:
+É um serviço construído para melhorar a eficiência da trans-
+missão de dados, especialmente para migração de dados em 
+larga escala. Por meio da otimização de protocolos de trans-
+ferência de rede e tecnologias de compressão de dados, ele
+pode rapidamente e estavelmente migrar uma quantidade absur-
+da de dados para a Huawei Cloud. Na escala de PBs de dados. 
+

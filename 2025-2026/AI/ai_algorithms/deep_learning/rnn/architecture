@@ -1,0 +1,34 @@
+Estrutura básica da RNN:
+-> Para cada instante t:
+   xt = entrada atual
+   st = estado/memória
+   ot = saída
+
+Estado st (memória): 
+-> Ele representa a memória da rede naquele momento. 
+   Ele depende de entrada atual, memória anterior. 
+   Ou seja, a rede lembra do passado. 
+-> Fórmula conceitual:
+   memória atual = função(entrada atual + memória anterior)
+   Isso cria dependência temporal
+
+Fluxo de informação:
+-> A RNN funciona assim:
+   palavra1 -> memória
+   palavra2 + memória anterior -> nova memória
+   palavra3 + memória anterior -> nova memória
+   Cada passo usa contexto anterior, isso permite entender
+   frases, e não só juntar tokens baseados em distância de
+   significado. 
+
+Saída da RNN:
+-> Depois de atualizar memória, uma saída é gerada. Geral-
+   mente, se usa softmax. Assim, é possível prever próxima
+   palavra, classe, tradução, sentimento. 
+
+Problema grave:
+-> Vanishing gradient em sequência longa, quanto maior a se-
+   quência, mais difícil lembrar do início. Gradiente passa
+   por muitos passos, fica pequeno e informação se perde.
+   Como resultado, RNN esquece coisas antigas. 
+ 

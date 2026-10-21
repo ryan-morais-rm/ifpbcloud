@@ -1,0 +1,44 @@
+Introdução:
+-> A ideia central do SVM é encontrar a melhor
+   fronteira de separação entre diferentes classes.
+   Essa fronteira é chamada de hiperplano. O obje-
+   tivo do algoritmo é separar os dados de forma 
+   que as classes fiquem o mais distantes possíveis
+   dessa linha (ou plano). Quanto maior a distância
+   entre a fronteira e os pontos de cada classe,
+   melhor a separação. 
+
+Ideia intuitiva:
+-> Imagine um gráfico com dois tipos de pontos:
+   - Classe A / Classe B
+   O SVM tenta desenhar uma linha entre essas duas
+   classes. Mas, não é qualquer linha, ele procura
+   uma linha que maximiza a margem entre as classes.
+   Margem = distância entre a linha e os pontos mais
+   próximos de cada classe. 
+-> Quanto maior a margem:
+   - melhor a separação
+   - maior a capacidade de generalização
+
+Support Vectors:
+-> Os pontos mais importantes para o SVM são os mais
+   próximos da fronteira. Esses pontos são chamados de
+   support vectors. Eles definem a posição da linha de
+   separação. Se esses pontos mudarem, a fronteira muda.
+   Os outros pontos, mais distantes, têm menos influência.
+
+Classificação linear e não linear:
+-> Caso linear:
+   Se as classes puderem ser separadas por uma linha reta:
+   SVM linear funciona bem.
+-> Caso não linear:
+   Muitas vezes os dados não são separáveis por linha reta.
+   Nesse caso, o SVM usa algo chamado kernel trick. 
+   O kernel transforma os dados para um espaço de maior di-
+   mensão, onde eles se tornam separáveis.
+
+Limitações:
+-> Lento em datasets muito grandes, difícil interpretar.
+   Escolha do kernel pode ser complexa, tuning de hiperpa-
+   râmetros necessário. 
+

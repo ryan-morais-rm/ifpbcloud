@@ -1,0 +1,29 @@
+Can ELB route traffic across regions?
+-> Load balancers compartilhados não podem distribuir tráfego 
+   entre regiões. 
+-> Load balancers dedicados podem distribuir tráfego entre regi-
+   ões ou VPCs.
+
+Certificados
+-> Certificados novos possuem efeito imediatamente depois da re-
+   colocação. O certificado velho é usado para estabelecer cone-
+   xões, e o novo é usado para novas conexões. 
+-> Quando o certificado expira, o sistema mostrará uma mensagem
+   indicando que a conexão é insegura. Porém, você pode ignorar
+   o aviso e continuar acessando o website. 
+
+ELB e DDoS:
+-> ELB não provê funções de segurança como bloquear ataques DDoS
+   Porém, o Anti-DDoS é habilitado para os serviços de nuvem por
+   padrão, e todo o tráfego que entrar pela rede pública está 
+   protegido. 
+
+OSs diferentes:
+-> É possível associar servidores de backend que estão rodando 
+   com OSs diferentes com um load balancer. ELB não restringe os
+   OSs de servidores de backend, enquanto as aplicações nestes
+   servidores sejam as mesmas e a consistência de dados seja a 
+   mesma. Para fazer o gerenciamento mais fácil, é recomendado
+   que se instale o mesmo OS nos servidores de backend. 
+
+

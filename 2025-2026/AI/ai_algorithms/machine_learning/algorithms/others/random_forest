@@ -1,0 +1,57 @@
+Introdução:
+-> É um algoritmo de ML baseado em várias árvores
+   de decisão. ELe é um método de ensemble learning,
+   ou seja, combina vários modelos simples para criar
+   um modelo mais forte e preciso. Pode ser usado 
+   tanto para classificação e regressão. A ideia 
+   principal é simples: em vez de usar apenas uma 
+   árvore de decisão, usamos muitas árvores e combi-
+   namos as respostas. Isso melhora a precisão e re-
+   duz erros. 
+
+Ideia intuitiva:
+-> Imagine que você precisa tomar uma decisão
+   importante. Em vez de perguntar para uma ú-
+   nica pessoa, você pergunta para várias. Ca-
+   da pessoa dá uma resposta, depois você de-
+   cide com base na maioria.
+-> Random Forest funciona assim:
+   1. várias árvores -> fazem previsões
+   2. resultado final -> média ou votação
+
+Funcionamento:
+-> O Random forest cria várias árvores de 
+   decisão usando partes diferentes dos dados.
+   Processo:
+   1. Seleciona amostras aleatórias do dataset
+   2. Cria uma árvore de decisão para cada amostra
+   3. Cada árvore faz uma previsão
+   4. Combina as previsões
+   Para classificação:
+   Usa a votação da maioria.
+   Para regressão:
+   Usa a média dos valores previstos. 
+
+Por que usar várias árvores:
+-> Uma única árvore de decisão:
+   Pode sofrer overfitting
+   Memorizar dados
+   Ser instável 
+-> Muitas árvores juntas:
+   Reduzem overfitting
+   Melhorar generalização
+   Aumentam precisão
+-> Isso é chamado de ensemble learning
+
+Aleatoriedade no Random Forest:
+-> O nome "random" vem de dois tipos de alea-
+   toriedade:
+   1. Amostras aleatórias dos dados:
+   Cada árvore treina com subconjunto diferente
+   do dataset. 
+   2. Seleção aleatória de features:
+   Cada divisão da árvore usa apenas algumas 
+   features. Isso faz com que as árvores sejam
+   diferentes entre si. 
+   Diversidade entre árvores -> modelo mais robusto
+

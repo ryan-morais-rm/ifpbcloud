@@ -1,0 +1,11 @@
+Introdução:
+-> Criado para resolver o problema do AdaGrad.
+   Em vez de acumular todos os gradientes: usa
+   média móvel recente. Isso evita que o lear-
+   ning rate vá a zero. Resultado é que o apren-
+   dizado fica mais estável, é rápido, muito u-
+   sado em RNNs. 
+
+Características:
+-> Ele é adaptativo, funciona bem em deep learning,
+   bom para sequências, bom para redes profundas.

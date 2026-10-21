@@ -1,0 +1,13 @@
+Ideia central:
+-> Adiciona uma penalidade baseada no valor absoluto dos pesos.
+
+Objetivo:
+-> Reduzir pesos desnecessários, isso faz com que alguns pesos
+   virem exatamente zero, ou seja elimina features irrelevantes
+   automaticamente.
+
+Efeito principal:
+-> L1 faz feature selection automaticamente, porque pesos pequenos
+   viram zero, modelo fica mais simples, menos overfitting. Assim,
+   o modelo fica esparso. 
+-> Se um peso não ajuda, L1 empurra ele para zero.  

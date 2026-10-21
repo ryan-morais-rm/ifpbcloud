@@ -1,0 +1,39 @@
+Introdução:
+-> Ele é usado quando queremos prever a qual classe um 
+   dado pertence, geralmente em problemas binários.
+   Por exemplo: "spam ou não spam", "fraude ou legítimo",
+   "doente ou saudável", "aprovado ou reprovado". Ele
+   não prevê valores contínuos como a regressão linear.
+   Ele prevê probabilidades de pertencer a uma classe.
+
+Ideia central:
+-> A regressão logística calcula qual a probabilidade
+   de um dado pertencer a uma classe. Por exemplo, pro-
+   babilidade de fraude = 0.9, probabilidade de procedên-
+   cia = 0.1. Depois disso, o modelo define um limite 
+   (geralmente 0.5): se > 0.5 -> classe positiva. Se < 0.5
+   -> classe negativa. 
+
+Nome logística:
+-> Porque usa a função sigmoid. Essa função transforma
+   qualquer número em um valor entre 0 e 1. Isso permite
+   interpretar a saída como probabilidade.
+-> Formato da curva:
+   nunca menor que 0
+   nunca maior que 1
+   formato em "S"
+-> Características importantes:
+   Modelo supervisionado, ou seja precisa de dados rotula-
+   dos. Classificação probabilística, sempre gera probabi-
+   lidade antes da decisão final. Linear, a regressão lo-
+   gística é um modelo linear, ela funciona melhor quando
+   as classes podem ser separadas de forma aproximadamente
+   linear. 
+-> Vantagens:
+   Simples de treinar, rápido, interpretável, funciona bem
+   em muitos problemas reais, bom baseline de classificação. 
+-> Desvantagens:
+   Dificuldade com relações muito complexas, não funciona 
+   bem se dados não forem linearmente separáveis, menos po-
+   deroso que as redes neurais ou random forest.
+ 

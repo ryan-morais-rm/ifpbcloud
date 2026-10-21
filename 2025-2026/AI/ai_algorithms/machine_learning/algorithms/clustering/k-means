@@ -1,0 +1,47 @@
+Introdução:
+-> A ideia principal é dividir os dados em K grupos
+   com base na similaridade entre eles. Cada grupo
+   é chamado de cluster. 
+
+Intuição básica:
+-> Imagine um conjunto de pontos espalhados em um
+   gráfico. O k-means tenta organizar esses pontos
+   em grupos onde os pontos de um mesmo grupo são
+   parecidos entre si. Por exemplo: clientes com
+   comportamento parecido, imagens semelhantes,
+   padrões de consumo, perfis de usuários. 
+
+Significado do "k":
+-> Representa números de clusters desejados. Se k = 3,
+   o algoritmo cria 3 grupos. O valor de k é escolhi-
+   do antes do treinamento. 
+
+Funcionamento:
+-> 1. Escolhe K pontos iniciais (centroides) 
+   2. Cada dado é associado ao centro mais próximo
+   3. Recalcula o centro de cada grupo
+   4. Repete o processo até estabilizar
+   O processo termina quando os grupos não mudam mais
+
+Centróide:
+-> Cada cluster tem um ponto central, ele representa
+   o centro do grupo. O algoritmo ajusta esses centro-
+   ides até encontrar a melhor posição. 
+
+Objetivo:
+-> Minimizar a distância entre pontos e seu centróide.
+   Ou seja, pontos de um cluster ficam próximos, clus-
+   ters ficam bem separados. Quando menor a distância
+   interna: melhor o agrupamento. 
+
+Características:
+-> Não supervisionado, baseado em distância.
+   Precisa definir "k" antes.
+   Muito usado em análise exploratória. 
+
+Limitações:
+-> Sensível à escolha inicial dos centroides.
+   Sensível à outliers.
+   Não funciona bem com clusters de formato irregular.
+   Assume clusters circulares. 
+

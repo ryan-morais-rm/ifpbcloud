@@ -1,0 +1,29 @@
+Tipos de ML:
+-> Supervised Learning:
+   O programa pega um conjunto de amostras conhe-
+   cidas e treina um modelo otimizado para gerar
+   previsões. Então, o modelo treinado mapeia to-
+   dos os inputs para os outputs e performa um 
+   julgamento simples nos outputs. Desta maneira,
+   dados desconhecidos são classificados. 
+-> Unsupervised Learning:
+   O programa constrói um modelo baseado em input
+   de dados não rotulados. Por exemplo, um modelo
+   de clustering agrupo objetos baseado em simila-
+   ridades. Algoritmos de aprendizado não supervi-
+   sionado modelam as amostras com maiores simila-
+   ridades, calculam a similaridade entre as amos-
+   tras novas e existentes, e classificam as novas
+   amostram, por meio da similaridade.
+-> Semi-supervised Learning:
+   O programa treina um modelo, por meio da combi-
+   nação de uma quantidade pequena de dados rotu-
+   lados e uma grande quantidade de dados não ro-
+   tulados. 
+-> Reinforcement Learning: 
+   Os sistemas aprendem o comportamento do ambien-
+   te para maximizar o valor da recompensa. O a-
+   prendizado reforçado diverge do conexionismo do
+   aprendizado supervisionado, isso é, no lugar de
+   dizer o sistema a ação correta, o ambiente provê
+   sinais de reforço escalares para melhorar ações. 

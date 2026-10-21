@@ -1,0 +1,30 @@
+Introdução:
+Cloud connect provê tanta conexões de nuvem e redes centrais que
+permitem a conexão de VPCs em regiões diferentes, para que então
+estas VPCs possam se comunicar por uma rede privada como se elas
+estivessem na mesma rede. Cloud connect também trabalha com o 
+Direct Connect para configurar uma ambiente de nuvem híbrida que
+habilita data-centers locais à acessar as VPCs entre regiões. 
+
+Cloud connection:
+- Conecta VPCs em regiões diferentes para configurar uma única 
+  rede privada virtual. Ademais, conecta data centers locais
+  com VPCs em diferentes regiões para configurar um ambiente de
+  rede de nuvem híbrida. 
+- Bandwidth:
+  É necessário comprar e atrelar um pacote de largura de banda 
+  para a nuvem e atrelar bandwidths inter-regionais para habi-
+  litar conexão entre instâncias de rede em diferentes regiões. 
+
+Central network:
+- Conecta VPCs em regiões diferentes, atrelando estas aos enter-
+  prise routers nas regiões correspondentes. 
+- É possível conectar data centers dedicados à VPCs em diferen-
+  tes regiões, atrelando-os aos enterprise routers às regiões 
+  correspondentes. 
+- Bandwidth:
+  É necessário comprar e atrelar uma bandwidth de conexão global
+  para a rede central e atrelar conexões de larguras de banda 
+  cross-site para habilitar comunicação entre os recursos em di-
+  ferentes regiões. 
+

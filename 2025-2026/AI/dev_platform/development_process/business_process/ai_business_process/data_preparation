@@ -1,0 +1,30 @@
+Data Collection: 
+-> Sistema de computação:
+   Coleta dados comportamentais históricos dos usuários, os quais
+   podem incluir histórico de compras, pequisa e avaliações. Da-
+   tasets públicos podem ser usados, por exemplo o MovieLens. 
+-> Visão computacional:
+   Obter imagem diversificada ou dados de vídeos em campos relaci-
+   onados para cobrir vários objetos, cenários e condições que o 
+   modelo deve reconhcer. É possível utilizar datasets públicos co-
+   como o ImageNet, COCO...
+-> Processamento NLP:
+   Usar rastreadores para obter textos relacionados da internet, ou
+   obter texto de datasets públicos, livros, jornais e plataformas 
+   de mídia social. Além disso, questionários também são uma medida
+   efetiva para coletar dados específicos. 
+
+Data Collection:
+-> Limpeza de dados:
+   Este processo remove informação incorreta e desnecessária, tais 
+   quais como imagens duplicadas, imagens irrelevantes, itens de tex-
+   to duplicados, erros de digitação...
+-> Feature engineering:
+   Extração de features importantes de dados crus pode ser necessária,
+   baseada nos requerimentos do sistema de recomendação. Tais features
+   incluem informação pessoal do usuário, atributos de objetos, e com-
+   portamento do usuário. O propósito do feature engineering é criar
+   features que podem ajudar o modelo a melhor entender dados, melho-
+   rando a acurácia da recomendação. 
+ Atualmente, visão computacional e NLP não requerem esta operação.
+

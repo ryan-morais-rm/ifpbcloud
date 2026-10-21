@@ -1,0 +1,42 @@
+Introdução:
+-> O PCA é uma técnica usada para redução de dimen-
+   sionalidade. Ele serve para reduzir o número de
+   variáveis de um dataset mantendo o máximo possí-
+   vel de informação importante. Em termos simples:
+   PCA transforma muitas variáveis em poucas variá-
+   veis mais informativas. Ele é considerado uma téc-
+   nica de aprendizado não supervisionado. 
+
+Necessidade:
+-> Muitos datasets têm muitas features, informações
+   redundantes, correlação entre variáveis. Isso cau-
+   sa modelos lentos, overfitting, difícil visualiza-
+   ção e alto custo computacional. 
+
+Ideia central:
+-> PCA cria novas variáveis chamadas: componentes prin-
+   cipais. Essas novas variáveis são combinações das 
+   variáveis originais. Capturam a maior variação dos
+   dados. Além disso, são independentes entre si. 
+-> Objetivo: 
+   Manter a maior quantidade de informação com menos
+   dimensões desnecessárias. 
+-> Exemplo simples:
+   Imagine um dataset com 100 variáveis, muitas delas
+   são parecidas. O dataset pode transformar isso em 
+   10 variáveis principais, mantendo maior parte da 
+   informaçaõ original, isso reduz complexidade. 
+
+Funcionalidade:
+-> Ele encontra as direções onde os dados variam mais.
+   Essas direções contêm mais informação, depois pro-
+   jeta os dados nessas direções. Resultado: menos di-
+   mensões, menos redundância, mais eficiência. 
+
+Vantagens:
+-> Redução de features, menos variáveis deixa o modelo
+   mais rápido. 
+   Visualização de dados, reduz para 2D ou 3D para a 
+   plotagem de gráficos. 
+   Remoção de correlação, criando variáveis standalones.
+

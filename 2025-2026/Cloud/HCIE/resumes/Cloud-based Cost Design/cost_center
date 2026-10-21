@@ -1,0 +1,18 @@
+Cost Center:
+Um conjunto de ferramentas para rastrear, analisar e explorar custos da nuvem.
+
+1. Cost analysis
+-> Tabelas com dados de custos.
+
+2. Budget management
+-> Custo rastreado e uso baseado em budgets configurados.
+
+3. Report management
+-> Reports de análises de custos salvos.
+
+4. Billing mode
+-> Informação sobre custos de recursos, incluindo recursos reservados.
+
+5. Cost tags
+-> Tags para gerenciar recursos e rastrear seus custos.
+

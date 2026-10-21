@@ -1,0 +1,66 @@
+Otimização de computação e programação
+-> Os frameworks de IA abstraem a estrutura de computação do
+   modelo em grafos computacionais. Os grafos entendem, ex-
+   pressam e executam um modelo de rede neural, por meio de
+   uma estrutura de dados comum que são tensores. Eles tam-
+   bém automaticamente difereciam isto baseado em grafos com-
+   putacionais.
+
+Tensores:
+-> É a estrutura de dados mais básica dentro do framework de 
+   desenvolvimento de IA. Todos os dados são encapsulados den-
+   tro deles.
+   Definição: um array multidimensional 
+-> Atribtuos:
+   1. Shape -> tamanho da dimensão de cada tensor. 
+   2. Rank/dimension -> Números de dimensões do tensor. o valor
+      é 0 para escalar e 1 para vetor. 
+   3. Data type/dtype -> Tipo de dado de um tensor, por examplo,
+      bool, uint8, int16, float32, float64...
+   4. Storage position -> Posição do dispositivo onde o tensor
+      está localizado, por exmplo, NPU ou GPU.
+   5. Name -> Identificador do Tensor. 
+   Um dataset carregado usualmente tem a forma de um tensor multi-
+   dimensional. Dados sequenciais geralmente estão em um formato 
+   tridimensional. Já dados de imagens estão em tensores quadrimen-
+   sionais. 
+
+TFRecord:
+-> Se um dataset possui muitos dados, pode ser mais efi-
+   ciente serializar os dados e armazená0los em um grupo
+   de arquivos que podem ser linearmente lidos. Este mé-
+   todo é particularmente adequado para streaming de da-
+   dos na rede. Isto é também mais utilizável para pré-
+   processamento quando está carregando quaisquer dados. 
+
+Grafo computacional:
+-> Provê uma maneira intuitiva de descrever o processo
+   de computação em um modelo de deep learning. Cada node
+   representa uma operação computacional, por exemplo, 
+   adição, multiplicação e função de ativação. Uma borda
+   representa um fluxo de dados entre estas operações. 
+   Este método de representação estruturada faz computa-
+   ção complexa fácil de entender e analisar. 
+-> Composição:
+   Um grafo computacional contém tensores (estrutura de
+   dados básica) e operadores (unidades básicas de ope-
+   ração). Os nodes operadores dentro de um grafo estão
+   conectados com bordas direcionadas, as quais indicam
+   o estado de cada tensor e as dependências entre as 
+   operações.
+-> Tipos:
+   Grafos estáticos:
+   O programador define primeiro toda a estrutura da rede
+   neural e, só depois, o framework a compila e executa.
+   Frameworks como o TensorFlow 1.x utilziam essa aborda-
+   gem. A grande vantagem é a performance; o compilador
+   conhece todos os detalhes do grafo antes da execução
+   e pode realizar otimizações profundas, como reutiliza-
+   ção de memória e paralelização de operações. 
+   Grafos dinâmicos:
+   A estrutura do grafo é construída na sequência em que
+   o código é escrito. O PyTorch é o exemplo clássico, 
+   permitindo que você use estruturas nativas do Python,
+   como "if" e "for", diretamente na construção do modelo.
+   Isso torna o desenvolvimento muito mais intuitivo. 
+

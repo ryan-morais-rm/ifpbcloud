@@ -1,0 +1,40 @@
+Introdução:
+-> Uma CNN é um tipo de rede neural profunda especializada
+   em processamento de imagens e visão computacional. Ela
+   também é uma "feedforward neural network"(fluxo só pa-
+   ra frente). Ou seja, entrada -> camadas -> saída. 
+
+Motivação:
+-> Redes neurais normais (fully connected) são ruins para 
+   imagem porque, imagens possuem muitos pixels, muitos pa-
+   râmetros, perde estrutura parcial, muito pesado compu-
+   tacionalmente. 
+-> CNN resolve isso usando convolução + filtros. Ela conse-
+   gue extrair padrões visuais automaticamente. 
+
+Estrutura de uma CNN
+-> Convolution layer
+   É o coração da CNN, ela usa filtros(kernels). Um filtro é
+   uma pequena matriz que percorre a imagem. Ela detecta pa-
+   drões como bordas, texturas, formas, objetos. 
+   Filtro(kernel) é uma pequena matriz de pesos. Ele desliza
+   pela imagem e faz multiplicações. Resultado é a criação do
+   "feature map", cada filtro aprende um padrão visual.
+   - Local receptive field:
+     Signifca que cada neurônio vê apenas uma pequena parte da 
+     imagem. Ele não vê imagem inteira, porque pixels próximos
+     têm relação mais forte.
+   - Parameter sharing:
+     Signicia que o mesmo filtro é usado em toda a imagem. Ou
+     seja, o kernel que detecta borda é o mesmo para toda a ima-
+     gem. Ele percorre toda a imagem usando mesmos pesos, isso
+     reduz muito o número de parâmetros.  
+-> Pooling layer
+   Depois da convulação vem pooling. Objetivo dele é reduzir o
+   tamanho da imagem. Ele pega regiões e resume. Por exemplo,
+   o "max pooling": pega maior valor, como resultado menos dados,
+   mais rápido, menos overfitting, mantém padrões importantes. 
+-> Fully connected layer
+   Última parte da CNN. Depoisde extrair features, a rede decide
+   a classe final. Funciona como rede neural tradicional. 
+

@@ -1,0 +1,7 @@
+Resumo comparativo:
+
+Características    Paralelismo de Dados(DP)          Paralelismo de Tensores(DP)
+O que é dividido?  O conjunto do dataset             O modelo/camada (Tensor de pesos)
+O modelo na placa  Cada placa tem o modelo completo  Cada placa tem apenas uma "fatia"
+Principal ganho    Velocidade de processamento       Capacidade de carregar modelos gigantes
+Complexidade       Menor; usa comunicação AllReduce  Maior; exige comunicação intensa; 

@@ -1,0 +1,53 @@
+Introdução:
+Roma connect foca na aplicação e conexão de dados. Ele 
+provê mensagens leves, dados, API, modelo e integração de
+dispositivos para simplificar o fluxo de "cloudificação"
+das empresas e suporta integração "cross-regional" para a
+nuvem e aplicações on-prem. 
+Os modos suportados de pagamento são Anual/Mensal, on-de-
+mand, e em pacotes. 
+
+Roma Connect consiste de 4 componentes: integração de da-
+dos (FDI), integração de serviço (APIC), integração de 
+mensagens (MQS) e integração de dispositivos (LINK). 
+
+- FDI:
+Por exemplo, se uma empresa e seus parceiros utilizam 
+fontes de dados diferentes, eles podem encontrar dificul-
+dade para atingir uma transmissão de dados efetiva. FDI
+prover múltiplos métodos para converter formatos de dados
+de origem mainstream como MySQL, Kafka e API. 
+
+- APIC:
+Por exemplo, se o centro de uma companhia integra seu
+sistema de TI com suas branches de diferentes regiões, é
+muito complexo diretamente acessar o banco de dados de um
+e do outro e vazamento de informações pode ocorrer. 
+O APIC abre dados e serviços de backend para simplificar
+o compartilhamento de dados e provisionamento de serviços
+e reduzir os custos de interconexão. 
+
+- MQS:
+É um componente de integração de mensagens do ROMA. MQS
+é baseado no kafka, onde ele usa um mecanismo de acesso
+unificado para garantir que as empresas possuam canais
+de acesso seguro e de mensagens para acesso de rede. 
+
+- LINK
+Compoente para integração de dispositivos. Ele usa o pro-
+tocolo MQTT para conectar dispositivos, ajudando empresas
+a rapdiamente e facilmente gerenciar serviços na nuvem. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

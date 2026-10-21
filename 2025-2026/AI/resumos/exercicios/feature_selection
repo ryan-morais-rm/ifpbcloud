@@ -1,0 +1,69 @@
+1. According to the sources, which problem is directly addressed by feature selection when the number of 
+   features increases exponentially, leading to higher computational costs? 
+   A. Underfitting 
+   B. The curse of dimensionality 
+   C. Learning rate decay 
+   D. Vanishing gradients
+
+2. Which feature selection method is characterized by being completely independent of the learning models
+   used during the selection process? 
+   A. Wrapper methods 
+   B. Embedding methods 
+   C. Filter methods 
+   D. Regularization methods
+
+3. Which method treats feature selection as a "search issue," evaluating different combinations of 
+   features based on the resulting model accuracy? 
+   A. Filter methods 
+   B. Wrapper methods 
+   C. Embedding methods 
+   D. Manual data cleansing
+
+4. In the context of text classification (using BoW or TF-IDF), why is feature selection specifically 
+   recommended? 
+   A. Because the resulting features are typically low-dimensional and dense. 
+   B. To handle data that is typically high-dimensional and sparse, which leads to poor training performance. 
+   C. To replace the need for tokenization. 
+   D. To increase the number of parameters in the model.
+
+5. Which of the following are identified as common statistical measurements used in Filter methods? 
+   (Select all that apply) 
+   A. Pearson correlation coefficient 
+   B. Recursive feature elimination 
+   C. Chi-square coefficient 
+   D. Mutual information 
+   E. Information gain
+
+6. What are the primary reasons for performing feature selection in a machine learning pipeline? 
+   (Select all that apply)
+   A. To simplify models for easier interpretation. 
+   B. To increase the training time for better convergence. 
+   C. To avoid the curse of dimensionality. 
+   D. To improve model generalization and avoid overfitting.
+
+7. Regarding Wrapper methods, which of the following statements are correct? (Select all that apply) 
+   A. They are computationally efficient because they do not require training new models. 
+   B. They treat feature selection as a search for the best feature subset. 
+   C. They provide feature sets that are usually optimized for a specific type of model. 
+   D. They are prone to selecting redundant variables because they ignore feature relationships.
+
+8. Which of the following are examples of "Embedding" or "Wrapper" techniques mentioned in the sources? 
+   (Select all that apply) 
+   A. LASSO regression 
+   B. L1 Regularization 
+   C. Recursive feature elimination 
+   D. Mutual information scoring
+
+9. True or False: Filter methods are known for their limitation of selecting redundant variables because 
+   they do not consider the relationships between features.
+
+10. True or False: Embedded methods perform feature selection as a part of the modeling process, 
+    with regularization being the most common approach to bias the model toward lower complexity.
+
+11. True or False: Wrapper methods are generally less computationally intensive than Filter methods because 
+    they only score features once using statistical measurements.
+
+12. True or False: In LASSO regression (L1 regularization), parameters can be directly reduced to zero if 
+    they are small enough, which serves as a mechanism for feature selection
+
+Gabarito: 1-B, 2-C, 3-B, 4-B, 5-A,C,D,E, 6-A,C,D, 7-B,C, 8-A,B,C, 9-True, 10-True, 11-False, 12-True.

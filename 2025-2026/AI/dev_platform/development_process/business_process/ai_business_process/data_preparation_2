@@ -1,0 +1,16 @@
+Rotulagem de dados:
+-> Para tarefas de aprendizado supervisionado, é necessário rotular
+   cada item de dado com o rótulo correto. Isto pode ser performado
+   manualmente ou usando tools automatizadas. A qualidade e acurácia
+   da rotulagem são cruciais para que o treinamento do modelo seja
+   efetivo. 
+
+Divisão do dataset:
+-> Dividir o dado limpo e rotulado em sets de treinamento, validação e
+   teste. O training test é usado para treinar o modelo, o set de va-
+   lidação é usado para ajustar os parâmetros do modelo e selecionar o
+   melhor modelo, e o test set é usado para avaliar a performance. 
+
+Pré-processamento:
+-> Pré-processa os dados, como normalização e codificação, ficando mais
+   fácil para o modelo processar. 

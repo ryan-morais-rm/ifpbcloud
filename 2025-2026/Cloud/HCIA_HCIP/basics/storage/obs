@@ -1,0 +1,65 @@
+Redundância do OBS:
+Ele utiliza o algoritmo Erasure Code(EC), no lugar de copiar o 
+arquivo múltiplas vezes para garantir redundância de dados. 
+Comparado com a redundância de múltiplas cópias. EC entre uma 
+utilização de espaço maior enquanto mantém o mesmo nível de 
+confiabilidade. 
+Um bucket com armazenamento single-AZ usa o algoritmo EC para re-
+dundância de dados entre todos os nodes em uma AZ. Um bucket com
+armazenamento multi-AZ não apenas garante redundânci para os no-
+des armazenamento na AZ, mas também entre múltiplas AZs. 
+
+Leitura extra no OBS:
+OBS apenas determina se os blocos de dados existem ou se estão
+danificados (reparação de dados, se necessário) pelo escaneamento
+dos dados. Ele não lê dados específicos. 
+
+Implementação de Backup e DR:
+É possível habilitar o modo multi-AZ quando se cria um bucket, 
+então o dado é armazenado em múltiplas AZs de modo redundante. 
+É possível, também, habilitar a função de replicação nas regiões.
+Então, os dados são copiados de uma região para outra região. 
+
+Suporte à upload com criptografia:
+OBS provê uma função de criptografia server-side. Você pode crip-
+tografar objetos enquanto faz o upload. O dado é criptografado no
+servidor e então armazenado no OBS. Quando se baixa um arquivo 
+criptografado, ele será descriptografado no servidor e então exi-
+bido em texto plano. 
+
+Tipos de websites:
+Websites estáticos podem conter páginas web estáticas e alguns
+scripts que podem rodar no lado do cliente, como JavaScript. 
+OBS suporta a hospedagem estática de websites. 
+
+Vantagem em cima do SAN e NAS:
+Armazenamento do OBS é adequado para aplicações web. Um espaço 
+de bucket massivo é provido baseado no endereço da URL para ar-
+mazenar uma quantidade vasta de objetos. OBS adota uma arquite-
+tura plana. Usuários não precisam manter diretórios de arquivos
+complexos. Não existe necessidade de se preocupar sobre faltar 
+espaço porque o armazenamento que o bucket pode prover é prati-
+camente ilimitado. 
+
+Movendo arquivos entre Buckets:
+É possível utilizar o OBS Browser+ ou obsutil para mover arquivos
+dentro da mesma região. É possível mover um único arquivo ou pas-
+ta para outro caminho especificado. Depois do arquivo ou pasta 
+ser movido, o arquivo ou pasta no caminho de origem é deletado. 
+Além disso, é possível utilizar o OMS para migrar dados entre 
+buckets OBS por contas, regiões ou dentro da mesma região. 
+
+Upload em blocos:
+OBS console permite o upload de arquivos em blocos. Até 100 ar-
+quivos por vez, com um total de não mais que 5GB. 
+OBS Browser+ suporta upload em blocos. Com um máximo de 500 ar-
+quivos ou pastas de uma vez. 
+Obsutil suporta upload de uma pasta com o máximo de 48.8TB.
+SDKs e APIs não suportam. 
+
+
+
+
+
+
+ 

@@ -1,0 +1,37 @@
+Introdução: 
+CCI utiliza o modelo serverless para permitir que você
+diretamente faça o deploy e rode cargas de trabalhos em
+containers, por meio do console, APIs, e ccictl. Você
+apenas precisa pagar pelos recursos que você consumiu. 
+Suporta o modo de cobrança on-demand e mensal/anual. 
+
+Conceitos básicos:
+CCI provê APIs baseadas no k8s e permite você criar recur-
+sos associados, por meio do console ou APIs. Antes de vo-
+cê usar CCI, você é avisado de entender conceitos básicos
+relacionados para entender melhor o CCI. 
+
+Limitações:
+VPC endpoints são necessários para puxar imagens do SWR. 
+Atualmente, VPC endpoints não podem ser criados automati-
+camente. Então, antes de usar o CCI 2.0, você precisa ma-
+nualmente criar os VPCEPs. 
+
+Segurança:
+- Service:
+É um método de expor uma aplicação de rede rodando em um
+pod ou um grupo de pods como serviço de rede. Cada objeto
+de serviço define um conjunto lógico de endpoints (usual-
+mente pods) e políticas para acessar estes pods. 
+- ConfigMap:
+É usado para armazenar configuração em formatos de chave-
+valor, ou em arquivos de config. São similares aos secrets
+porém eles podem armazenar dados não confidenciais utili-
+zando strings. 
+- Secret:
+É um objeto para armazenar dados sensíveis como informação
+de autenticação, certificados, e chaves privadas. Secrets
+podem ser usados como variáveis de ambiene ou de outros 
+modos quando um container é iniciado. 
+
+

@@ -1,0 +1,64 @@
+A Fundação: Arquitetura 1+3+4
+4 -> Conexões essenciais:
+     Aplicações, desenvolvedores, organizações e IoT.
+3 -> Serviços de capacitação:
+     ModelArts + DAYU + ROMA
+1 -> Infraestrutura QingTian:
+     Colaboração nuvem-borda-dispositivo, computação
+     multi-arquitetura e sinergia de hardware-software.
+
+O motor de criação: ModelArts (Plataforma E2E)
+1. Processamento de dados
+   Preparação e rotulagem automatizada.
+2. Desenvolvimento de algoritmos
+   Suporte a frameworks mainstream (TensorFlow, PyTorch
+   e nativos MindSporte). 
+3. Treinamento de Modelos
+   Agendamento inteligente, chips Ascend/GPU, 30% mais
+   performance.
+4. Implantação de serviços
+   Implantação em nuvem, borda e dispositivo (Sinergia
+   Device-Cloud).
+
+A Transformação: ModelArts PRO & NLP
+1. O Caos:
+   Dados brutos corporativos, gravações de call center,
+   documentos em formato livre. 
+2. ModelArtsPro (NLP Suite) 
+   A ponte entre IA geral e IA corporativa especializada.
+   Reconhecimento de entidades nomeadas
+   Extração de Palavras-chave
+   Análise de sentimento
+   Resumo de texto
+   Identificação de intenções
+3. A estrutura
+   Textos e áudios transformados em nós de informação
+   matemática. 
+
+O Cérebro digital contínuo
+1. Ingestão(Speech/Text)
+   Dados entram (ex: chamadas). SIS transcreve voz para texto.
+2. Compressão(NLP) 
+   O ModelArts NLP analisa a intenção e extrai as entidades do
+   texto. 
+3. Estruturação(Knowledge Graph)
+   Textos são ingeridos para construir a Teia de conhecimento.
+4. Inferência e Análise(GES)
+   GES consulta rapidamente o grafo para encontrar padrões ocultos.
+5. Resposta(NLP e TTS)
+   Conhecimento é convertido para voz e entregue em milissegundos. 
+
+Matriz de Impacto: Fraude vs Recomendação
+1. Risco(Detecção de fraude)
+   Como funciona:
+   O GES rastreia comportamentos anormais e analisa o risco de cré-
+   dito em tempo real. Identifica fraudadores ocultos através de 
+   análise de relações indiretas e circulares em operações finan-
+   ceiras complexas. 
+2. Oportunidade(Sistemas de recomendação)
+   Como funciona:
+   O GES consulta rapidamente características complexas(ex: com-
+   prado por amigos, interesses em comum) em redes de mais de 100
+   milhões de usuários, superando as severas limitações de banco
+   de ddos relacionais tradicionais.
+

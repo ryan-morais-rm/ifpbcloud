@@ -1,0 +1,32 @@
+Introdução:
+-> Regularização é um conjunto de técnicas utilizadas
+   para evitar o overfitting, garantindo que o modelo
+   aprenda padrões gerais dos dados em vez de "memo-
+   rizar" o conjunto de treinamento. Quando uma rede
+   neural é muito complexa ou treinada por muito tem-
+   po, ela tende a aprender ruídos e detalhes especí-
+   ficos que não se aplicam a novos dados; a regula-
+   rização adiciona restrições ao treinamento para 
+   manter o modelo mais simples e robusto.
+
+Métodos:
+-> Dropout:
+   Durante o treinamento, uma parte aleatória dos neu-
+   rônios é "desativada"(ignorada) a cada iteração, for-
+   çando a rede a aprender representações mais diversas
+   e não depender excessivamente de neurônios específicos.
+-> Regularização L2:
+   Adiciona uma penalidade à função de perda baseada no 
+   quadrado da magnitude dos pesos. Isso incentiva a rede
+   a manter os pesos pequenos, gerando um modelo mais sua-
+   ve e menos sensível a ruídos. 
+-> Regularização L1:
+   Adiciona uma penalidade baseada no valor absoluto dos
+   pesos, o que pode levar alguns pesos a zero, promovendo
+   a seleção de características e tornando o modelo mais
+   esparso. 
+-> Aumento de dados:
+   Cria novas amostras de treinamento baseadas em transfor-
+   mações(rotação, corte, zoom) dos dados originais, aumen-
+   tando a diversidade e reduzidno a memorização. 
+

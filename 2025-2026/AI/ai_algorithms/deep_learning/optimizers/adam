@@ -1,0 +1,9 @@
+Adam combina: Momentum + RMSProp
+
+Ele usa a média dos gradientes (momentum), média dos
+quadrados dos gradientes (RMSProp). 
+
+Resultado: 
+Converge rápido, estável, pouco tuning necessário,
+funciona bem na maioria dos problemas. É o otimizador
+padrão em deep learning. 

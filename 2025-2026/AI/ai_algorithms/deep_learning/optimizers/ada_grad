@@ -1,0 +1,13 @@
+Introdução
+-> "Gradiente adaptativo", primeiro optimizer adapta-
+    tivo famoso. Ideia principal é que cada peso tem
+    seu próprio learning rate. Se um peso recebe mui-
+    tos updates: learning rate diminui. Se recebe pou-
+    cos: learning rate permanece alto. Isso ajuda em 
+    dados esparsos, NLP, features raras.
+
+Problema:
+-> O learning rate diminui demais com o tempo. Pode fi-
+   car muito pequeno e assim o aprendizado para. Por
+   isso, caiu em desuso em deep learning moderno. 
+

@@ -1,0 +1,54 @@
+Introdução:
+-> GMM é um algoritmo usado para clustering e 
+   modelagem de distribuição de dados. A ideia
+   principal é que os dados são gerados por uma
+   mistura de várias distribuições gaussianas
+   (normais). Cada grupo de dados é representado
+   por uma "gaussiana" diferente.
+
+Ideia intuitiva:
+-> Imagine um conjunto de pontos em um gráfico,
+   esses pontos não estão distribuídos aleatori-
+   amente, eles formam grupos. Então, o algoritmo
+   tenta descobrir quantas gaussianas existem,
+   onde estão, como estão distribuídas. Cada gaus-
+   siana representa um cluster. 
+
+Distribuição gaussiana:
+-> É a famosa curva em formato de sino, ela é de-
+   finida por média (centro), variância (espalha-
+   mento). O GMM usa várias dessas curvas para re-
+   presentar os dados.
+
+Diferença principal do k-menas:
+-> K-means:
+   1. Cluster rígido
+   2. Cada ponto pertence a 1 grupo
+   3. Baseado em distância
+   4. Clusters circulares
+-> GMM:
+   1. Cluster probabilístico
+   2. Cada ponto tem probabilidade de pertencer
+      a um grupo. 
+   3. Mais flexível
+   4. Clusters podem ter formatos diferentes
+   GMM é mais sofisticado que o k-means.
+
+Como o GMM aprende:
+-> Ele usa um algoritmo chamado: EM (Expectation-
+   Maximization).
+   Processo simplificado:
+   1. Assume posições iniciais das gaussianas
+   2. Calcula probabilidade de cada ponto
+   3. Ajusta gaussianas
+   4. Repete até convergir
+
+Quando usar GMM:
+-> Dados complexos
+   Clusters não circulares
+   Precisa probabilidade de pertencimento
+   Modelagem estatística
+   Segmentação avançada
+
+
+

@@ -1,0 +1,8 @@
+Characteristics:
+-> É uma plataforma de machine learning open-source feita pelo Google. Ele pro-
+   vê acesso a múltiplas APIs, como a do Keras para rapidamente construir e 
+   treinar modelos. 
+-> Ferramentas: TensorFlow.js, TensorFlow Lite -> framework de deep learning para 
+   on-device inference, ele pode ser usado para desenolver modelos de machine lear-
+   ning em dispositivos mobile e IoT. TensorFlow TFX -> pipeline de machine learning.
+

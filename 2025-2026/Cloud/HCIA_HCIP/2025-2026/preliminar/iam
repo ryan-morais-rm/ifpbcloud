@@ -1,0 +1,31 @@
+IAM:
+-> Permissions:
+   Roles: Uma estratégia de autorização rígida provida pelo IAM
+   para assinalar permissões baseada em responsabilidades de tra
+   balho do usuário. Apenas um número limitado de roles em nível
+   de serviço estão disponíveis para autorização. 
+   Policies: Uma estratégia de autorização refinada que define
+   permissões necessárias para performar operações em recursos
+   de nuvem específicos debaixo de certas condições. Este tipo
+   de autorização é mais flexível e é ideal para acesso de menor
+   privilégio. Por exemplo, você pode garantir que usuários ape-
+   nas podem ter permissões para gerenciar ECSs de um tipo espe-
+   cífico. IAM suporta tanto policies definidas pelo sistema 
+   quanto as definidas de modo customizado. 
+
+-> Projects:
+   Uma região corresponde à um projeto. Projetos padrões são de-
+   finidos por grupo e fisicamente isolam recursos de computação
+   armazenamento e rede entre regiões. É possível garantir per-
+   missões de usuários em um projeto padrão para acessar todos
+   os recursos dentro da região associada com o projeto. Se é
+   necessário controle de acesso mais refinado, você pode criar
+   subprojetos dentro um projeto padrão e comprar recursos nes-
+   ses subprojetos. 
+   Enterprise project: 
+   Permite você agrupar e gerenciar recursos entre regiões. Re-
+   cursos dentro desses projetos são logicamente isolados um do
+   outro. Um projeto enterprise pode conter recursos de múlti-
+   plas regiões, e você pode facilmente adicionar recursos para
+   ou remover recursos de projetos empresariais. 
+

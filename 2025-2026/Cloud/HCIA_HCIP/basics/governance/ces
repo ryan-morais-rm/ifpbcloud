@@ -1,0 +1,47 @@
+Para utilizar o server monitoring, usuários IAM 
+dentro de um grupo de usuário devem ter permissões
+de "Security Administrator". Se eles não possuem 
+tais permissões, uma mensagem indicando permissões
+anormais será exibida. 
+
+Se interrupções de monitoramento ocorrerem, prova-
+velmente está acontecendo porque o Agent está so-
+brecarregado. Você pode diagnosticar com o seguin-
+te: Se na página do "Server monitoring", os status
+do Agent está frequentemente mudando entre Running
+and Faulty. Ademais, as métricas dentro de um pe-
+ríodo que você especificar estarem descontinuadas.
+
+Se não existirem dados de monitoramento depois de 
+10 minutos do Agente ter sido instalado, o "Instan-
+ceId" dentro do conf file pode estar configurado 
+incorretamente. 
+
+Os dados de métricas são retidos com base nessa 
+tabela, é possível exportar dados com múltiplas 
+métricas de uma vez só para um arquivo CSV:
+	RollUp Period   Retention Period
+	1 minute 	2 days
+	5 minutes	10 days
+	20 minutes 	20 days
+	1 hour		155 days
+	4 hours		155 days
+	24 hours	155 days
+
+One-click monitoring está apenas disponível para a 
+conta empresarial do projeto ou seus usuários IAM
+com as permissões de "Tenant Administrator". 
+
+Cloud eye pode enviar e-mails ou requisições HTTP
+para os servidores. Além de trabalhar com o Auto 
+Scaling para ativar automaticamente o sistema, com
+o objetivo de adicionar ou remover servidores. 
+
+Quando o uso de CPU de um único core é maior do que
+10%, ou a memória excede 200MB de modo consecutivo
+por 3 vezes de uma vez, o Agente irá implementar o
+padrão de quebra de circuitos, e as métricas do 
+servidor não serão coletadas. O Agent será reinici-
+ado depois. 
+
+

@@ -1,0 +1,32 @@
+Introdução:
+-> Ela é usada para prever valores numéricos contínuos,
+   ou seja, quando o resultado esperado é um número real.
+   Exemplos: prever preço de uma casa, prever salário,
+   prever temperatura, prever vendas futuras. Sempre que
+   a resposta for um número, a regressão linear pode
+   ser usada. 
+
+Ideia central:
+-> Ela tentan encontrar uma relação linear entre as vari-
+   áveis de entrada (features) e a variável de saída (tar-
+   get). Ela basicamente procura uma linha (ou plano, em
+   mais dimensões) que melhor se ajusta aos dados. 
+   A forma mais simples é: "y = wx + b"
+   Onde:
+   x = entrada / w = peso / b = bias / y = previsão
+-> A melhor linha é aquela que minimiza o erro entre:
+   valores reais e valores previstos. Esse erro é medido 
+   por uma função de loss, geralmente: o erro quadrático
+   médio (MSE). O treinamento ajusta os parâmetros para
+   reduzir essa diferença. 
+
+Aprendizado do modelo:
+-> O algoritmo usa técnicas de otimização (como gradient
+   descent) para ajustar os pesos. 
+   Processo:
+   1. Faz uma previsão.
+   2. Calcula o erro.
+   3. Ajusta pesos.
+   4. Repete até minimizar erro.
+   Ao final, encontra a linha que melhor representa a rela-
+   ção entre variáveis.

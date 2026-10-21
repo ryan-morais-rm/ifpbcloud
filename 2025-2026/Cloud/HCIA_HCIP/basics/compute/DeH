@@ -1,0 +1,44 @@
+Introdução: 
+Provê recursos de hospedagem dedicados à você, podendo criar
+ECSs em um DeH para garantir isolamento, segurança e perfor-
+mance em seu perfil elástico. Você pode trazer sua própria 
+licença (BYOL) para o DeH, com o objetivo de reduzir os cus-
+tos com licenças de software e facilitar a independência de
+gerenciamento de ECSs. 
+O modo de cobrança é exclusivo para Anual/Mensal.
+O Hypervisor utilizado é o KVM. 
+
+Funções:
+- Especifique um DeH em qual será criado suas instâncias. 
+- Habilite o sistema para selecionar um DeH para criar ECSs.
+- Desenvolva ECSs de vários tipos no DeH. 
+- Mude as opções de ECSs dentro do DeH, podendo aumentar 
+  vCPU ou Memória. 
+- Migre uma ECS de um DeH para outro Host. 
+- Migre uma ECS dentro de um pool público para o DeH, ou mi-
+  gre uma ECS em um DeH para o pool público. 
+
+Vantagens:
+- Efetividade de custo:
+  DeH permite você a trazer licenças como Windows Server, 
+  SQL Server e Microsoft Office, reduzindo custos. 
+- Segurança:
+  DeH isola recursos computacionais para previnir suas car-
+  gas de trabalhos em DeHs de serem afetadas por outros lo-
+  catários. 
+- Confiabilidade:
+  DeH provê uma disponibilidade de 99,95%. 
+
+Avisos:
+- ECSs criadas pelo Auto Scaling não serão enviadas para os
+  DeHs, enquanto ECSs criadas em DeHs podem ser manualmente
+  adicionadas aos grupos AS. 
+- Só ECSs comuns on-demand podem ser migradas para os DeHs.
+- ECSs especiais, como as com discos locais ou GPUs, não po-
+  dem ser migradas entre DeHs ou entre pools públicos e DeH.
+- Apenas imagens públicas open-source podem ser usadas para
+  criar ECSs em DeHs. Se você quer usar imagens baseadas no
+  windows, crie imagens privadas e ative as imagens com suas
+  próprias licenças.  
+
+

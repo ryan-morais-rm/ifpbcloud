@@ -1,0 +1,50 @@
+ECS:
+-> É adequado para aplicações que possuem requerimentos baixos em CPU,
+   memória, capacidade de disco e largura de banda. Porém, possui re-
+   querimentos altos em segurança e disponibilidade. Estas aplicações
+   podem ser desenvolvidas em um ou poucos servidores para minimizar
+   o investimento inicial e custos de manuntenção. Cenários de exem-
+   plo incluem: teste e desenvolvimento web, e banco de dados pequenos
+
+ELB:
+-> ELB periodicamente envia requisições aos servidores de backend para
+   checar se eles podem processar requisições. Este processo é chamado
+   de health check. Porém, ele pode ser manualmente desabilitado. 
+   ELB suporta múltiplos algoritmos de load balancing, como o weighted
+   round robin, weighted least connections, source IP hash e connect ID
+   ELB melhora a tolerância de falhas das suas aplicações, eliminando
+   pontos únicos de falha (SPOFs), e melhorando a disponibilidade da 
+   aplicação. 
+
+GaussDB:
+-> Escalabilidade, ele suporta até mais de 1000 nodes por instância e 
+   provê capacidade de armazenamento em nível de petabytes para reque-
+   rimentos de armazenamento extensivos. 
+   Arquitetura, ele é baseado na arquitetura "shared-nothing", a qual
+   é uma arquitetura de banco de dados distribuído. Ele distribui dados
+   em múltiplos nodes, e cada node possui recursos de computação e ar-
+   mazenamentos independentes. 
+
+GaussDB(DWS):
+-> Suporta as arquiteturas de hardware x86 e ARM. 
+   Além disso, garante que dados estejam corretos e confiáveis dentro 
+   de um ambiente, por meio de transações distribuídas com o ACID (ato-
+   micity, consistency, isolatin, and durability).  
+
+LTS:
+-> Logs são estruturados pelo Log stream. Logs de formatos fixos ou si-
+   milares são extraídos de um log stream baseado no método de estrutu-
+   ração definido pelo usuário. Assim, logs irrelevantes são filtrados.
+   É possível utilizar a sintaxe SQL para consultar e analisar os logs
+   estruturados. 
+
+BMS:
+-> Adequado para análise de AI, edição de vídeo e databases robustos.
+
+OBS:
+-> Políticas do OBS incluem:
+   Public (read, read/write) 
+   Bucket (read, read/write) 
+   Directory (read, read/write) 
+
+

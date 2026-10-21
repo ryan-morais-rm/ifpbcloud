@@ -1,0 +1,24 @@
+A teoria KRE é uma metodologia de design de de disponibilidade desenvol-
+vida pela Huawei para garantir que os mecanismos de redundância não sejam
+apenas "reservas passivas", mas ferramentas que realmente funcionem quando
+ocorre uma falha.
+
+K(Knowledge): Foca na visibilidade e monitoramento. O design deve incluir
+ferramentas e processos de inspeção para garantir que cada mecanismo de 
+proteção esteja ativo e seja capaz de detectar falhas automaticamente. Sem
+esse "conhecimento" em tempo real, uma redundância pode estar quebrada sem
+que ninguém perceba até que seja tarde demais. 
+
+R(Recovery): Foca na eficiência da resposta. Questiona se existem métodos,
+ferramentas e processos documentados para recuperar o serviço mais rápido
+possível após a falha ser detectada. Aqui entram métricas como RTO e RPO.
+
+E(Evaluation): Foca na melhoria contínua e na arquitetura. O design deve 
+prever revisões constantes e análise de problemas para validar se a arqui-
+tetura de alta disponibilidade(HA) continua sendo a ideal para o negócio ou
+se precisa de ajustes técnicos. 
+
+Em resumo, o KRE exige que você saiba que a redundância funciona(K), tenha
+como restaurar rápido(R) e avalie constantemente se o design é eficaz(E). 
+
+

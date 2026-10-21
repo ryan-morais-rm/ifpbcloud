@@ -1,0 +1,31 @@
+Backpropagation:
+-> Depois de calcular o erro, a rede precisa ajustar
+   os pesos para reduzir erro. A ideia é começa do 
+   erro final, volta camada por camada, calcula quan-
+   to cada peso contribuiu para o erro, ajusta os 
+   pesos. Ou seja, erro volta pela rede ajustando tudo.
+
+Chain rule:
+-> A rede neural é composta por várias funções em se-
+   quência. Para ajustar pesos corretamente, precisa-
+   mos saber como cada peso influenciou o erro final.
+   A chain rule permite calcular gradiente em redes
+   profundas. Ele basicamente diz "o gradiente total =
+   multiplicação dos gradientes das camadas". Isso 
+   permite atualizar todos os pesos. 
+
+Atualização dos pesos:
+-> Depois de calcular gradiente: 
+   Wnovo = Watual - learning rate * gradiente
+   Ou seja, se o peso aumenta erro -> diminui. Se peso
+   reduz erro -> aumenta. 
+
+Exploding gradient:
+-> O gradiente pode ficar enorme. Resultado é que os pe-
+   sos explodem, o modelo fica instável, treinamento di-
+   verge. Mais comum em: redes profundas ou RNN.
+-> Por que isso acontece:
+   Por causa da chain rule. O gradiente é multiplicado 
+   várias vezes entre camadas. Se valores < 1, o gradi-
+   ente diminui. Se valores > 1, o gradiente explode. 
+

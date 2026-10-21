@@ -1,0 +1,30 @@
+Introdução:
+-> Naive Bayes é um algoritmo de machine learning usado
+   principalmente para classificação. Ele é baseado no
+   teorema de Bayes, um conceito de probabilidade que 
+   calcula a chance de um evento ocorrer com base em 
+   informações conhecidas.
+-> O nome "naive" (ingênuo) vem da suposição feita pelo
+   algoritmo. Ele assume que todas as variáveis são in-
+   dependentes entre si. Essa suposição é raramente 
+   verdadeira, mas mesmo assim o algoritmo funciona 
+   muito bem em vários problemas. 
+
+Ideia central:
+-> O Naive Bayes calcula qual a probabilidade de um
+   dado pertencer a cada classe. Depois escolhe a 
+   classe com maior probabilidade. 
+-> Base probabilística:
+   Ele usa o teorema de Bayes: P(classe/dados). Ou
+   seja, a probabilidade de classe dado o input. 
+   Ele analisa a frequência de palavras, características,
+   padrões no dataset e calcula as probabilidades. 
+
+Tipos de Naive Bayes:
+-> Guassian Naive Bayes (dados contínuos) 
+-> Multinomial Naive Bayes (texto e contagens) 
+-> Bernoulli Naive Bayes (presença/ausência) 
+
+
+
+

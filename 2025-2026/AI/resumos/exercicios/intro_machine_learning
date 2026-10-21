@@ -1,0 +1,50 @@
+1. Based on the formal mathematical definition of prediction tasks, which of the following identifies a regression task as opposed to a classification task?
+A. The learning algorithm outputs a function mapping inputs to a discrete category set (1,2,...,k).
+B. The program predicts the output as a continuous quantity or a real-valued set.
+C. The model groups data points based on internal similarity without using ground truth labels.
+D. The system uses a feedback loop to maximize a scalar reinforcement signal from the environment.
+
+2. How does the feedback mechanism in Reinforcement Learning (RL) fundamentally differ from that of Supervised Learning (SL) in the context of Large Language Models?
+A. SL provides feedback for the entire output sequence, while RL evaluates individual tokens.
+B. SL requires interaction with an external environment, whereas RL relies on a fixed classified sample library.
+C. RL uses reward scores to encourage the model to abandon low-quality answers, whereas SL forces an answer even if the ground truth is unknown.
+D. RL informs the model exactly how to improve its parameters, whereas SL only provides a scalar signal of success.
+
+3. In the framework of Unsupervised Learning, what is the primary criterion for grouping unlabeled data into clusters?
+A. Minimizing the classification error rate against a set of standard answers provided by a supervisor.
+B. Maximizing the distance between points within the same class to ensure variety.
+C. Ensuring that same-class data points share higher internal similarity compared to data points across different classes.
+D. Establishing a linear mapping relationship between independent variables to predict future security prices.
+
+4. Why is Semi-supervised learning often preferred for modern tasks like web page recommendation or large-scale data processing?
+A. It eliminates the need for any labeled data, relying entirely on the "Game with itself" experience.
+B. It effectively utilizes a small amount of expensive labeled data combined with a massive volume of unlabeled data.
+C. It allows for pixel-level labeling in instance segmentation without requiring initial training samples.
+D. It focuses strictly on maximizing long-term cumulative rewards through a value function.
+
+5. Regarding the rationale of Machine Learning algorithms, which statement correctly describes the relationship between the target function (f) and the hypothesis function (g)?
+A. The objective function f is always known, and the learning algorithm's goal is to replicate it perfectly.
+B. The hypothesis function g is an ideal representation that is identical to the target equation f.
+C. The objective function f is unknown, and the algorithm seeks a hypothesis function g that best approximates it.
+D. The target equation f maps outputs to inputs, while the hypothesis function g maps labels to features.
+
+6. When evaluating a model for a task such as "identifying whether an image is a cat," which metric specifically measures the proportion of actual positive samples that were correctly identified?
+A. Precision, which is the ratio of true positives to the total number of predicted positives.
+B. Accuracy, which measures correct predictions out of the total number of samples.
+C. Recall (or sensitivity), which measures the proportion of actual positives correctly predicted by the model.
+D. Error Rate, which calculates the percentage of incorrectly classified samples.
+
+7. True or False: In a regression task, the Mean Absolute Error (MAE) is considered more robust to outliers than the Mean Squared Error (MSE) because it does not square the differences between predicted and actual values.
+
+8. True or False: Polynomial regression is technically classified as a type of non-linear regression because its feature variables are raised to the n-th power, making the relationship between weight parameters non-linear.
+
+9. True or False: Overfitting is characterized by a model having a small training error but a large generalization error, often occurring when the model capacity is greater than the amount required by the task.
+
+10. True or False: The core characteristic of Unsupervised Learning is that the program must analyze relationships and hidden patterns within a dataset without being provided with standard answers or labels.
+
+11. True or False: In Reinforcement Learning, both "good" and "bad" behaviors are valuable for the model's learning process because they contribute to the system of rewards used to adjust future actions.
+
+12. True or False: If a Linear Regression model involves multi-dimensional variables (multiple independent features), the model takes the form of a straight line in the feature space.
+
+
+Gabarito: 1-B, 2-C, 3-C, 4-B, 5-C, 6-C, 7-True, 8-False, 9-True, 10-True, 11-True, 12-False

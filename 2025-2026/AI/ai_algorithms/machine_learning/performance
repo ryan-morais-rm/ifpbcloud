@@ -1,0 +1,29 @@
+Performance Evaluation - Regression:
+-> Mean absolute error (MAE):
+   Média das diferenças absolutas entre os valores
+   previstos e reais. Ele mede a magnitude média dos
+   erros sem considerar a sua direção. 
+   Necessidade -> Quando você quer entender o erro
+   médio real e não quer que outliers dominem a ava-
+   liação do modelo. 
+-> Mean squared error (MSE):
+   É a média dos quadrados das diferenças entre os 
+   valores previstos e reais. 
+   Necessidade -> Quando erros grandes são muito inde-
+   sejáveis e você deseja penalizá-los severamente 
+   durante o treinamento. 
+   
+Performance Evaluation - Classificação:
+-> Actual\Predicted Yes No Total
+   Yes              TP  FN P
+   No               FP  TN N
+   Total            P'  N' P+N
+
+
+
+
+
+
+
+
+   

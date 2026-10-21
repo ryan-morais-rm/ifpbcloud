@@ -1,0 +1,124 @@
+Última atualização:
+52 verdes, 30 vermelhos e 9 amarelos. 
+
+- Compute:
+	ECS -> verde
+	Flexus -> verde
+	BMS -> verde
+	AS -> verde
+	IMS -> verde
+	DeH -> verde 
+	FunctionGraph -> verde 
+	CDN -> verde 
+
+- Storage:
+	OBS -> verde
+	EVS -> verde
+	CBR -> verde
+	BRS -> verde
+	SFS T -> verde
+	SFS -> verde
+	VBS -> verde 
+	CSBS -> vermelho 
+	DES -> amarelo
+	DSS -> vermelho
+	DDS -> vermelho 
+
+- Network:
+	VPC -> verde
+	EIP -> verde
+	ELB -> verde
+	NAT Gateway -> verde
+	Direct Connect -> verde
+	VPN -> verde
+	VPCEP -> verde 
+	Cloud Connect -> verde
+	Enterprise Router -> verde
+	DNS -> verde
+
+- Container:
+	CCE -> verde
+	SWR -> verde
+	ASM -> verde
+	CCI -> verde
+
+- Governance:
+	CES -> verde
+	IAM -> verde
+	CTS -> verde
+	LTS -> verde
+	Config -> verde 
+	OneAccess -> verde 
+	RAM -> vermelho 
+	SMN -> verde 
+	APM -> verde
+	AOM -> verde
+
+- Database:
+	RDS -> verde 
+	DDS -> vermelho 
+	DAS -> verde 
+	DRS -> verde
+	GeminiDB -> vermelho 
+	GaussDB -> verde 
+	DDM -> verde
+	UGO -> amarelo
+	TaurusDB -> vermelho 
+
+- Migration:
+	SMS -> verde
+	OMS -> verde
+	CDM -> verde 
+
+- Middleware:
+	DCS -> vermelho
+	API Gateway -> vermelho 
+	DMS Kafka, RabbitMQ, RocketMQ -> vermelho 
+	CSE -> vermelho 
+	EventGrid -> vermelho 
+
+- Ecosystem:
+	KooGallery -> vermelho 
+	Partner Center -> vermelho
+
+- Business Applications:
+	Workspace -> vermelho
+	ROMA Connect -> verde 
+
+- Cloud Transformation:
+	Well-Architected Framework -> amarelo 
+	Cloud Adoption Framework -> amarelo 
+
+- Developer Tools:
+	SDK -> vermelho 
+	Koo CLI -> vermelho  
+
+- IoT:
+	IoT Device Access -> vermelho 
+
+- Analytics:
+	MapReduce Service -> vermelho 
+	Data Lake Insight -> vermelho 
+	Cloud Table -> vermelho 
+	DataArts: (Studio, Lake Formation, Fabric) -> vermelho  
+	DWS -> vermelho 
+	Cloud Search -> vermelho 	
+	Data Ingestion Service -> vermelho 
+	Data Lake: (Visualization, Factory) -> vermelho  
+
+- Security & Compliance:
+	WAF -> verde
+	HSS -> verde 
+	Cloud Firewall -> amarelo 	
+	SecMaster -> vermelho 
+	Anti-DDoS -> amarelo
+	DEW -> verde
+	Database Security Service -> amarelo 
+	CBH -> verde 
+	DSC -> amarelo 
+
+- Developer Services:
+	ServiceStage -> vermelho
+	CodeArts -> amarelo
+
+

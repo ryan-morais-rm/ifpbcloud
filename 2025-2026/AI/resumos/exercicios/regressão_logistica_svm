@@ -1,0 +1,77 @@
+1. In the context of multi-dimensional feature spaces, which statement accurately describes 
+   the geometric representation of a Linear Regression model? 
+   A. It is always represented by a straight line regardless of dimensionality. 
+   B. It takes the form of a straight line only when the variable x is one-dimensional 
+      and becomes a hyperplane when multi-dimensional. 
+   C. It forms a non-linear curved plane to minimize the empirical error. 
+   D. It uses a circular boundary to enclose all relevant data points.
+
+2. Regarding Polynomial Regression, why is it technically classified as a type of 
+   "Linear Regression" even when it handles non-linear datasets? 
+   A. Because it uses the Sigmoid function to linearize outputs. 
+   B. Because it only applies to datasets that can be split by a single vertical line. 
+   C. Although its features are non-linear (e.g., x2,xn), the mathematical relationship 
+      between its weight parameters w remains linear. 
+   D. It is actually not classified as linear regression; it is a type of unsupervised clustering.
+
+3. True or False: Linear regression assumes that the prediction error ε follows a normal 
+   (Gaussian) distribution, and its loss function can be derived using maximum 
+   likelihood estimation (MLE).
+
+4. When comparing L1 (Lasso) and L2 (Ridge) regularization in Linear Regression, 
+   which of the following is true? (Select all that apply) 
+   A. L2 regularization adds a square sum loss to the target function. 
+   B. L1 regularization can reduce parameter values directly to 0, effectively performing 
+      feature selection. 
+   C. L2 regularization reduces parameters to values close to 0 but does not typically 
+      reduce them to exactly 0. 
+   D. Lasso regression is exclusively used for classification tasks.
+
+5. Despite its name, what is the primary function of the Logistic Regression model? 
+   A. It is a continuous regression model used for predicting exact house prices. 
+   B. It is a classification model used to resolve binary or multiclass classification problems. 
+   C. It is a self-supervised model that generates new labels for unlabeled data. 
+   D. It is an unsupervised clustering algorithm based on K-means logic.
+
+6. How does Logistic Regression introduce non-linearity into a "broad sense" linear model? 
+   A. By adding multiple hidden layers like a deep neural network. 
+   B. By using the kernel trick to map data to a high-dimensional space. 
+   C. By introducing a Sigmoid function that maps inputs to an output 
+      interval of (0, 1) and setting a threshold. 
+   D. By calculating the mean absolute error instead of the mean squared error.
+
+7. True or False: The Softmax function is a generalization of Logistic Regression 
+   used for k-class classification, ensuring the sum of all predicted probabilities
+   for the classes equals 1.
+
+8. Which of the following is the standard loss function used for training Logistic 
+   Regression models in deep learning frameworks? 
+   A. Mean Squared Error (MSE). 
+   B. Cross-Entropy Loss. 
+   C. Hinge Loss. 
+   D. L1 Absolute Error.
+
+9. What is the core mathematical objective of a Linear SVM? 
+   A. To find a line that passes through the average of all data points. 
+   B. To minimize the distance between the centroids of two clusters. 
+   C. To find an optimal hyperplane that maximizes the width of the 
+      gap (margin) between two categories in the feature space. 
+   D. To map all data points to a zero-dimensional point.
+
+10. How does the "Kernel Trick" allow an SVM to handle linearly inseparable datasets? 
+   A. It removes the outliers from the training set to make the data linear. 
+   B. It uses non-linear mapping algorithms to convert low-dimensional inseparable
+      samples into a high-dimensional feature space where they become separable. 
+   C. It replaces the weights with support vectors to reduce computational cost. 
+   D. It converts the classification task into a regression task using the Sigmoid function.
+
+11. Which points in a dataset are specifically referred to as "Support Vectors"?
+   A. All data points located in the center of a cluster. 
+   B. The points that are furthest away from the decision boundary. 
+   C. The most nearby points to the decision line/hyperplane which determine its position. 
+   D. Points that have been misclassified by the model during the training phase.
+
+12. True or False: SVMs were originally designed as binary classifiers, but they can
+    be applied to both classification and regression tasks.
+
+Gabarito: 1-B, 2-C, 3-True, 4-A,B,C, 5-B, 6-C, 7-True, 8-B, 9-C, 10-B, 11-C, 12-True

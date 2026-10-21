@@ -1,0 +1,42 @@
+Seq2Seq é um modelo que recebe uma sequência como entrada
+e produz outra sequência como saída. Exemplos clássicos:
+Tradução automática, resumo de texto, geração de texto,
+chatbot, speech-to-text. 
+Formalmente:
+Entrada: x1, x2, x3,...,xt.
+Saída: y1, y2, y3,...,yt.
+As sequências podem ter tamanhos diferentes, significados
+diferentes, estruturas diferentes.
+
+Arquitetura Encoder-Decoder:
+Seq2Seq usa dois blocos principais.
+Fluxo:
+Input sequence -> Encoder -> Context vector -> Decoder -> Output sequence.
+
+Se for RNN ou LSTM:
+A cada passo recebe xt, atualiza estado oculto ht. NO final, o último
+hidden state vira o vetor contexto c. Esse vetor representa toda a in-
+formação da sequência de entrada. Porém, gera o problema da compressão. 
+
+Context Vector(c):
+Esse é o gargalo clássico do Seq2Seq. Toda a informação da frase inteira
+comprimida em um único vetor fixo. Se a frase for longa, compressão aumen-
+ta, perda de informação, degrada desempenho. 
+
+Decoder(d):
+O decodificador recebe "contexto c" e o token inicial <bos>(beginning of
+sentence). A cada passo, usa estado anterior, usa palavra anterior, usa
+contexto c, gera próxima palavra. Ele gera a sequência palavra por palavra.
+
+Processo de geração:
+Exemplo(tradução):
+Input: "I love AI" / Encoder: -> gera contexto c
+Decoder:
+<bos> -> "Eu" / "Eu" -> "amo" / "Eu amo" -> "IA" / IA -> <eos>
+<eos> indica o fim da sequência.
+
+Resumo:
+Seq2Seq é um modelo encoder-decoder que transforma uma sequência de en-
+trada em uma sequência de saída, usando RNN ou LSTM para codificar e de-
+codificar informação. 
+

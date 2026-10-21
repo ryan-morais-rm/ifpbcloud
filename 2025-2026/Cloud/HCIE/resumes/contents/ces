@@ -1,0 +1,48 @@
+O Cloud Eye(CES) deve ser compreendido como o motor de moni-
+toramento multidimensional que sustenta a alta disponibilida-
+de e a escalabilidade automática na Huawei Cloud.
+
+1. Granularidade e retenção de dados
+-> O CES utiliza diferentes períodos de agregação(rollup) que
+   determinam por quanto tempo seus dados ficam disponíveis.
+   É um erro comum em arquitetura ignorar que dados de alta
+   granularidade somem rápido. 
+   Tabela:
+   1 minuto -> 2 dias
+   5 minutos -> 10 dias
+   20 minutos -> 20 dias
+   1 hora -> 155 dias
+   4 horas -> 300 dias
+   24 horas -> 5 anos
+
+2. Monitoramento de SO vs Monitoramento básico
+-> Básico: Coleta de métricas de hardware fornecidas pelo hi-
+   pervisor do ECS de forma automática.
+-> SO (Agent-based): Exige o Cloud Eye Agent para métricas re-
+   finadas(como uso de memória interna, processos e tráfego de
+   rede detalhado) coletadas minuto a minuto. 
+-> Ponto crítico de O&M: Se os dados do Agent não aparecerem, o
+   culpado técnico costuma ser a dessincronização de tempo entre
+   o SO do servidor e o horário do console/navegador, o que in-
+   valida a exibição dos pontos de coleta. 
+
+3. Monitoramento de eventos: A Base da HA
+-> Diferente das métricas(números), os eventos capturam exceções
+   de hardware físico, falhas de instâncias de banco de dados e
+   operações críticas(como deleção de recursos). No design de ar-
+   quitetura, o CES atua como o gatilho principal para o Auto Re-
+   coveyr do ECS e alarmes de severidade crítica.
+
+4. Monitoramento de Site e Dialing
+-> Para aplicações voltadas ao público, o CES realzia o monitora-
+   mento de site através de discagem contínua de IPs elásticos. Isso
+   permite medir a disponibilidade e o tempo de resposta do portal 
+   sob a perspectiva do usuário final, sendo vital para identificar
+   gargalos de rede antes que eles afetem o SLA. 
+
+5. Grupos de recursos e automação:
+-> EM cenários de larga escala (como E-commerce), você não deve con-
+   figurar alarmes individualmente. A prática recomendada é o uso de 
+   Resource Groups, que permitem aplicar regras de alarme em lote para
+   todos os recursos associados a um serviço específico, reduzindo 
+   drasticamente a complexidade da operação. 

@@ -1,0 +1,78 @@
+Cenários de aplicação do EVS:
+-> Computação de alta performance
+-> Teste e desenvolvimento
+-> Data Warehouse 
+
+Web Application Firewall (WAF):
+-> Web Tamper Protection
+-> Website anti-crawler
+-> Prevenção de vazamento de informações sensíveis
+
+Elastic Load Balance (ELB):
+-> A capacidade externa de serviço da aplicação pode ser expan-
+   dida por meio da distribuição do tráfego, e a tolerância de
+   falhas do sistema pode ser aumentada. 
+-> Tráfego pode ser direcionado entre AZs, implementando um sis-
+   tema de recuperação de desastres em tempo real. 
+-> Suporta políticas de load balancing, as quais são weighted 
+   round robin, weighted least connections, source IP e connec-
+   tion id.
+
+Projetos na Huawei cloud:
+-> Sub-projetos podem ser criados dentro de um projeto, fazendo
+   com que o controle de permissão de recursos seja certeiro. 
+-> O nome padrão do projeto não pode ser mudado. 
+-> Projetos são usados para isolar recursos (incluindo computa-
+   ção, armazenamento e recursos de rede) entre as regiões físi-
+   cas. Um projeto é provido para cada região por padrão. 
+-> Projetos não podem ser criados entre regiões, eles devem ser
+   criados de acordo com sua região. 
+
+Relational Database Service:
+-> Usuários não precisam comprar e instalar quaisquer softwares
+   ou hardwares. 
+-> É possível o pagamento sob demanda ou mensal/anual
+-> Para cenários que precisam de alta disponibilidade e confia-
+   bilidade o modo active/standby é possível. 
+-> É fácil de usar, gerenciamento flexível, visível e controlado
+
+NAT Gateway:
+-> Uma VPC pode ser associada com múltiplos NAT gateway. 
+-> Múltiplas regras debaixo do mesmo NAT Gateway podem usar o 
+   mesmo EIP.
+-> SNAT e DNAT podem compartilhar o mesmo EIP, reduzindo custos.
+-> Apenas uma regra de SNAT pode ser adicionada para cada subnet
+   em uma VPC. 
+-> Apesar dos Hosts em uma VPC não precisarem de múltiplos EIP
+   para acessarem a rede por meio do NAT, ainda é necessário que
+   um EIP seja atrelado ao NAT Gateway. 
+
+OBS:
+-> Se aplica nos cenaŕios de sequenciamento genético
+-> Website estático
+-> Análise de Big Data
+-> Arquivamento de logs
+-> Um objeto é a unidade básica de armazenamento de dados do OBS
+   consistindo em três partes: "Key, Metadata e Data".
+
+ELB x Listener:
+-> Diferentes tráfegos de serviço podem ser encaminhados pelo 
+   mesmo load balancer. Porém, diferentes tráfegos de serviços
+   precisam ser separados por listener, ou seja, um listener pa-
+   ra porta 80, um listener para porta 443...
+-> A porta de serviço escutada pelo listener deve ser a mesma
+   porta do health check do backend. 
+
+Backups RDS:
+-> Os backups automáticos feitos pela instância são deletados
+   automaticamente quando você a exclui. Porém, os backups manu-
+   ais não são deletados e permanecem armazenados para uso. 
+-> RDS suporta as engines MySQL, Postgres, SQL Server e MariaDB.
+
+Auto Scaling:
+-> Na Huawei Cloud, "Scaling group" é uma coleção de instâncias
+   com o mesmo cenário de aplicação ou utilidade. Ela é a unida-
+   de básica para iniciar ou pausar políticas de escalonamento
+   e performar ações de escalonamento. 
+
+

@@ -1,0 +1,15 @@
+Introdução:
+Config permite que você procure por registros, e conti-
+nuamente progrida as configurações dos seus recursos pa-
+ra você ter certeza que eles estão em status desejados. 
+
+Para ter a funcionalidade completa do Config, é necessá-
+rio habilitar o gravador de recurso. Se ele estiver desa-
+bilitado, a operação de atualizar, criar e usar regras ou
+agregar dados aos seus recursos podem falhar. 
+
+Ele armazena os recursos de dados a cada 24 horas. Ade-
+mais, as notificações dos recursos mudam a cada 6 horas.
+Ele também irá notificá-lo quando uma mudança é feita 
+aos seus recursos. Além disso, ele habilita vocẽ a usar
+as regras do Config para melhorar seus recursos. 

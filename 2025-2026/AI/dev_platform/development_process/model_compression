@@ -1,0 +1,19 @@
+Model pruning:
+-> A ideia básica dele é remover pesos e branches de um modelo
+   e espaçar e escassear a estrutura de rede do modelo para obter
+   um modelo com parâmetros menores. Porém, pruning pode causar
+   deterioração da performance. Conexões de neurônios em uma rede
+   neural são matematicamente expressadas como uma matriz de peso.
+   Isto significa que pruning muda alguns elementos dentro da ma-
+   triz de peso para zero elementos.
+
+Knowledge distilation:
+-> Uma rede complexa larga usualmente provê boa performance, porém
+   também contém muita informação redundante, a qual aumente a com-
+   plexidade computacional e consumo de recursos. Destilamento ex-
+   trai informações úteis de uma rede complexa e migra isto para
+   uma rede menor. Depois de aprender, a rede pequena pode entregar
+   informação similar para a rede larga complexa enquanto precisa
+   de menos recursos computacionais. A rede complexa pode ser vista
+   como um professor, e a rede pequena como um estudante. 
+

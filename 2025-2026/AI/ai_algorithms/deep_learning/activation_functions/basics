@@ -1,0 +1,32 @@
+Introdução:
+-> Funções de ativação determinam se um neurônio deve
+   ser ativado ou não e introduzem não linearidade.
+   Sem função de ativação, a rede neural seria apenas
+   uma combinação linear de entradas. Isso faria com 
+   que ela tivesse o mesmo poder de uma regressão li-
+   near simples. Com funções de ativação, a rede con-
+   segue aprender padrões complexos e não lineares. 
+
+Por que são necessárias:
+-> Em uma rede neural, cada neurônio calcula a soma 
+   ponderada das entradas + bias. Se a saída fosse 
+   apenas essa soma, o modelo seria linear. 
+
+O que a função faz:
+-> Ela recebe um valor numérico e aplica uma transfor-
+   mação. Por exemplo, entrada = 3.5, saída após ati-
+   vação = valor transformado. Essa transformação po-
+   de limitar valores, tornar saída não linear, pode
+   gerar probabilidades. Cada neurôio aplica uma fun-
+   ção de ativação. 
+
+Tipos principais de funções:
+-> Sigmoid, Tanh, ReLU, Softmax. 
+
+Problemas relacionados:
+-> Algumas funções podem causar:
+   Vanishing gradient (gradiente muito pequeno) 
+   Treinamento lento
+   Saturação
+   ReLU resolveu muitos desses problemas. 
+

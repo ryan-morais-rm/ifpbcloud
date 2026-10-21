@@ -1,0 +1,16 @@
+Melhor aprendizado:
+-> Large models possuem mais parâmetros e uma estrutura mais complexa,
+   a qual permite-os adequar dados melhores e aprender de modo mais 
+   eficiente. Isto os permite processar datasets maiores e encontrar
+   padrões mais profundos, indo para uma performance melhor. 
+
+Melhor generalização:
+-> Large Models generalizam melhor, performando em dados novos mais e-
+   ficientemente. Isto os faz mais adaptáveis para uso em mundo real e
+   menos prováveis de sofrer overfitting. 
+
+Processamento multi-task:
+-> Large models podem suportar múltiplas tarefas de uma vez só, elimi-
+   nando a necessidade de separar modelos para cada task. Isto melhora
+   a flexibilidade e eficiência e diminui os custos de manutenção.
+ 

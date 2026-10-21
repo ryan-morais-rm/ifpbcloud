@@ -1,0 +1,47 @@
+Introdução:
+-> É um algoritmo de ML usado tanto para
+   classificação quanto para regressão.
+   Ele é considerado um dos algoritmos 
+   mais simples e intuitivos. A ideia
+   central é: prever o resultado de um
+   novo dado com base nos dados mais 
+   próximos dele. Ou seja, ele observa
+   os exempos já existentes e usa os 
+   mais parecidos para decidir. 
+
+Intuição básica:
+-> Imagine que você quer classificar um novo
+   ponto em um gráfico. Você olhas os pontos
+   mais próximos dele:
+   Se a maioria for da classe A -> ele deve ser A,
+   Se a maioria for da classe B -> ele deve ser B,
+   Isso é exatamente o que o k-NN faz. Ele não
+   cria uma fórmula complexa, ele apenas compara
+   com dados existentes. 
+
+Significado do "k":
+-> Ele representa quantos vizinhos mais próximos
+   serão considerados. Por exemplo, k = 1, olha
+   apenas o vizinho mais próximo. k = 5, olha os
+   5 mais próximos. k = 10, olha os 10 mais pró-
+   ximos. O valor de k influencia o comportamento
+   do modelo. 
+
+Medição de proximidade:
+-> O k-NN usa distância entre pontos. Distâncias
+   comuns: Euclidiana, Manhattan, outras métricas.
+   Quanto menor a distância, mais parecido o dado.
+
+Características importantes:
+-> Baseado em distância.
+   Não tem fase de treinamento real.
+   Chamado de lazy learning.
+   Ele apenas armazena dados e compara quando for
+   necessário. 
+
+Desvantagens:
+-> Lento com muitos dados
+   Precisa calcular distância toda hora
+   Sensível à escala dos dados
+   Sensível a ruído
+   Escolha de k é importante

@@ -1,0 +1,16 @@
+Pontos chaves para estabelecer um sistema de segurança durante migração
+e direcionamento para empresas para construir seus próprios sistemas de
+segurança baseados em nuvem:
+
+Avaliação e inspeção -> planejamento e design -> implementação de migra-
+ção -> aceitação da migração. 
+
+O time de gerenciamento e segurança de uma empresa precisa formular po-
+líticas de segurança de nuvem baseadas na estratégia de segurança geral
+e estratégia de negócio, e planejar segurança antes de começar a usar
+serviços de nuvem. 
+
+Por padrão, sub-redes dentro da mesma VPC podem comunicar entre si. Para
+controlar o acesso a diferentes serviços do sistema, associe diferentes
+ACLs de rede às suas sub-redes. 
+

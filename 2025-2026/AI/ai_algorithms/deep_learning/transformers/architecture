@@ -1,0 +1,38 @@
+Origem dos Transformers:
+-> Problemas de RNN/LSTM:
+   1. Processamento sequencial lento
+   2. Difícil paralelizar
+   3. Vanishing gradient
+   4. Dificuldade com dependências longas
+   Mesmo com LSTM: ainda era pesado e lento.
+
+Ideia central:
+-> Transformers são redes que analisam toda a
+   sequência ao mesmo tempo usando attention.
+   Sem RNN, LSTM, convolução. Somente utilizando
+   self-attention + feedforward layers. 
+
+Estrutura geral:
+-> Encoder stack | Decoder stack
+   Cada um com várias camadas. 
+   Fluxo:
+   Input -> Embedding -> Encoder -> Decoder -> Output 
+   Porém, o coração de tudo isso é o "Self-attention"
+
+Self-Attention:
+-> Significa que cada palavra olha para todas as outras
+   palavras da fase. Ela mede relação entre palavras. 
+   Por exemplo: "A lei e suas aplicações". Para entender 
+   "suas", precisa saber a que se refere. Self-attention
+   conecta "suas" <-> "lei". Isso resolve, o problema de
+   "long-distance dependency". 
+
+Estrutura interna de uma camada Transformer:
+-> Cada camada possui:
+   1. Multi-head self-attention
+   2. Feedforward neural network
+   3. Residual connections
+   4. Layer normalization
+   Isso se repete várias vezes, quanto mais camadas, mais
+   profundo o modelo. 
+

@@ -1,0 +1,31 @@
+1. Especialização e Precisão de Negócio (SFT)
+Modelos pré-treinados genéricos, como o GPT ou Llama, possuem vasto conhecimento, 
+mas frequentemente não atingem o nível de precisão superior (geralmente exigido 
+como ≥90%) necessário para operações de negócio reais.
+• Correção de Underfitting: O SFT é necessário para melhorar o desempenho do 
+  modelo em tarefas onde ele ainda é "fraco" ou genérico demais.
+• Redução de Alucinações: Ao treinar o modelo em dados rotulados de alta qualidade, 
+  reduz-se a probabilidade de o modelo gerar respostas factualmente incorretas.
+• Alinhamento de Domínio: O SFT ajuda a diminuir a diferença entre o conhecimento geral 
+  aprendido na internet e o conhecimento específico de um setor (como financeiro ou 
+  médico), garantindo que o modelo entenda as nuances daquela área.
+
+2. Viabilidade Econômica e Computacional (PEFT)
+À medida que os modelos crescem para centenas de bilhões ou trilhões de parâmetros, 
+o ajuste fino de todos os parâmetros (Full Parameter Fine-Tuning) torna-se 
+extremamente caro, demorado e tecnicamente inacessível para a maioria das empresas e 
+indivíduos.
+As técnicas de Efficient Fine-Tuning (Adapter, Prefix e Prompt Tuning) resolvem 
+esse problema ao permitir que o modelo principal seja "congelado", treinando apenas 
+uma pequena fração de novos parâmetros. As necessidades específicas que cada 
+um atende são:
+• Adapter Tuning: Resolve o problema do alto custo de R&D. Em vez de atualizar 
+  todos os pesos, inserem-se módulos "adaptadores" entre as camadas. Isso permite 
+  que um único modelo base seja reutilizado para múltiplas tarefas, guardando 
+  apenas os pequenos arquivos de peso dos adaptadores para cada tarefa.
+• Prefix Tuning: Criado como uma alternativa leve para tarefas de geração de linguagem. 
+  Ele permite manipular o comportamento do modelo sem a necessidade de processamento 
+  pesado nas camadas ocultas, sendo ideal para lidar com restrições de memória.
+• Prompt Tuning: Atende à necessidade de máxima eficiência. Ele simplifica o processo 
+  ao atuar apenas na camada de entrada (embedding), permitindo que modelos massivos 
+  sejam adaptados rapidamente com um gasto mínimo de memória de vídeo (VRAM)

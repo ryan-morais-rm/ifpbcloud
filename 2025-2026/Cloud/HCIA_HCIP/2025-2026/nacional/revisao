@@ -1,0 +1,65 @@
+Cloud Data Migration(CDM):
+-> Ferramenta de ETL para mover e integrar dados entre diferentes fontes. 
+
+Suporta bancos e sistemas como:
+-> Relacionais: MySQL, Oracle, SQL Server, GaussDB. 
+-> Big Data: HBase, Hadoop, Hive. 
+-> Busca/Analytics: ElasticSearch. 
+-> Data Warehouse e OBS. 
+
+Docker:
+-> Union File Systems: 
+   Sistemas de arquivos hierárquicos, leves e de alta performance, podendo
+   ser (AUFS, OverlayFS, etc...). 
+   Estrutura em camadas (hierarchical layers), leves (lightweight), alta 
+   performance, base do sistema de imagens. 
+-> runC:
+   É o runtime de container de baixo nível que estrutura o docker por padrão
+   É o componente responsável por criar, rodar e gerenciar containers no 
+   sistema host. 
+   Docker engine -> A plataforma de alta nível que gerencia imagens, redes,
+   e o ciclo de vida geral do container. 
+   containerD -> Docker engine passa as instruções ao containerD, que é o
+   runtime de container que gerencia o ciclo de vida do container (create, 
+   start, stop, delete) no sistema. 
+   runC -> containerD então usa o runC por padrão, que é o runtime de baixo
+   nível que interage com as ferramentas do Kernel Linux como (namespace,
+   cgroups, mount points) para realmente criar e isolar os processos. 
+
+Cloud Bastion Host (CBH):
+Atua como um jump server seguro, protegendo os servidores internos (ECS) 
+contra acessos diretos externos. 
+-> Funções principais:
+   Centraliza acesso administrativo (SSH/RDP)
+   Evita exposição direta dos ECS à internet
+   Auditoria e gravação de sessões
+   Controle de permissões (IAM/RBAC) 
+   Monitoramento e logging de operações
+
+Application Performance Management (APM):
+Para Java -> é necessário instalar o APM Agent. 
+Para Python, C++, Node.js... -> É necessário instalar agentes ou usar SDKs
+-> Cloud-init:
+   É usado para inicialização/configuração de instâncias
+   Não coleta tracing de aplicações
+   Não substitui o APM Agent
+Monitoramento APM exige:
+   Instrumentação da aplicação
+   Agentes ou SDKs
+   Coletas de métricas, traces e chamadas. 
+
+CCE Components:
+-> Cron job: Utilizado para scripts periódicos e programáticos. 
+-> Job: Executa uma tarefa única ou batch e é finalizada após completar. 
+-> Helm Charts: É um pacote com uma características pré-determinada de fun-
+   ções que você utiliza para atualização, remoção, gerenciamento dentro do
+   seu cluster k8s. É parecido com o apt, yum para o Linux. 
+
+
+
+
+
+
+
+
+

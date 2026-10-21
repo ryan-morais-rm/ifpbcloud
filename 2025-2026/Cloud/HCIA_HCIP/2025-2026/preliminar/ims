@@ -1,0 +1,69 @@
+Data disk:
+-> Uma imagem de disco de dados pode apenas ser usado para apli-
+   car para um novo disco e seus dados não podem ser importados
+   para outro disco. Para importar os dados, é possível usar o
+   seguinte:
+   1. Usar a imagem do disco de dados para criar um temporário
+   2. Atrelar o temporário para a ECS onde o disco alvo está
+   3. Copie os dados do disco temporário para o disco alvo. 
+      Então, delete o temporário. 
+
+Diferença entre CSBS/CBR Backup:
+-> Não, você pode criar uma image full-ECS de uma ECS, CSBS ou 
+   CBR. Quando se cria uma imagem full-ECS de uma ECS, o sistema
+   primeiro cria um backup da ECS e então usa o backup para cri-
+   ar uma imagem.
+
+Sysprep:
+-> É usado para generalizar imagens. Ele remove informações es-
+   pecíficas do servidor, como o SID de uma imagem. Então, ECSs
+   criadas dessa imagem podem ter um SID único no domínio. Se
+   as ECSs windows não precisam entrar em um domínio, Sysprep é
+   desnecessário. Antes de rodar Sysprep, garanta que o Windows
+   está ativo. 
+
+Mudança do UUID de um disco:
+-> Se um disco é criado de uma imagem, o UUID do novo disco será
+   o mesmo que o disco original. Se você atrelar o novo disco ao
+   servidor Linux de origem, haverá um conflito de UUID entre o
+   disco novo e original. Para resolver esse problema, você pre-
+   cisa logar no servidor e mudar o UUID do novo disco e então 
+   montá-lo de novo. Você pode rodar o "blkid" para checar o ti-
+   po do sistema de arquivo. 
+
+Imagem privada invisível:
+-> Quando se cria uma ECS ou muda o OS de uma ECS existente, al-
+   gumas de suas imagens privadas não são mostradas. Uma possí-
+   vel causa é que as arquiteturas x86 e Arm são incompatíveis
+   entre si, ou que existe um problema de incompatibilidade en-
+   tre os modos de boot da UEFI e BIOS. 
+
+Guest OS Drivers:
+-> Instalar drivers hospedeiros em uma ECS melhora a experiência
+   de utilizar uma ECS. Ademais, também garante alta resistência
+   e estabilidade das ECSs. 
+
+Cobrança por compartilhar uma imagem:
+-> Se isto é uma imagem de disco de sistema ou de dados, o arma-
+   zenamento do OBS é gratuito. 
+-> Se isto é uma imagem completa, será cobrado o espaço usado
+   para armazenar o backup CBR. 
+
+Diferenças entre compartilhamento e replicação:
+-> Sharing images:
+   Você pode apenas compartilhar imagens dentro de uma região 
+   com outros usuários. Para compartilhar uma imagem entre regi-
+   ões, replique a imagem para a região alvo, e então comparti-
+   lhe-a. 
+-> Replicating images:
+   Em região: É possível converter imgens criptografadas e não 
+   criptografadas entre si ou habilitar complementos avançados.
+   (tais quais criação rápida de ECS de uma imagem) por replicar
+   uma imagem dentro de uma região. 
+   Entre regiões:
+   Se você precisa desenvolver servidores ou fazer backup de da-
+   dos entre regiões, replicação entre regiões será a melhor es-
+   colha. Ele pode ser usado junto com o compartilhamento de i-
+   magens entre regiões, e replicação entre contas.
+
+ 

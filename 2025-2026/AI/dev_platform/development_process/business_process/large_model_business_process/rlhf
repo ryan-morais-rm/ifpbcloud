@@ -1,0 +1,21 @@
+Reinforcement learning from humang feedback:
+-> É um método que influencia o feedback humano para refinir
+   um modelo, habilitando aprendizado próprio efetivo. 
+-> Pela interação de feedback humano em uma função de recom-
+   pensa, RLHF garante que large models podem performar tare-
+   fas mais alinhadas com metas, aspirações e necessidades
+   humanas. 
+
+Reinforcement learning:
+-> Considera o impacto geral mais do que o aprendizado supervisionado:
+   Aprendizado supervisionado usando tokens individuais para ajudar o
+   modelo a dar a resposta correta. Aprendizado reforçado dá o deeback
+   usando a saída inteira no lugar de tokens. Aprendizado reforçado
+   trabalha melhor para LLMs em razão da diferença da granularidade do
+   feedback. 
+É mais efetivo em resolver alucinações:
+-> Em aprendizado supervisionado, o modelo fornece um resultado
+   mesmo se ele não sabe a resposta. Em aprendizado reforçado,
+   o modelo evita respostas com baixo scoring através dos scores
+   de recompensa. 
+

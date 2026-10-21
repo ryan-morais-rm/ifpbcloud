@@ -1,0 +1,63 @@
+1) Descreva a evolução das arquiteturas de aplicação, comparando as características das gerações Monolítica, SOA (Arquitetura Orientada a Serviços) e de Microsserviços.
+-> A arquitetura monolítica se dá principalmente pela dependência forte entre os componentes da aplicação, porque como tudo é desenvolvido de maneira central, a aplicação precisa ser pensada como uma unidade só, ou seja, essa arquitetura é fortemente acoplada. O serviço de login está junto com o de compras, que está junto com o de validação de produto... Tudo em um espectro único, dificultando a escalabilidade vertical do sistema e muito mais a horizontal porque uma aplicação monolítica é stateful na maioria dos casos. 
+-> A arquitetura orientada a serviços foi a primeira maneira do mercado de melhorar a comunicação entre os sistemas empresariais. Tendo em vista que os sistemas na sua maioria eram monolíticos e pesados, era necessário algum meio de comunicação entre eles, daí veio a arquitetura SOA-ESB, implementando mecanismos de assíncronicidade e independência entre as aplicações. 
+-> A arquitetura de microssserviços é a principal do mercado, porque ela foca na independência total entre os serviços da aplicação. Ou seja, um time fica responsável pela parte de login, o outro fica responsável pela parte de pagamentos... Assim, mecanismos de O&M são mais eficazes, porque conseguem prever onde estão os gargalos do sistema e onde melhorar. Além de implementar mecanismos como circuit breaker, 
+
+2) Explique a aplicação do método 5W1H (Why, Who, What, Where, When, How) no planejamento de uma arquitetura de nuvem e quais perguntas fundamentais cada etapa busca responder.
+-> Esse método 5W1H tem o foco em resolver problemas de implementação de um ambiente de nuvem, principalmente para clientes que estão fazendo migração.
+-> Why: É o motivo de você estar fazendo essa migração, por que você precisa disso no seu negócio? Será que continuar on-prem pelos seus gastos seria melhor? Será que ir para a nuvem é bem melhor? Por que você precisa disso de acordo com o seu negócio?
+-> Who: Quem são as pessoas impactadas nesse processo? Quais são as pessoas responsáveis pela migração? Quem são as pessoas que serão demitidas numa possível migração? Como os seus clientes serão impactados com essa decisão? 
+-> What: O que você vai migrar? Que tipo de plataforma você vai escolher? Que tipo de serviço será escolhido? IaaS, PaaS, SaaS?
+-> Where: Onde vai ocorrer a migração? Para qual região da nuvem você vai migrar? São Paulo? Hong Kong? Onde serão feitos os processos regulatórios? 
+-> When: Quando será feita a migração? Quando será possível retomar o negócio depois da migração? 
+-> How: Como será feito o processo de conversão para a nuvem? Quais ferramentas vamos utilizar para fazer o processo? Como vamos analisar os impactos, riscos? 
+
+3) Diferencie requisitos funcionais de requisitos não funcionais no design de sistemas, citando pelo menos três exemplos de capacidades não funcionais essenciais para a nuvem.
+-> Requisitos funcionais são as capacidades do seu sistema, por exemplo: Cadastrar usuário, validar uma migração de uma região para outra, comunicar com o usuário em horários específicos. Requisitos funcionais são a alma da aplicação, é a identidade dela e como ela se diferencia de outras. 
+-> Requisitos não funcionais são métricas de avaliação como performance, tempo de latência, disponibilidade, jitter... É a parte mais atrelada a como a aplicação se comporta de acordo com o uso dela.
+
+4) Detalhe as políticas de migração conhecidas como 6R, explicando especificamente as diferenças de esforço e benefício entre as estratégias de Rehost (P2V/V2V), Replatform e Refactor/Re-architect.
+-> Rehost, Refactor, Replataform, Retain, Retire, 
+
+5) Como se dividem as responsabilidades de gerenciamento entre o usuário e o provedor de nuvem nos modelos de serviço IaaS, PaaS e SaaS?.
+-> IaaS: Infraestrutura como serviço: O usuário possui controle no nível
+de instância, por exemplo configuração direta de servidores.
+-> PaaS: Plataforma como serviço: O usuário não possui controle no nível
+de instância, ele apenas configura como será o seu serviço em nível de códio, por exemplo um RDS for MySQL ou FunctionGraph. 
+-> SaaS: Software como serviço: É um serviço completo gerenciado pela huawei, por exemplo o Huawei Phone que permite você fazer chamadas telefônicas em nível de nuvem. 
+ 
+6) Defina o conceito de TCO (Total Cost of Ownership) na nuvem e explique a transição do modelo de gastos de CAPEX (Capital Expenditure) para OPEX (Operating Expenditure).
+-> TCO é a soma do CAPEX com o OPEX.
+-> CAPEX é o custo inicial que você precisa honrar para construir seu ambiente on-prem ou de nuvem. No ambiente on-prem seria você comprar hardware, licença de softwares, cabos, desktops... No ambiente de nuvem, seria você comprar instâncias, bancos de dados, plataformas de comunicação, mesmo o custo do CAPEX ser mais reduzido em relação ao ambiente on-prem, esse custo ainda existe. 
+-> O OPEX é o custo operacional do seu ambiente. No on-prem, seria você pagar a conta de água, energia, manutenção do hardware... Já no ambiente em cloud, você não tem esse custo, porque você não precisa se preocupar com o hardware em si, ou se a conta de água ou energia está cara demais. Você só precisa gerenciar a contabilidade dos recursos que você tá utilizando, que podem ser on-demand ou por assinatura mensal/anual. 
+
+7) Compare a escalabilidade horizontal com a escalabilidade vertical e descreva como o serviço de Auto Scaling (AS) ajuda a evitar o desperdício de recursos.
+-> Escalabilidade vertical é o tipo de escalabilidade mais limitado, porque ele gira em torno de você aumentar o poder computacional de um servidor ou de servidores, ou seja aumentar o número de vCPU, e memória por meio da melhoria individual de cada servidor e não aumentando a quantidade de servidores.
+-> Escalabilidade horizontal é o tipo de escalabilidade mais utilizado, porque você pode aumentar e diminuir servidores de acordo com a quantidade de uso. Diferente da escalabilidade vertical, a horizontal é virtualmente ilimitada, porque você não está chegando no máximo de recursos de uma máquina individualmente, mas sim de um cluster dedicado. 
+
+8) Explique as diferenças fundamentais entre os conceitos de Alta Disponibilidade (HA), Recuperação de Desastres (DR) e Backup dentro de um design de resiliência.
+-> HA: Alta disponibilidade é um mecanismo de redundância entre AZs ou regiões.Por exemplo, a configuração de um ELB que faz health checks em instâncias que estão em AZs diferentes, se uma instância cair, a ECS de outra AZ recebe essa carga de trabalaho. Além do nível regional que pode ter um DNS inteligente que pode fazer um failover entre regiões. 
+-> DR: Recuperação de desastres ocorre no nível de AZ, principalmente por meio do SDRS que é um mecanismo de failover de discos em caso de uma AZ ser destruída por desastres naturais ou algum tipo de atentado contra o data center. Geralmente, quando há sincronização em tempo real, quando uma AZ fica indisponível, as métricas de RPO são virtualmente 0, por conta do mecanismo de sincronização. As métricas de RTO indicam ser menores de 30 minutos, por conta do redirecionamento do tráfego, estabilidade do DNS, validação de ELB e outros quesitos para recontinuidade do negócio. 
+-> Backup: O backup é pode ser feito em nível de AZ ou de região com o CBR, depende de como você vai implementar e os requisitos de negócio. 
+ 
+9) Quais são os principais indicadores de qualidade de serviço (Key SLIs) que devem ser monitorados em um nó de arquitetura para garantir o desempenho do sistema?.
+-> Disponibilidade, performance, resiliência e escalabilidade. 
+
+10) Descreva como a integração de uma arquitetura orientada a eventos e o uso de filas de mensagens distribuídas (DMS) contribuem para aumentar o throughput e reduzir a dependência entre aplicações.
+-> O principal é o desacoplamento entre as aplicações e a implementação de
+assíncronicidade. Veja bem, se o serviço de autenticação pode ser quebrado em vários módulos, como por exemplo: cadastro, validação e login. Se você constrói a aplicação em um bloco de serviço só, você não sabe qual mecanismo está sofrendo mais overloading no momento. Por exemplo, você pode estar com muitos usuários novos fazendo cadastro, porém você não sabe que é isso que está acontecendendo no seu negócio, porque não existe um mecanismo de DMS. Então, você pensa que o serviço de autenticação como todo está com gargalo e não aquele microsserviço específico dentro de autenticação, assim você escala todos os outros sem necessidade e investe um capital completamente desnecessário, porque você escalou o serviço como macro e não como micro. Além da independência entre times quando você cria um DMS, porque o time X fica responsável pela feature X e o time Y fica responsável pela feature Y, sem se preocupar com o trabalho entre times. 
+
+11) Quais são os cinco fatores críticos que influenciam diretamente o design de uma solução de arquitetura em nuvem estável e eficiente?.
+
+12) No contexto de design de desempenho para bancos de dados, explique o papel da separação de leitura e escrita (Primary/Standby replication) e do uso de cache (Redis) para lidar com picos de tráfego.
+-> Quando você faz a separação de responsabilidade de um banco de dados, você interfere tanto no eixo Y quanto no eixo X do teorema AKF. O motivo é porque você segmenta responsabilidades, ou seja, leitura/escrita do eixo Y e também multiplica o número de instâncias e dependendo do caso, as instâncias de leitura podem ter configurações iguais, diferenciando apenas da instância de escrita. A rigor, essa divisão melhora a disponibilidade da aplicação e performance, porque com a implementação do cache Redis, você pode consultar por meio das instâncias de leitura os conteúdos mais usados da aplicação e armazenar em cache no Redis, sem ter que fazer várias queries de leitura e diminuir a performance. Além disso, como haverá uma instância dedicada apenas para escrita, ela seria o ponto principal para escalabilidade vertical se o pico de escritas crescerem demais.  
+
+13) Explique a teoria KRE (Knowledge, Recovery, Evaluation) aplicada ao design de disponibilidade e como ela ajuda a garantir que os mecanismos de proteção sejam eficazes.
+
+14) Ao realizar a otimização de segurança de uma arquitetura, quais aspectos devem ser considerados nas camadas de acesso, aplicação e armazenamento de dados?.
+-> Camada de acesso: É a proteção principalmente que vem do IAM, ou seja as permissões de r, rw. Em um ambiente de nuvem é essencial separar essas responsabilidades, por meio de policies para que  os usuários da aplicação não possam ter acesso a serviços críticos da nuvem, por meio de alguma bracha da sua aplicação, como por exemplo, fazer um GET em um objeto confidencial de outro usuário no OBS. 
+-> Camada de aplicação: A camada de aplicação é principalmente protegida por meio do WAF, prtegendo contra xss, injeções, interação via requisições maliciosas, dentre outros. 
+-> Camada de armazenamento: Mecanismos de backup, replicações de bancos entre AZs, replicação de Backup via CBR entre regiões, mecanismo de três cópias do EVS. Além de outros pontos que já destaquei em outros questões. 
+
+15) Descreva o processo sistemático de otimização de arquitetura, desde a confirmação de problemas e análise de fluxos de serviço até a implementação do plano de melhoria.
+-> Identificação de gargalos da arquitetura. Por exemplo, falha de comunicação entre as instâncias dos microsserviços. Antes disso, é necessário analisar o comportamento da aplicação para ver se o problema, por exemplo, não é no serviço de mensageria. Além disso, é necessário analisar componentes de auto scaling, porque de vez em quando o problema é no suporte ao número de usuários, dependendo do comportamento é necessário também ver o eixo AKF, porque mesmo fazendo a segmentação de responsabilidades do eixo Y, também é necessário fazer a segmentação de usuários em nível de região, como detalha do oeixo Z. Assim, analisando os problemas principais da aplicação, é possível montar uma plano de melhoria. 

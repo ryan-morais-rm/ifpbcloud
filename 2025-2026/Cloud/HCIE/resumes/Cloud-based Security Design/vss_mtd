@@ -1,0 +1,22 @@
+-> Vulnerability Scan Service(CodeArts Inspector)
+Detecção de vulnerabilidades comuns da OWASP e mais de 30 tipos de vulne-
+rabilidades, vulnerabilidade de file inclusion, erros de configuração, 
+vazamento de informações e web shells. 
+
+Pode detectar CVE, conteúdo sensível, spam, trojans e links externos ma-
+liciosos. Configure as políticas de scanning para todas as aplicações web
+e conserte as vulnerabilidades em tempo ágil. Escaneamento profundo apenas
+pode ser performado depois que uma conta com permissões máximas forem
+providas. 
+
+-> Managed Threat Detection Service(MTD)
+MTD continuamente detecta atividades maliciosas e comportamento não autori-
+zado para proteger sua conta e seus workloads. Ele usa Machine Learning, 
+detecção de exceções, associação de ameaças, e outros meios para identifi-
+car possíveis ameaças e determinar suas prioridades, melhorando a acurácia
+de detecção de incidentes.
+
+O MTD identifica ameças para contas IAM e vulnerabilidades para DNS e olha
+por intrusões por meio dos logs do CTS. Estes riscos de segurança não podem
+ou dificilmente são detectados por outros serviços de segurança. 
+ 

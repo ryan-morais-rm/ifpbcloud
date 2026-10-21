@@ -1,0 +1,63 @@
+1. Which of the following best defines "Generalization Capability" in machine learning? 
+   A. The ability of a model to achieve zero error on the training dataset. 
+   B. The extent to which a learned model can be effectively applied to new, unseen samples. 
+   C. The speed at which a model processes input data during the inference phase. 
+   D. The complexity of the mathematical functions used within the hidden layers.
+
+2. A model is considered to be "Overfitting" when: 
+   A. Both the training error and the generalization error are equally large. 
+   B. The training error is large, indicating the model failed to learn basic features. 
+   C. The training error is small, but the generalization error on new samples is large. 
+   D. The model capacity is insufficient to handle the complexity of the task.
+
+3. True or False: As model complexity increases, the training error typically decreases, but the test error 
+   may eventually increase, forming a convex curve.
+
+4. Which techniques are specifically used to prevent Overfitting? (Select all that apply) 
+   A. Dropout. 
+   B. Adding more complex features and high-order polynomials. 
+   C. L1 and L2 Regularization. 
+   D. Early Stopping. 
+   E. Data Augmentation.
+
+5. What is a primary cause of "Underfitting"? 
+   A. The model has too many parameters and feature dimensions. 
+   B. The training data contains too much noise. 
+   C. The mathematical model is too simple or the training time is too short. 
+   D. The model fits the training data fluctuations too closely.
+
+6. True or False: "Generalization error" refers to the difference between the model's prediction 
+   and the actual result on the samples used during the training phase.
+
+7. In terms of Error Analysis, Overfitting is typically associated with: 
+   A. High Bias.
+   B. High Variance, caused by extreme sensitivity to small fluctuations in the training set. 
+   C. Low model capacity. 
+   D. Ineliminable errors that cannot be solved by data volume.
+
+8. How can a developer fix an "Underfitting" problem? (Select all that apply) 
+   A. Reduce the number of network layers and neurons. 
+   B. Add new features or feature combinations. 
+   C. Reduce regularization parameters. 
+   D. Use more complex or non-linear models.
+
+9. True or False: "Early Stopping" involves stopping the training process before the training error 
+   reaches its absolute minimum, specifically when the validation set error starts to increase.
+
+10. What is the goal of "Regularization" in deep learning? 
+    A. To increase the training error to match the testing error. 
+    B. To reduce generalization error by restricting model complexity or weight increase. 
+    C. To ensure that the model memorizes every noise and fluctuation in the training data. 
+    D. To replace the need for a validation set during the training process.
+
+11. True or False: Large models (Foundation Models) generally exhibit better generalization capability 
+    and are less likely to overfit compared to smaller models when trained on large-scale data.
+
+12. According to the sources, total Prediction Error can be decomposed into which components? 
+    (Select all that apply) 
+    A. Bias². 
+    B. Variance. 
+    C. Learning Rate Coefficient. 
+    D. Ineliminable Error (Noise)
+
+Gabarito: 1-B, 2-C, 3-True, 4-A,C,D,E, 5-C, 6-False, 7-B, 8-B,D , 9-True, 10-B, 11-True, 12-A,B,D

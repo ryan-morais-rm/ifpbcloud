@@ -1,0 +1,36 @@
+Estrutura conceitual do Attention:
+Query(Q):
+-> O que eu estou procurando
+Key(K):
+-> Onde procurar
+Value(V):
+-> Informação real
+
+Processo:
+-> 1. Query compara com Keys
+   2. Mede similaridade
+   3. Gera pesos
+   4. Soma ponderada dos Values 
+   Como resultado, informação relevante 
+   é destacada. 
+
+Processo matemático:
+-> Passo 1 - Similaridade
+   Compara query com cada key
+-> Passo 2 - Softmax
+   Transforma score em probabilidades
+-> Passo 3 - Weighted sum
+   Multiplica pesos pelos values
+
+Vantagens do Attention:
+-> Paralelização
+   RNN é sequencial, ou seja lento. 
+-> Attention:
+   Pode processar tudo em paralelo, muito
+   mais rápido em GPU. 
+-> Melhor contexto:
+   Não depende só da última palavra, ele pode
+   olhar qualquer parte da frase.
+-> Menos perda de informação:
+   Não comprime tudo em um vetor. 
+

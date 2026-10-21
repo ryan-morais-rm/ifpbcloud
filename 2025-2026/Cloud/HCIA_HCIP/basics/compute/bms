@@ -1,0 +1,53 @@
+-> Introdução:
+Combina a escalabilidade do ECS com alta performance de
+servidores físicos. Utilizado em cenários como: "core data-
+bases, critical applications, HPC e big data". 
+
+-> Vantagens:
+BMSs ativas na arquitetura QingTian podem usar discos EVS
+como discos de sistema e discos de dados, os quais podem fa-
+zer backup para restauração. BMS pode interconectar com ar-
+marzenamento dedicado para garantir a segurança dos dados e
+confiabilidade requirida para serviços empresariais. 
+
+-> Funções:
+- BMS possui a arquitetura x86 e Kunpeng. 
+- Tipos de rede BMS incluem: VPC, High-speed network e VLAN.
+- Métodos de cobrança:
+  BMSs são cobradas em uma cota anual/mensal
+- Imagens:
+  Uma imagem é um template de um ambiente BMS. Ele contém um
+  OS e o runtime, e alguns softwares pré-instalados, podendo
+  ser imagens: públicas, privadas e compartilhadas. 
+- Uma imagem de uma BMS pode ser exportada para aplicar con-
+  figurações do BMS e outras BMSs, eliminando tarefas redun-
+  dantes de configuração. 
+
+-> SDKs:
+Você pode chamar APIs do BMS para criar aplicações, facil-
+mente na Huawei Cloud. Disponíveis: Java, Python, GO.
+
+-> Features:
+- É possível resetar a senha com One-click
+- Reinstalar o sistema operacional
+- Reconstruir um BMS se o hardware ou se SDI iNIC forem da-
+  nificados. 
+- Usar o CSBS para fazer o backup de configurações do BMS e
+  disco EVS para buckets OBS para segurança de dados. 
+
+-> Constraints:
+- Hardwares externos como USB e dongles não são suportados
+- BMSs são gerenciados e mantidos pela Huawei
+- Live migration não é suportada. Se uma BMS estiver com 
+  problema, seus serviços serão afetados. É uma boa prática
+  fazer o deploy em um cluster ou primary/standby. 
+- Não pode trocar a VPC depois do BMS ser criado. 
+- Softwares de virtualização como proxmox é suportado.
+- O tipo de disco para o BMS precisa ser o SCSI. 
+- Não faça o upgrade do kernel, se não o driver de hardware
+  pode se tornar incompatível com o BMS. 
+- Você pode parar um BMS apenas no console de gerenciamento,
+  e não pode rodar o "shutdown" para pará-lo. 
+
+
+
