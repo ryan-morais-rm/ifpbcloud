@@ -1,0 +1,11 @@
+# /etc/logrotate.d/nuvemif
+/var/log/nuvemif/coletor-servico.log {
+    daily
+    rotate 7
+    compress
+    dateext
+    missingok
+    notifempty
+    copytruncate
+    su coletor coletor
+}

@@ -1,0 +1,2 @@
+# /etc/audit/rules.d/nuvemif.rules
+-w /opt/nuvemif/config -p wa -k nuvemif_config

@@ -1,0 +1,3 @@
+# /etc/sudoers.d/nuvemif  (editar com: sudo visudo -f /etc/sudoers.d/nuvemif)
+ana ALL=(root) NOPASSWD: /usr/bin/systemctl restart coletor, /usr/bin/journalctl -u coletor
+%nuvemif ALL=(root) /usr/bin/dnf

@@ -1,0 +1,8 @@
+[Unit]
+Description=Backup diario de dados e configuracao da NuvemIF
+
+[Service]
+Type=oneshot
+# -h segue a ligacao simbolica /opt/nuvemif/dados -> /srv/dados (criada no modulo 7)
+# %% vira % para o systemd e $$ vira $ (para o bash executar o $(date))
+ExecStart=/bin/bash -c 'tar -czhf /mnt/backup/nuvemif-$$(date +%%F).tar.gz /opt/nuvemif/dados /opt/nuvemif/config'

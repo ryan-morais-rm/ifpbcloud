@@ -1,0 +1,14 @@
+[Unit]
+Description=Agente coletor NuvemIF
+After=network.target
+
+[Service]
+User=coletor
+ExecStart=/opt/nuvemif/bin/coletor.sh
+Restart=on-failure
+RestartSec=5
+# cria /var/log/nuvemif com dono coletor (corrige a falha da primeira tentativa)
+LogsDirectory=nuvemif
+
+[Install]
+WantedBy=multi-user.target
